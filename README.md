@@ -3,7 +3,7 @@ Trigger Time (https://github.com/Sheph/TriggerTime)
 
 **1. About**
 -------------------
-Trigger Time is a story-driven, top-down Shoot'em up with a fun gravity gun and physics puzzles to solve.
+Trigger Time is a story-driven, top-down shoot'em up with a fun gravity gun and physics puzzles to solve.
 Blast your way through 9 levels filled with enemies, hazards and bizarre bosses.
 Along the way you'll take control of vehicles, pick up weapons, items and boosters.
 
@@ -73,3 +73,64 @@ choose "Release" in the topmost combox box and press "ctrl + F5"
 
 Once the game is built you can also run it outside of IDE by simply
 running "C:\Projects\TriggerTime\build_Win32_VS2013\out\bin\Release\tt.exe"
+
+**3. Building on linux**
+-------------------
+
+<pre>
+./cmake_x64_release.sh
+cd ../TriggerTime-x64-release
+make -j4
+</pre>
+
+Then:
+
+<pre>
+cd ./out/bin
+./tt
+</pre>
+
+You can also use other cmake_xxx.sh scripts to generate debug, i386 and steam runtime version of the game.
+
+**3. Building for android**
+-------------------
+
+Originally there was also an android build, but at some point the game became "PC only". There're still android makefiles
+here and there, the game code still contains touchscreen control code, android platform code, etc. So technically, with some effort, one can get the game running on android again... But for now, the **build is broken**, so you were warned :)
+
+#### Build commands
+
+<pre>
+cd ./android
+echo "sdk.dir=/home/user/android-sdk-linux/sdk" > local.properties
+/home/user/android-ndk-rxx/ndk-build
+ant debug
+</pre>
+
+Then:
+
+<pre>
+adb install ./bin/AirForce-debug.apk
+</pre>
+
+#### Other NDK build options
+
+Multithreaded build:
+<pre>
+/home/user/android-ndk-rxx/ndk-build -j8
+</pre>
+
+Build for one arch only:
+<pre>
+/home/user/android-ndk-rxx/ndk-build APP_ABI=x86
+</pre>
+
+Build for native debugging:
+<pre>
+/home/user/android-ndk-rxx/ndk-build NDK_DEBUG=1 APP_OPTIM=debug
+</pre>
+
+Start native debugging:
+<pre>
+bash /home/user/android-ndk-rxx/ndk-gdb --start
+</pre>
