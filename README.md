@@ -74,7 +74,7 @@ choose "Release" in the topmost combox box and press "ctrl + F5"
 Once the game is built you can also run it outside of IDE by simply
 running "C:\Projects\TriggerTime\build_Win32_VS2013\out\bin\Release\tt.exe"
 
-**3. Building on linux**
+**4. Building on linux**
 -------------------
 
 <pre>
@@ -92,7 +92,7 @@ cd ./out/bin
 
 You can also use other cmake_xxx.sh scripts to generate debug, i386 and steam runtime version of the game.
 
-**3. Building for android**
+**5. Building for android**
 -------------------
 
 Originally there was also an android build, but at some point the game became "PC only". There're still android makefiles
@@ -134,3 +134,20 @@ Start native debugging:
 <pre>
 bash /home/user/android-ndk-rxx/ndk-gdb --start
 </pre>
+
+**6. Replacing in-game music**
+-------------------
+
+Due to some legal stuff it's not possible to publish some of the in-game
+music here on github. Those music files were replaced by "5 minutes of silence" dummy ogg files. If you want to have the
+music in game you'll have to:
+
+* Go to Steam and install the game: https://store.steampowered.com/app/512920
+* If you're on windows, go to C:/Program Files (x86)/Steam/SteamApps/common/Trigger Time/assets
+* If you're on linux, go to /home/user/.steam/steam/SteamApps/common/Trigger Time/assets
+* Copy all action*.ogg and ambient*.ogg files to ./game/assets with overwriting
+
+**7. Developer mode**
+-------------------
+
+TODO
