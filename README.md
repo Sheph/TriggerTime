@@ -147,7 +147,34 @@ music in game you'll have to:
 * If you're on linux, go to /home/user/.steam/steam/SteamApps/common/Trigger Time/assets
 * Copy all action*.ogg and ambient*.ogg files to ./game/assets with overwriting
 
-**7. Developer mode**
+**7. Running without Steam**
 -------------------
 
-TODO
+The game is intended to run from Steam, so if you don't have Steam opened you'll see something like this in console:
+
+<pre>
+[S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed.
+[S_API FAIL] SteamAPI_Init() failed; unable to locate a running instance of Steam, or a local steamclient.so.
+Game startup failed, see $HOME/.TriggerTime/log.txt for details
+</pre>
+
+In order to fix this open config.ini and change steamApiRequired to false.
+
+**8. Developer settings**
+-------------------
+
+config.ini has a lot of stuff for developer to use, some of the settings are:
+
+setting | description
+------------ | -------------
+developer | an integer from 1 to N specifying debug spawn point, most of the levels have many debug spawn points that are used to check out part of the level without running through from the start. note that if you set this to a non-existent spawn point the game will simply crash in script :)
+debugKeys | if set to true in-game debug keys are enabled, such as 'p' for physics debugging, 'r' for render debugging, 'c' for culling debugging, 'g' for ghost mode, 'm' for slowmo, etc.
+atLeastGems| number of games that the player will always have
+allLevelsAccessible| make all levels accessible on all difficulty settings
+skill| run the game on specified skill
+
+Also, when debugKeys is true you can run the game like this:
+<pre>
+tt.exe e1m4.lua e1m4.json
+</pre>
+i.e. launch some level right away.
