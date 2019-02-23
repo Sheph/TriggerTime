@@ -1,0 +1,25 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UIEndOfDemo = {};
+
+        function UIEndOfDemo.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("main_menu.lua", "");
+                end);
+            end
+        end
+    </script>
+</head>
+<body template="base" onkeydown="UIEndOfDemo.OnKeyDown(event, document);">
+    <p style="font-size:50px; margin-top: 280px;">Thanks for playing Trigger Time demo!</p>
+    <p style="font-size:35px;">More content and improvements await in full version :)</p>
+</body>
+</rml>

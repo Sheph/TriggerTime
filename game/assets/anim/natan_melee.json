@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["natan2/natan_melee%0-9%.png", 12],
+        ["natan3/natan_melee%10-11%.png", 12]
+    ],
+    "specials": [4, 9]
+}

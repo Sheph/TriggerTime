@@ -1,0 +1,149 @@
+{
+	"children": [
+		{
+			"type": "menu",
+			"name": "&AirForce scripts",
+			"children": [
+				{
+					"type": "action",
+					"name": "&Circle to line",
+					"file": "circleToLine",
+					"desc": "circle to line",
+					"minFixtures": 1,
+					"maxFixtures": 1
+				},
+				{
+					"type": "action",
+					"name": "&Ellipse to line",
+					"file": "ellipseToLine",
+					"desc": "ellipse to line",
+					"minFixtures": 1,
+					"maxFixtures": 1
+				},
+				{
+					"type": "action",
+					"name": "&Line to circle",
+					"file": "lineToCircle",
+					"desc": "line to circle",
+					"minFixtures": 1,
+					"maxFixtures": 1
+				},
+				{
+					"type": "action",
+					"name": "&Translate to COM",
+					"file": "translateToCOM",
+					"desc": "translate to COM",
+					"minBodies": 1,
+					"maxBodies": 1
+				},
+				{
+					"type": "action",
+					"name": "&Fix joints",
+					"file": "fixJoints",
+					"desc": "fix joints",
+					"minJoints": 1
+				},
+				{
+					"type": "action",
+					"name": "&Align joints",
+					"file": "alignJoints",
+					"desc": "align joints",
+					"minJoints": 1
+				},
+				{
+					"type": "action",
+					"name": "&Change body position",
+					"file": "changeBodyPos",
+					"desc": "change body position",
+					"minBodies": 1,
+					"maxBodies": 1
+				},
+				{
+					"type": "action",
+					"name": "&Rotate around center",
+					"file": "rotateBy",
+					"desc": "rotate by"
+				},
+				{
+					"type": "action",
+					"name": "&Rotate around cursor",
+					"file": "rotateBy2",
+					"desc": "rotate by"
+				},
+				{
+					"type": "action",
+					"name": "&Select fixture vertices",
+					"file": "selectFixtureVertices",
+					"desc": "select fixture vertices"
+				},
+				{
+					"type": "action",
+					"name": "&Make rope",
+					"file": "makeRope",
+					"desc": "make a rope"
+				},
+				{
+					"type": "action",
+					"name": "&Weld 2",
+					"file": "weld2",
+					"desc": "weld 2",
+					"minVertices": 2,
+					"minFixtures": 1,
+					"maxFixtures": 1
+				},
+				{
+					"type": "action",
+					"name": "&Set vertices",
+					"file": "setVertices",
+					"desc": "setVertices",
+					"minVertices": 1,
+					"maxVertices": 1,
+					"minFixtures": 1,
+					"maxFixtures": 1
+				},
+				{
+					"type": "action",
+					"name": "&Flip weld joints",
+					"file": "flipWeldJoints",
+					"desc": "flip weld joints",
+					"minJoints": 1
+				},
+				{
+					"type": "action",
+					"name": "&Select body joints",
+					"file": "selectBodyJoints",
+					"desc": "select body joints",
+					"minBodies": 1
+				},
+				{
+					"type": "action",
+					"name": "&Flip vertices horizontally",
+					"file": "flipVerticesHorz",
+					"desc": "flipVerticesHorz",
+					"minVertices": 1
+				},
+				{
+					"type": "action",
+					"name": "&Make boss-buddy side",
+					"file": "makeBuddySide",
+					"desc": "make boss-buddy side",
+					"minBodies": 1
+				},
+				{
+					"type": "action",
+					"name": "&Make boss-buddy main",
+					"file": "makeBuddyMain",
+					"desc": "make boss-buddy main",
+					"minBodies": 1
+				},
+				{
+					"type": "action",
+					"name": "&Change radius",
+					"file": "changeRadius",
+					"desc": "change radius",
+					"minFixtures": 1
+				}
+			]
+		}
+	]
+}

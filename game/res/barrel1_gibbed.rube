@@ -1,0 +1,267 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "bitplane6",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40C00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3DCCCCCD",
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 3,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "3ED14510", "BE2FA500", "BE2518E0", "3EDBC820" ],
+              "y" : [ "3F519D94", "3F525294", "BF5D2820", "BF5EE066" ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearDamping" : "40C00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3CE499C3",
+        "massData-center" : 
+        {
+          "x" : "3E017A58",
+          "y" : "BCD4D534"
+        },
+        "massData-mass" : "3DCA488D",
+        "name" : "gib",
+        "position" : 
+        {
+          "x" : "3FA0D994",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40C00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3DCCCCCD",
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BF830348", "BF82808E", "BFD329BB", "BFCED688" ],
+              "y" : [ "BF5D3F94", "3F63F118", "3F619EF4", "BF639D8C" ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearDamping" : "40C00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3E629048",
+        "massData-center" : 
+        {
+          "x" : "BFA9F37D",
+          "y" : "3C5F208A"
+        },
+        "massData-mass" : "3DDCB41D",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "3DC0CF00",
+          "y" : "BC611100"
+        },
+        "file" : "factory1/barrel1_gib3.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "40A00000",
+        "scale" : "3F88E277"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : "BFA8E1F2",
+          "y" : "BC91284F"
+        },
+        "file" : "factory1/barrel1_gib0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "40A00000",
+        "scale" : "3F773DB4"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["factory4/shield_%0-12%.png", 12],
+        ["factory4/shield_%11-1%.png", 12]
+    ]
+}

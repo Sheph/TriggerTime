@@ -1,0 +1,406 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "41F00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40000000",
+            "filter-categoryBits" : 32,
+            "id" : 1,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40600000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearDamping" : "41100000",
+        "linearVelocity" : 0,
+        "massData-I" : "43EBB7B7",
+        "massData-mass" : "4299F024",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : "3DCCCCCD",
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "40D26E04",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "melee",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : "41000000"
+      },
+      
+      {
+        "angle" : "BFBD309A",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "411320EB",
+          "y" : "C05FED82"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "gun",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : 1
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "410668A9",
+          "y" : "C075C4B6"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "plasma",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : 1
+      },
+      
+      {
+        "angle" : "BFAD3B61",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "4110A72A",
+          "y" : "C03471BE"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "missile",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : 1
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "40247BCF",
+          "y" : "3ED5A469"
+        },
+        "file" : "keeper1/keeper_walk0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41300000",
+        "scale" : "419F45A5"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

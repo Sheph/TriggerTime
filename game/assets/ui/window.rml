@@ -1,0 +1,72 @@
+<template name="window" content="window_content">
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UIWindow = {};
+        function UIWindow.TransitionIn(document)
+            UIInTransition = true;
+            UITransitionElementIn(1, document, 0.35, 0, -720, function()
+                UIInTransition = false;
+            end);
+        end
+        function UIWindow.TransitionOut(document, nextDoc)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UITransitionElementOut(1, document, 0.35, 0, -720, function()
+                UIInTransition = false;
+                table.insert(UIDocList, "ui/"..nextDoc..".rml");
+                local nd = document.context:LoadDocument("ui/"..nextDoc..".rml");
+                document:Close();
+                nd:Show();
+            end);
+        end
+        function UIWindow.TransitionOutFunc(document, fn, ...)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            local args = pack2(...);
+            UITransitionElementOut(1, document, 0.35, 0, -720, function()
+                UIInTransition = false;
+                fn(unpack2(args));
+            end);
+        end
+        function UIWindow.TransitionBack(document)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UITransitionElementOut(1, document, 0.35, 0, -720, function()
+                UIInTransition = false;
+                table.remove(UIDocList);
+                local nd = document.context:LoadDocument(UIDocList[#UIDocList]);
+                document:Close();
+                nd:Show();
+            end);
+        end
+        function UIWindow.TransitionReturn(document, fn, ...)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            local args = pack2(...);
+            UITransitionElementOut(1, document, 0.35, 0, -720, function()
+                UIInTransition = false;
+                table.remove(UIDocList);
+                fn(unpack2(args));
+            end);
+        end
+        function UIWindow.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                UIWindow.TransitionBack(document);
+            end
+        end
+    </script>
+</head>
+<body template="base" onkeydown="UIWindow.OnKeyDown(event, document);" onload="UIWindow.TransitionIn(document);">
+    <div class="box1" id="window_content">
+    </div>
+</body>
+</template>

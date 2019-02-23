@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["spider1/acidworm_attack%0-4%.png", 16],
+        ["spider1/acidworm_head%3-5%.png", 16]
+    ]
+}

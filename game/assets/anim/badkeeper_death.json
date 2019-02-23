@@ -1,0 +1,9 @@
+{
+    "loop": false,
+    "frames": [
+        ["badkeeper7/keeper_death%0-13%.png", 10],
+        ["badkeeper8/keeper_death%14-29%.png", 10],
+        ["badkeeper9/keeper_death30.png", 10]
+    ],
+    "specials": [19]
+}

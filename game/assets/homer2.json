@@ -1,0 +1,327 @@
+{"frames": [
+
+{
+	"filename": "homer_gib0.png",
+	"frame": {"x":4,"y":4,"w":90,"h":93},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":93},
+	"sourceSize": {"w":90,"h":93},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_gib1.png",
+	"frame": {"x":98,"y":4,"w":108,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":61},
+	"sourceSize": {"w":108,"h":61},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_gib2.png",
+	"frame": {"x":210,"y":4,"w":81,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":101},
+	"sourceSize": {"w":81,"h":101},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_gib3.png",
+	"frame": {"x":295,"y":4,"w":66,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":114},
+	"sourceSize": {"w":66,"h":114},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee0.png",
+	"frame": {"x":365,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee1.png",
+	"frame": {"x":687,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee10.png",
+	"frame": {"x":1009,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee11.png",
+	"frame": {"x":1331,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee12.png",
+	"frame": {"x":4,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee13.png",
+	"frame": {"x":326,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee14.png",
+	"frame": {"x":648,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee15.png",
+	"frame": {"x":970,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee16.png",
+	"frame": {"x":1292,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee17.png",
+	"frame": {"x":1614,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee18.png",
+	"frame": {"x":4,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee2.png",
+	"frame": {"x":326,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee3.png",
+	"frame": {"x":648,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee4.png",
+	"frame": {"x":970,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee5.png",
+	"frame": {"x":1292,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee6.png",
+	"frame": {"x":1614,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee7.png",
+	"frame": {"x":4,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee8.png",
+	"frame": {"x":326,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_melee9.png",
+	"frame": {"x":648,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile0.png",
+	"frame": {"x":365,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile1.png",
+	"frame": {"x":970,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile10.png",
+	"frame": {"x":1292,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile11.png",
+	"frame": {"x":1614,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile2.png",
+	"frame": {"x":4,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile3.png",
+	"frame": {"x":326,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile4.png",
+	"frame": {"x":648,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile5.png",
+	"frame": {"x":970,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile6.png",
+	"frame": {"x":1292,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile7.png",
+	"frame": {"x":1614,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile8.png",
+	"frame": {"x":4,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_pre_missile9.png",
+	"frame": {"x":326,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "homer2.png",
+	"format": "RGBA8888",
+	"size": {"w":1936,"h":1888},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0259f6cb86b30513ed3e2f61e6475eba:14892085254c7413e2bedc6ca3047d80:18fea2ea9a8d76f7e2e6264e6db5b77a$"
+}
+}

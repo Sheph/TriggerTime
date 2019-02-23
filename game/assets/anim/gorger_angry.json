@@ -1,0 +1,9 @@
+{
+    "loop": false,
+    "frames": [
+        ["factory3/gorger_angry%0-11%.png", 15],
+        ["factory10/gorger_angry%12-14%.png", 15],
+        ["factory11/gorger_angry%15-17%.png", 15],
+        ["factory13/gorger_angry%18-19%.png", 15]
+    ]
+}

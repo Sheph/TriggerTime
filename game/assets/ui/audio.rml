@@ -1,0 +1,61 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 80%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIAudio = {};
+
+        function UIAudio.OnLoad(document)
+            UIWindow.TransitionIn(document);
+
+            local elemSoundVolume = Element.As.ElementFormControlInput(document:GetElementById("aud_sound_volume"));
+            local elemMusicVolume = Element.As.ElementFormControlInput(document:GetElementById("aud_music_volume"));
+
+            elemSoundVolume.value = audio.soundVolume;
+            elemMusicVolume.value = audio.musicVolume;
+        end
+
+        function UIAudio.UpdateSoundVolume(document)
+            local elemSoundVolume = Element.As.ElementFormControlInput(document:GetElementById("aud_sound_volume"));
+
+            if tonumber(elemSoundVolume.value) ~= audio.soundVolume then
+                audio.soundVolume = tonumber(elemSoundVolume.value);
+            end
+        end
+
+        function UIAudio.UpdateMusicVolume(document)
+            local elemMusicVolume = Element.As.ElementFormControlInput(document:GetElementById("aud_music_volume"));
+
+            if tonumber(elemMusicVolume.value) ~= audio.musicVolume then
+                audio.musicVolume = tonumber(elemMusicVolume.value);
+            end
+        end
+    </script>
+</head>
+<body template="window" onload="UIAudio.OnLoad(document);">
+    [AUDIO_TITLE]
+    <div id="audio_options">
+        <div class="audio_option_row">
+            <div class="audio_option_name">[AUDIO_SOUND]</div>
+            <div class="audio_option_value">
+                <input type="range" min="0" max="1" step="0.01" id="aud_sound_volume" onchange="UIAudio.UpdateSoundVolume(document);" />
+            </div>
+        </div>
+        <div class="audio_option_row">
+            <div class="audio_option_name">[AUDIO_MUSIC]</div>
+            <div class="audio_option_value">
+                <input type="range" min="0" max="1" step="0.01" id="aud_music_volume" onchange="UIAudio.UpdateMusicVolume(document);" />
+            </div>
+        </div>
+    </div>
+    <button class="audio_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+</body>
+</rml>

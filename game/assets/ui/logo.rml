@@ -1,0 +1,38 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UILogo = {};
+
+        function UILogo.OnLoad(document)
+            UIAddTimeoutOnce(1, 5.0, function()
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("poster.lua", "");
+                end);
+            end);
+        end
+
+        function UILogo.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("poster.lua", "");
+                end);
+            end
+        end
+    </script>
+</head>
+<body template="base" onload="UILogo.OnLoad(document);" onkeydown="UILogo.OnKeyDown(event, document);">
+    <img src="/ui1/clogo.png" style="height: 250px; margin-top: 200px;"/>
+    <p style="color: black; font-size: 60px;">Shephf games</p>
+</body>
+</rml>

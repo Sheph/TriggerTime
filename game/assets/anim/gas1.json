@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "clampY": true,
+    "frames": [
+        ["gas1/%0-15%.png", 30]
+    ]
+}

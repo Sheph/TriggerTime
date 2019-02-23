@@ -1,0 +1,439 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3E99999A",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 16,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35A1D5D0" ],
+              "y" : [ "3672C0B9" ]
+            }
+          }
+        ],
+        "id" : 16,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EF1463B",
+        "massData-center" : 
+        {
+          "x" : "35A1D5D1",
+          "y" : "3672C0BA"
+        },
+        "massData-mass" : "3F71463B",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 16,
+        "center" : 
+        {
+          "x" : "BED7BA36",
+          "y" : "BD42A7C0"
+        },
+        "file" : "spider2/kyle_idle0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "part",
+        "opacity" : 1,
+        "renderOrder" : "41000000",
+        "scale" : "403A01CD"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

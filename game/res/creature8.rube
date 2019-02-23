@@ -1,0 +1,1413 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : "BBA6A600",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F5AF75E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3F2C2FB9",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FEB5B02",
+        "name" : "tail",
+        "position" : 
+        {
+          "x" : "C0EAF381",
+          "y" : "BD634A40"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3D042A00",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 5,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part6",
+        "position" : 
+        {
+          "x" : "C0C9608C",
+          "y" : "BD792400"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3BB40200",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 6,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part5",
+        "position" : 
+        {
+          "x" : "C0A7D1EE",
+          "y" : "BCDCFE00"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3D2717C0",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 7,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 7,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part4",
+        "position" : 
+        {
+          "x" : "C0863EF9",
+          "y" : "BCADC7C0"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BC07B400",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 8,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part3",
+        "position" : 
+        {
+          "x" : "C049661A",
+          "y" : "3CB0C140"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3C9A4180",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 9,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 9,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part2",
+        "position" : 
+        {
+          "x" : "C0064086",
+          "y" : "3C532230"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BCFF0380",
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 10,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 10,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part1",
+        "position" : 
+        {
+          "x" : "BF863AD1",
+          "y" : "3D05B390"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 32,
+            "friction" : "3E4CCCCD",
+            "id" : 11,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F5AF75E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "353963A2" ],
+              "y" : [ "360B0ABA" ]
+            }
+          }
+        ],
+        "id" : 11,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3F2C2FB9",
+        "massData-center" : 
+        {
+          "x" : "353963A2",
+          "y" : "360B0ABA"
+        },
+        "massData-mass" : "3FEB5B02",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 0,
+        "file" : "prison1/squid_eye.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 23,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "BF800000",
+        "scale" : "3FE4CC79"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : "3D18F1B4",
+          "y" : "3D8E26EF"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 24,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0E00000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 6,
+        "center" : 
+        {
+          "x" : "3D18F1B9",
+          "y" : "3D8E26F1"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 25,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0C00000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : "3D18F1BC",
+          "y" : "3D8E26F0"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 26,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0A00000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 
+        {
+          "x" : "3D18F1BD",
+          "y" : "3D8E26EF"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 27,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0800000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 9,
+        "center" : 
+        {
+          "x" : "3D18F1BA",
+          "y" : "3D8E26EC"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 28,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0400000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 10,
+        "center" : 
+        {
+          "x" : "3D18F1B9",
+          "y" : "3D8E26EF"
+        },
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 29,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C0000000",
+        "scale" : "3FA547AE"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 11,
+        "center" : 0,
+        "file" : "prison1/squid_eye.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 30,
+        "name" : "part",
+        "opacity" : 1,
+        "renderOrder" : "BF800000",
+        "scale" : "3FE4CC79"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 4,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "id" : 2,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F2350EA",
+          "y" : "BD17A62C"
+        },
+        "anchorB" : 
+        {
+          "x" : "BED31EEC",
+          "y" : "BCB149CC"
+        },
+        "bodyA" : 4,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 3,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "3D18FEC0",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F2350EA",
+          "y" : "BD17A62C"
+        },
+        "anchorB" : 
+        {
+          "x" : "BED31EEC",
+          "y" : "BCB149CC"
+        },
+        "bodyA" : 4,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 4,
+        "name" : "br_joint",
+        "referenceAngle" : "3D18FEC0",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 5,
+        "bodyB" : 6,
+        "collideConnected" : false,
+        "id" : 5,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0EC90F",
+          "y" : "BD0AF0EC"
+        },
+        "anchorB" : 
+        {
+          "x" : "BEFB1134",
+          "y" : "BD40C7B8"
+        },
+        "bodyA" : 5,
+        "bodyB" : 6,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 6,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "BCDB5380",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0EC90F",
+          "y" : "BD0AF0EC"
+        },
+        "anchorB" : 
+        {
+          "x" : "BEFB1134",
+          "y" : "BD40C7B8"
+        },
+        "bodyA" : 5,
+        "bodyB" : 6,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 7,
+        "name" : "br_joint",
+        "referenceAngle" : "BCDB5380",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 6,
+        "bodyB" : 7,
+        "collideConnected" : false,
+        "id" : 8,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0B990B",
+          "y" : "BCACBD14"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF011BD8",
+          "y" : "BB577F80"
+        },
+        "bodyA" : 6,
+        "bodyB" : 7,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 9,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "3D109780",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0B990B",
+          "y" : "BCACBD14"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF011BD8",
+          "y" : "BB577F80"
+        },
+        "bodyA" : 6,
+        "bodyB" : 7,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 10,
+        "name" : "br_joint",
+        "referenceAngle" : "3D109780",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 7,
+        "bodyB" : 8,
+        "collideConnected" : false,
+        "id" : 11,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0F1E45",
+          "y" : "BCF3359A"
+        },
+        "anchorB" : 
+        {
+          "x" : "BEF9E85E",
+          "y" : "BD5BF30C"
+        },
+        "bodyA" : 7,
+        "bodyB" : 8,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 12,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "BD4904C0",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0F1E45",
+          "y" : "BCF3359A"
+        },
+        "anchorB" : 
+        {
+          "x" : "BEF9E85E",
+          "y" : "BD5BF30C"
+        },
+        "bodyA" : 7,
+        "bodyB" : 8,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 13,
+        "name" : "br_joint",
+        "referenceAngle" : "BD4904C0",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 8,
+        "bodyB" : 9,
+        "collideConnected" : false,
+        "id" : 14,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0682BF",
+          "y" : "BC69FDC9"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF0622AD",
+          "y" : "B8A27000"
+        },
+        "bodyA" : 8,
+        "bodyB" : 9,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 15,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "3CDE1B80",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F0682BF",
+          "y" : "BC69FDC9"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF0622AD",
+          "y" : "B8A27000"
+        },
+        "bodyA" : 8,
+        "bodyB" : 9,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 16,
+        "name" : "br_joint",
+        "referenceAngle" : "3CDE1B80",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 9,
+        "bodyB" : 10,
+        "collideConnected" : false,
+        "id" : 17,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F07D90D",
+          "y" : "BC134593"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF0477C8",
+          "y" : "BD0ED73E"
+        },
+        "bodyA" : 9,
+        "bodyB" : 10,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 18,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "BD4CA280",
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F07D90D",
+          "y" : "BC134593"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF0477C8",
+          "y" : "BD0ED73E"
+        },
+        "bodyA" : 9,
+        "bodyB" : 10,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 19,
+        "name" : "br_joint",
+        "referenceAngle" : "BD4CA280",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 10,
+        "bodyB" : 11,
+        "collideConnected" : false,
+        "id" : 20,
+        "maxLength" : "3F86683C",
+        "name" : "br_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EDC5B1C",
+          "y" : "BCA08AB2"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF1E7DB8",
+          "y" : "B9B30000"
+        },
+        "bodyA" : 10,
+        "bodyB" : 11,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 21,
+        "lowerLimit" : "BF32B8C2",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "br_joint",
+        "referenceAngle" : "3CFF0380",
+        "type" : "revolute",
+        "upperLimit" : "3F32B8C2"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EDC5B1C",
+          "y" : "BCA08AB2"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF1E7DB8",
+          "y" : "B9B30000"
+        },
+        "bodyA" : 10,
+        "bodyB" : 11,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 22,
+        "name" : "br_joint",
+        "referenceAngle" : "3CFF0380",
+        "type" : "weld"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

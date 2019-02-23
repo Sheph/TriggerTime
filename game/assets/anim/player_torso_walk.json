@@ -1,0 +1,6 @@
+{
+    "loop": true,
+    "frames": [
+        ["common1/player_walk%0-9%.png", 24]
+    ]
+}

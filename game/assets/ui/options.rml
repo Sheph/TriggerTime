@@ -1,0 +1,25 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 80%;
+
+            margin:auto;
+        }
+    </style>
+</head>
+<body template="window">
+    [OPTIONS_TITLE]
+    <div id="option_buttons">
+        <button class="options_button" onclick="UIWindow.TransitionOut(document, 'video');">[OPTIONS_VIDEO]</button>
+        <button class="options_button" onclick="UIWindow.TransitionOut(document, 'brightness');">[OPTIONS_BRIGHTNESS]</button>
+        <button class="options_button" onclick="UIWindow.TransitionOut(document, 'audio');">[OPTIONS_AUDIO]</button>
+        <button class="options_button" onclick="UIWindow.TransitionOut(document, 'controls');">[OPTIONS_CONTROLS]</button>
+        <button class="options_button" onclick="UIWindow.TransitionOut(document, 'gamepad');">[OPTIONS_GAMEPAD]</button>
+        <button class="options_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+    </div>
+</body>
+</rml>

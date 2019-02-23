@@ -1,0 +1,237 @@
+{"frames": [
+
+{
+	"filename": "mech_torso_melee2_0.png",
+	"frame": {"x":4,"y":4,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_1.png",
+	"frame": {"x":348,"y":4,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_10.png",
+	"frame": {"x":692,"y":4,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_11.png",
+	"frame": {"x":1036,"y":4,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_12.png",
+	"frame": {"x":1380,"y":4,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_13.png",
+	"frame": {"x":4,"y":348,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_14.png",
+	"frame": {"x":348,"y":348,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_15.png",
+	"frame": {"x":692,"y":348,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_16.png",
+	"frame": {"x":1036,"y":348,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_17.png",
+	"frame": {"x":1380,"y":348,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_18.png",
+	"frame": {"x":4,"y":692,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_19.png",
+	"frame": {"x":348,"y":692,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_2.png",
+	"frame": {"x":692,"y":692,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_20.png",
+	"frame": {"x":1036,"y":692,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_21.png",
+	"frame": {"x":1380,"y":692,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_22.png",
+	"frame": {"x":4,"y":1036,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_23.png",
+	"frame": {"x":348,"y":1036,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_24.png",
+	"frame": {"x":692,"y":1036,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_3.png",
+	"frame": {"x":1036,"y":1036,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_4.png",
+	"frame": {"x":1380,"y":1036,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_5.png",
+	"frame": {"x":4,"y":1380,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_6.png",
+	"frame": {"x":348,"y":1380,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_7.png",
+	"frame": {"x":692,"y":1380,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_8.png",
+	"frame": {"x":1036,"y":1380,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mech_torso_melee2_9.png",
+	"frame": {"x":1380,"y":1380,"w":340,"h":340},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":340},
+	"sourceSize": {"w":340,"h":340},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mech2.png",
+	"format": "RGBA8888",
+	"size": {"w":1724,"h":1724},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f53f066ef64a6d225546d3eabe6aba75:e752bb08a39c4a16912b0e0e2955e24a:55028d2b4c5ba80ef2e1167cd0bd977f$"
+}
+}

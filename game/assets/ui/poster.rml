@@ -1,0 +1,117 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UIPoster = {};
+
+        function UIPoster.OnLoad(document)
+            UIAddTimeoutOnce(1, 0.75, function()
+                audio:playSound("poster.ogg");
+            end);
+
+            UIAddTimeoutOnce(1, 7.0, function()
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("main_menu.lua", "");
+                end);
+            end);
+
+            local elemPlayer = document:GetElementById("poster_player");
+            local elemWarder = document:GetElementById("poster_warder");
+            local elemCentipede = document:GetElementById("poster_centipede");
+            local elemEnforcer = document:GetElementById("poster_enforcer");
+            local elemGorger = document:GetElementById("poster_gorger");
+            local elemSpider = document:GetElementById("poster_spider");
+            local elemLogo = document:GetElementById("poster_logo");
+
+            local tweening = SingleTweening(2.5, const.EaseLinear, 0.0, 1.0, false);
+            local t = 0;
+
+            local xPlayer = elemPlayer:GetAbsoluteLeft();
+
+            UIAddTimeout0(1, function(cookie, dt)
+                t = t + dt;
+                local v = tweening:getValue(t);
+                elemPlayer.style.left = ((1 - v) * xPlayer + v * 700).."px";
+                if tweening:finished(t) then
+                    UICancelTimeout(cookie);
+
+                    UIStainedGlass(2, {1, 1, 1, 0.95}, {0.5, 0.5, 0.5, 0.0}, const.EaseInQuad, 1.0, function(obj)
+                        obj:removeFromParent();
+                    end);
+
+                    tweening = SingleTweening(0.7, const.EaseOutQuad, 0.0, 1.0, false);
+                    t = 0;
+                    xPlayer = elemPlayer:GetAbsoluteLeft();
+                    local xWarder = elemWarder:GetAbsoluteLeft();
+                    local xCentipede = elemCentipede:GetAbsoluteLeft();
+                    local xEnforcer = elemEnforcer:GetAbsoluteLeft();
+                    local xGorger = elemGorger:GetAbsoluteLeft();
+                    local xSpider = elemGorger:GetAbsoluteLeft();
+
+                    UIAddTimeout0(1, function(cookie, dt)
+                        t = t + dt;
+                        local v = tweening:getValue(t);
+                        elemPlayer.style.left = ((1 - v) * xPlayer + v * 335).."px";
+                        elemWarder.style.left = ((1 - v) * xWarder + v * -70).."px";
+                        elemCentipede.style.left = ((1 - v) * xCentipede + v * -10).."px";
+                        elemEnforcer.style.left = ((1 - v) * xEnforcer + v * 865).."px";
+                        elemGorger.style.left = ((1 - v) * xGorger + v * 620).."px";
+                        elemSpider.style.left = ((1 - v) * xSpider + v * 680).."px";
+                        if tweening:finished(t) then
+                            UICancelTimeout(cookie);
+                        end
+                    end);
+
+                    UIAddTimeoutOnce(1, 0.1, function()
+                        local t = 0;
+                        local logoTweening = SingleTweening(0.6, const.EaseInQuad, 0.0, 1.0, false);
+
+                        local hLogo = elemLogo.client_height;
+                        elemLogo.style.visibility = "visible";
+
+                        UIAddTimeout0(1, function(cookie, dt)
+                            t = t + dt;
+                            local v = logoTweening:getValue(t);
+                            elemLogo.style.height = ((1 - v) * hLogo + v * 200).."px";
+                            elemLogo.style.top = (v * 200).."px";
+                            if logoTweening:finished(t) then
+                                UICancelTimeout(cookie);
+                            end
+                        end);
+                    end);
+                end
+            end);
+        end
+
+        function UIPoster.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("main_menu.lua", "");
+                end);
+            end
+        end
+    </script>
+</head>
+<body template="base" onload="UIPoster.OnLoad(document);" onkeydown="UIPoster.OnKeyDown(event, document);">
+    <img src="/ui2/poster_stripes.png" style="position:absolute; margin:auto; height: 720px; z-index: 0;"/>
+    <img src="/ui2/poster_glow.png" style="position:absolute; top: 310px; height: 410px; z-index: 1;"/>
+    <img src="/ui2/poster_spider.png" id="poster_spider" style="position:absolute; left: 1280px; top: 20px; height: 220px; z-index: 2;"/>
+    <img src="/ui2/poster_centipede.png" id="poster_centipede" style="position:absolute; left: -570px; top: -80px; height: 600px; z-index: 3;"/>
+    <img src="/ui2/poster_gorger.png" id="poster_gorger" style="position:absolute; left: 1280px; top: -20px; height: 780px; z-index: 3;"/>
+    <img src="/ui2/poster_warder.png" id="poster_warder" style="position:absolute; left: -570px; top: 225px; height: 650px; z-index: 4;"/>
+    <img src="/ui2/poster_enforcer.png" id="poster_enforcer" style="position:absolute; left: 1280px; top: 260px; height: 520px; z-index: 4;"/>
+    <img src="/ui2/poster_player.png" id="poster_player" style="position:absolute; left: 800px; top: 70px; height: 720px; z-index: 5;"/>
+    <img src="/ui2/poster_mist.png" style="position:absolute; margin:auto; width: 1280px; height: 720px; z-index: 6;"/>
+    <img src="/ui1/poster_logo.png" id="poster_logo" style="position:absolute; margin:auto; height: 780px; z-index: 7; visibility: hidden;"/>
+</body>
+</rml>

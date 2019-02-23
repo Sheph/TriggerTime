@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["spider1/queen_attack%0-4%.png", 12]
+    ],
+    "specials": [2]
+}

@@ -1,0 +1,9 @@
+{
+    "loop": false,
+    "frames": [
+        ["homer1/homer_missile%0-8%.png", 20],
+        ["homer1/homer_missile9.png", 2.5],
+        ["homer1/homer_missile%10-32%.png", 34]
+    ],
+    "specials": [10]
+}

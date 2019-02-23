@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["spider2/spider_attack%0-4%.png", 12],
+        ["spider2/spider_body.png", 12]
+    ]
+}

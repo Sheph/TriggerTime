@@ -1,0 +1,299 @@
+
+{
+  "activeScript" : "body b = getBody(\"root\");\nvec2 d = b.pos - b.getWorldCenter();\ntranslate(b.getFixtures(), d);\ntranslate(b.getImages(), d);\n",
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 1,
+            "name" : "fixture0",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40A76C72",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BE315E34" ],
+              "y" : [ "BC0C7BB8" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 2,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C0922B14",
+                "C09AC0FC",
+                "C0701415",
+                "BFB7ECE2",
+                "C05BB030",
+                "C08649F6"
+              ],
+              "y" : 
+              [
+                "40EEF73F",
+                "40D52BEB",
+                "4070051C",
+                "409EC575",
+                "40EE388B",
+                "40F5590F"
+              ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 3,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C0892E57",
+                "C05D6CFC",
+                "BFC6372C",
+                "C072BF09",
+                "C09B946B",
+                "C094D76C"
+              ],
+              "y" : 
+              [
+                "C0F25F82",
+                "C0EC2B90",
+                "C09DC9A8",
+                "C0660A4B",
+                "C0D30B61",
+                "C0EB9958"
+              ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 4,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "41085D56",
+                "40FE0CD6",
+                "409B8A17",
+                "409AB83A",
+                "40FEE9F4",
+                "41085F0F"
+              ],
+              "y" : 
+              [
+                "3E4FE843",
+                "3F51FE22",
+                "3F9EA3A0",
+                "BFAFB30B",
+                "BF495607",
+                "BE5F9ED6"
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "name" : "root",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3E857F40",
+          "y" : "BDA03240"
+        },
+        "file" : "common2/spawner1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "41800000"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

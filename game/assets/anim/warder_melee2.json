@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["prison2/warder_melee2_%0-19%.png", 28]
+    ],
+    "specials": [12]
+}

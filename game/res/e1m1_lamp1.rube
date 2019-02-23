@@ -1,0 +1,1571 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "rock",
+      "enemy",
+      "bitplane6",
+      "gizmo",
+      "custom1",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_machineGun",
+      "name" : "prob_ammo_machineGun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockEnemy",
+      "name" : "blockEnemy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "probability1",
+      "name" : "probability1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "mask",
+      "name" : "mask",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "dynomite"
+        },
+        
+        {
+          "entry" : "redKey"
+        },
+        
+        {
+          "entry" : "blueKey"
+        },
+        
+        {
+          "entry" : "yellowKey"
+        }
+      ],
+      "displayName" : "inventoryItem",
+      "name" : "inventoryItem",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle1",
+      "name" : "angle1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_zorder",
+      "name" : "image_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain_hole"
+        },
+        
+        {
+          "entry" : "terrain_points"
+        },
+        
+        {
+          "entry" : "stripe"
+        },
+        
+        {
+          "entry" : "hermite_stripe"
+        },
+        
+        {
+          "entry" : "chain"
+        },
+        
+        {
+          "entry" : "polygon"
+        },
+        
+        {
+          "entry" : "line_stripe"
+        },
+        
+        {
+          "entry" : "proj"
+        },
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "height",
+      "name" : "height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "base",
+      "name" : "base",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "gravityGun"
+        },
+        
+        {
+          "entry" : "blaster"
+        },
+        
+        {
+          "entry" : "shotgun"
+        },
+        
+        {
+          "entry" : "rlauncher"
+        },
+        
+        {
+          "entry" : "fireball"
+        },
+        
+        {
+          "entry" : "flamethrower"
+        },
+        
+        {
+          "entry" : "pistol"
+        },
+        
+        {
+          "entry" : "superBlaster"
+        },
+        
+        {
+          "entry" : "proxmine"
+        },
+        
+        {
+          "entry" : "chainsaw"
+        },
+        
+        {
+          "entry" : "lgun"
+        },
+        
+        {
+          "entry" : "machineGun"
+        },
+        
+        {
+          "entry" : "plasmagun"
+        },
+        
+        {
+          "entry" : "superShotgun"
+        }
+      ],
+      "displayName" : "weaponType",
+      "name" : "weaponType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle2",
+      "name" : "angle2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "circle_zorder",
+      "name" : "circle_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain"
+        },
+        
+        {
+          "entry" : "player"
+        },
+        
+        {
+          "entry" : "rock"
+        },
+        
+        {
+          "entry" : "dummy"
+        },
+        
+        {
+          "entry" : "shroom_cannon_red1"
+        },
+        
+        {
+          "entry" : "sensor"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red1"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red2"
+        },
+        
+        {
+          "entry" : "blocker"
+        },
+        
+        {
+          "entry" : "blocker2"
+        },
+        
+        {
+          "entry" : "jake"
+        },
+        
+        {
+          "entry" : "hermite_path"
+        },
+        
+        {
+          "entry" : "shroom_snake"
+        },
+        
+        {
+          "entry" : "tetrobot"
+        },
+        
+        {
+          "entry" : "tetrocrab"
+        },
+        
+        {
+          "entry" : "spawner1"
+        },
+        
+        {
+          "entry" : "teleport1"
+        },
+        
+        {
+          "entry" : "goal_area"
+        },
+        
+        {
+          "entry" : "weapon_station"
+        },
+        
+        {
+          "entry" : "scorp"
+        },
+        
+        {
+          "entry" : "barrel1"
+        },
+        
+        {
+          "entry" : "barrel2"
+        },
+        
+        {
+          "entry" : "turret1"
+        },
+        
+        {
+          "entry" : "pyrobot"
+        },
+        
+        {
+          "entry" : "keyl"
+        },
+        
+        {
+          "entry" : "laser_blocker"
+        },
+        
+        {
+          "entry" : "powerup_inventory"
+        },
+        
+        {
+          "entry" : "placeholder"
+        },
+        
+        {
+          "entry" : "boss_skull"
+        },
+        
+        {
+          "entry" : "spider"
+        },
+        
+        {
+          "entry" : "instance"
+        },
+        
+        {
+          "entry" : "powerup_helmet"
+        },
+        
+        {
+          "entry" : "baby_spider1"
+        },
+        
+        {
+          "entry" : "baby_spider2"
+        },
+        
+        {
+          "entry" : "spider_nest"
+        },
+        
+        {
+          "entry" : "weapon_trap"
+        },
+        
+        {
+          "entry" : "boss_queen"
+        },
+        
+        {
+          "entry" : "enforcer1"
+        },
+        
+        {
+          "entry" : "sentry1"
+        },
+        
+        {
+          "entry" : "sentry2"
+        },
+        
+        {
+          "entry" : "gorger1"
+        },
+        
+        {
+          "entry" : "powerup_ammo"
+        },
+        
+        {
+          "entry" : "roboarm"
+        },
+        
+        {
+          "entry" : "crate1"
+        },
+        
+        {
+          "entry" : "crate2"
+        },
+        
+        {
+          "entry" : "crate3"
+        },
+        
+        {
+          "entry" : "crate4"
+        },
+        
+        {
+          "entry" : "powerup_weapon"
+        },
+        
+        {
+          "entry" : "orbo"
+        },
+        
+        {
+          "entry" : "warder"
+        },
+        
+        {
+          "entry" : "keeper"
+        },
+        
+        {
+          "entry" : "powerup_backpack"
+        },
+        
+        {
+          "entry" : "powerup_earpiece"
+        },
+        
+        {
+          "entry" : "health_station"
+        },
+        
+        {
+          "entry" : "rod_bundle"
+        },
+        
+        {
+          "entry" : "garbage"
+        },
+        
+        {
+          "entry" : "boss_coreprotector"
+        },
+        
+        {
+          "entry" : "barrel3"
+        },
+        
+        {
+          "entry" : "acidworm1"
+        },
+        
+        {
+          "entry" : "centipede1"
+        },
+        
+        {
+          "entry" : "beetle1"
+        },
+        
+        {
+          "entry" : "beetle2"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height2",
+      "name" : "height2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "glassy",
+      "name" : "glassy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "width",
+      "name" : "width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_polygon",
+      "name" : "first_polygon",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_width",
+      "name" : "image_width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_height",
+      "name" : "image_height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "cancelCollisions",
+      "name" : "cancelCollisions",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "shoot",
+      "name" : "shoot",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo",
+      "name" : "prob_ammo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "folded",
+      "name" : "folded",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockAlly",
+      "name" : "blockAlly",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_fixedPos",
+      "name" : "image_fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "foldable",
+      "name" : "foldable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockRock",
+      "name" : "blockRock",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "amount",
+      "name" : "amount",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_gem",
+      "name" : "prob_gem",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_rlauncher",
+      "name" : "prob_ammo_rlauncher",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "huge",
+      "name" : "huge",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_visible",
+      "name" : "image_visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "unfoldRadius",
+      "name" : "unfoldRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_proxmine",
+      "name" : "prob_ammo_proxmine",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "player_missile"
+        },
+        
+        {
+          "entry" : "enemy_missile"
+        },
+        
+        {
+          "entry" : "ally_missile"
+        },
+        
+        {
+          "entry" : "neutral_missile"
+        }
+      ],
+      "displayName" : "missileType",
+      "name" : "missileType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "minAmmo",
+      "name" : "minAmmo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_plasmagun",
+      "name" : "prob_ammo_plasmagun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_shotgun",
+      "name" : "prob_ammo_shotgun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockPlayer",
+      "name" : "blockPlayer",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_health",
+      "name" : "prob_health",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "split",
+      "name" : "split",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_point",
+      "name" : "first_point",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "autoTarget",
+      "name" : "autoTarget",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "radius",
+      "name" : "radius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "assetPath",
+      "name" : "assetPath",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height1",
+      "name" : "height1",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/scenePropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          }
+        ],
+        "id" : 3,
+        "linearVelocity" : 0,
+        "name" : "lamp",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "3F947D3C",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40400000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "specular_light",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "3FFFD404",
+          "y" : 0
+        },
+        "colorTint" : [ 255, 255, 255, 160 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 40,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "light",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "3F67F250",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 60,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "diffuse"
+          }
+        ],
+        "file" : "factory1/lamp2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "42AC0000",
+        "scale" : "40000000"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

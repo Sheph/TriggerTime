@@ -1,0 +1,1817 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : "3FC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 1,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C0299A35",
+                "C07017FC",
+                "3F7A83CF",
+                "4036BF32",
+                "4051A33D",
+                "40231C2A",
+                "3FCA17C0",
+                "BEA411A8",
+                "C00EB616",
+                "C006CC67"
+              ],
+              "y" : 
+              [
+                "BF329EEA",
+                "C063B0C4",
+                "C0887C46",
+                "BFF3270D",
+                "3E3204CC",
+                "4040B6F7",
+                "4084CCB4",
+                "4092427B",
+                "4081E3B2",
+                "400412EB"
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "43A9EE80",
+        "massData-center" : 
+        {
+          "x" : "33EBAE48",
+          "y" : "353C8B6D"
+        },
+        "massData-mass" : "422DCB5D",
+        "name" : "arm1_upper",
+        "position" : 
+        {
+          "x" : "3F7EC2CE",
+          "y" : "4105D4F3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C0DE2718",
+                "C108E7C8",
+                "C1178B89",
+                "C1178B89",
+                "C104E375",
+                "C0CD26CA",
+                "C06885EE",
+                "C014F7E4",
+                "400BB6C8",
+                "40C0354C",
+                "40FBDA9A",
+                "411040BF",
+                "411040BF",
+                "40FBDA9A",
+                "40A2A662",
+                "3FB76BD8",
+                "C04472ED",
+                "C07C946B"
+              ],
+              "y" : 
+              [
+                "409ED78D",
+                "405A5742",
+                "3FA1B411",
+                "BF9F49BD",
+                "C06CA294",
+                "C0A38378",
+                "C0BEF9BB",
+                "C0D3AE7C",
+                "C0D50922",
+                "C0BF5C3A",
+                "C088CBED",
+                "BF6769BF",
+                "3FAAE605",
+                "40945240",
+                "40C48F12",
+                "40D90BF7",
+                "40CAC40F",
+                "40B86D84"
+              ]
+            }
+          }
+        ],
+        "id" : 2,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "45D9D416",
+        "massData-center" : 
+        {
+          "x" : "B4D0BDD0",
+          "y" : "B4C6FB37"
+        },
+        "massData-mass" : "434B467F",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 3,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "404F182A",
+                "403AEA7F",
+                "3F9F8A17",
+                "BFC2E9A9",
+                "C0678B3B",
+                "C002EEA3",
+                "C009FB73",
+                "BF8F97F9",
+                "3EE14D20",
+                "3FD828D8",
+                "40369813"
+              ],
+              "y" : 
+              [
+                "BE318DC0",
+                "3FECB8CA",
+                "407C0CA2",
+                "408327FA",
+                "40640A5B",
+                "C002C261",
+                "C0805AE2",
+                "C08D197B",
+                "C08FFA89",
+                "C082FA1B",
+                "C02528AB"
+              ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "43AB98E8",
+        "massData-center" : 
+        {
+          "x" : "B4B3A242",
+          "y" : "34E0E84A"
+        },
+        "massData-mass" : "422F4A39",
+        "name" : "arm1_lower",
+        "position" : 
+        {
+          "x" : "3F7EC2CE",
+          "y" : "C105D4F3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "BFDFDCE4",
+                "BEBF0BDC",
+                "3F9794AE",
+                "4006A4A0",
+                "400A832E",
+                "3FCA4375",
+                "BFFD2961",
+                "BFCA0DEA"
+              ],
+              "y" : 
+              [
+                "C0066934",
+                "BFFF349A",
+                "BFAD0F0B",
+                "BEC0B262",
+                "3F551334",
+                "3FC9D0D6",
+                "3FEC7301",
+                "3EDD7ACE"
+              ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "41D2F23A",
+        "massData-center" : 
+        {
+          "x" : "B3F7BE10",
+          "y" : "B3252960"
+        },
+        "massData-mass" : "4146664C",
+        "name" : "arm2_upper",
+        "position" : 
+        {
+          "x" : "3F1C7D1C",
+          "y" : "414D8FC5"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 5,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C10CE95D",
+                "C0F2129A",
+                "C0AE9472",
+                "C07580D6",
+                "4047E71E",
+                "409357C6",
+                "40E02118",
+                "40FB3FD2",
+                "4100B0EE",
+                "40D8EC55",
+                "40656642",
+                "C0AEF0AD",
+                "C1066744"
+              ],
+              "y" : 
+              [
+                "3F88C814",
+                "BE570C40",
+                "BFAB7257",
+                "BFCBC3EC",
+                "BF881B8A",
+                "C05998E0",
+                "C04F89E3",
+                "C00FE75F",
+                "BF5B4EB0",
+                "3EC3DFF8",
+                "3FCD4A6A",
+                "4021E932",
+                "4004D3A6"
+              ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "449E6346",
+        "massData-center" : 
+        {
+          "x" : "BDDE2A2A",
+          "y" : "3B85F1B7"
+        },
+        "massData-mass" : "425E5A18",
+        "name" : "arm3_upper",
+        "position" : 
+        {
+          "x" : "BF1CCA3E",
+          "y" : "41A80347"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 6,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "400ABDF9",
+                "3FCB5D4C",
+                "BE2BC97B",
+                "BFEDF927",
+                "BFCC4830",
+                "BFFDCF81",
+                "3FB67E38",
+                "40054DD4"
+              ],
+              "y" : 
+              [
+                "3DFEE4D9",
+                "3F8B5A21",
+                "4000FDA8",
+                "4000B18C",
+                "BEC93015",
+                "BFDE0FB1",
+                "BFE0D35B",
+                "BF78A63E"
+              ]
+            }
+          }
+        ],
+        "id" : 6,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "41DC3A4E",
+        "massData-center" : 
+        {
+          "x" : "352ACB21",
+          "y" : "340CA748"
+        },
+        "massData-mass" : "414BD93A",
+        "name" : "arm2_lower",
+        "position" : 
+        {
+          "x" : "3F1C7D1C",
+          "y" : "C14D8FC5"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 9,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C05D3D01",
+                "C09EFA36",
+                "C09EFA36",
+                "C05D3D01",
+                "BF6E3078",
+                "40AE2D75",
+                "40BE0F9F",
+                "40AE2D75",
+                "BF6E3078"
+              ],
+              "y" : 
+              [
+                "4048F84A",
+                "3F443417",
+                "BF847A77",
+                "C0416B32",
+                "C07F8085",
+                "BFB96E37",
+                "BDB4EA9B",
+                "3F9F7B9F",
+                "408234F2"
+              ]
+            }
+          }
+        ],
+        "id" : 7,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "441941E4",
+        "massData-center" : 
+        {
+          "x" : "34ADC46E",
+          "y" : "343F24DF"
+        },
+        "massData-mass" : "426BB7B1",
+        "name" : "head",
+        "position" : 
+        {
+          "x" : "401F786A",
+          "y" : "BCB17644"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "angularDamping" : "42480000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 65519,
+            "id" : 7,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C0FA1BD7",
+                "C10A5D92",
+                "C10A0040",
+                "C0B91246",
+                "4065A93E",
+                "40E41F62",
+                "41028CB2",
+                "40F91A06",
+                "40DDF2A0",
+                "409785A4",
+                "4045B905",
+                "C0521D2D",
+                "C0B0DE36"
+              ],
+              "y" : 
+              [
+                "3DD587E0",
+                "BF548358",
+                "BFEFD390",
+                "C01E796B",
+                "BFC601F0",
+                "BE7F0470",
+                "3F80BFAC",
+                "4020C78B",
+                "4050CEE5",
+                "405787FC",
+                "3F8C5D05",
+                "3FC87110",
+                "3FBA947A"
+              ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearDamping" : "42480000",
+        "linearVelocity" : 0,
+        "massData-I" : "449F3C26",
+        "massData-center" : 
+        {
+          "x" : "BDAFCC0B",
+          "y" : "3D17BD8E"
+        },
+        "massData-mass" : "425D2BD7",
+        "name" : "arm3_lower",
+        "position" : 
+        {
+          "x" : "BF1CCA3E",
+          "y" : "C1A80347"
+        },
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BE863476",
+          "y" : "3E7E89AB"
+        },
+        "file" : "prison1/coreprotector_arm1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41800000",
+        "scale" : "410CB2A1"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "3D9784A0",
+          "y" : "BCFD6A56"
+        },
+        "file" : "prison1/coreprotector_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41880000",
+        "scale" : "419E61BB"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "BEC72B6C",
+          "y" : "BE31ACE2"
+        },
+        "file" : "prison1/coreprotector_arm1.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41800000",
+        "scale" : "410CB2A1"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 
+        {
+          "x" : "3D936098",
+          "y" : "BD8DD92F"
+        },
+        "file" : "prison1/coreprotector_arm2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41700000",
+        "scale" : "40962539"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : "BEB3C9B8",
+          "y" : "BE02F029"
+        },
+        "file" : "prison1/coreprotector_arm3.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41600000",
+        "scale" : "40E4447E"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : "3EE5C9C8",
+          "y" : "3CF2276C"
+        },
+        "file" : "prison1/coreprotector_head.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41900000",
+        "scale" : "4134586F"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 6,
+        "center" : 
+        {
+          "x" : "BD4557A4",
+          "y" : "BDAEDABD"
+        },
+        "file" : "prison1/coreprotector_arm2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 7,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41700000",
+        "scale" : "40962539"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 
+        {
+          "x" : "BE8D4001",
+          "y" : "3E121240"
+        },
+        "file" : "prison1/coreprotector_arm3.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 8,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41600000",
+        "scale" : "40E4447E"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41655A9C",
+          "y" : "40254E20"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 9,
+        "name" : "init_upper",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41655A9C",
+          "y" : "C01F16F0"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 10,
+        "name" : "init_lower",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : "40C100D8",
+          "y" : "BFF05280"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 11,
+        "name" : "tip",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "3FE8F4C7"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 
+        {
+          "x" : "40C338F2",
+          "y" : "40031708"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 12,
+        "name" : "tip",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "3FE8F4C7"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : "C0F43998",
+          "y" : "3F9A2B46"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 13,
+        "name" : "elbow",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "3FE8F4C7"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "C130DFA9",
+          "y" : "413F04EC"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 14,
+        "name" : "aim_upper",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "C130DFA9",
+          "y" : "C13A72B1"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 15,
+        "name" : "aim_lower",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 
+        {
+          "x" : "C0EB6E46",
+          "y" : "BF9E9C34"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 16,
+        "name" : "elbow",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "3FE8F4C7"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : "3DCCCCCD",
+        "body" : 7,
+        "center" : 0,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 17,
+        "name" : "missile",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "41380000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "412AEAB3",
+          "y" : "4136DFA4"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 18,
+        "name" : "weapon_upper",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "412AEAB3",
+          "y" : "C136DFA4"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 19,
+        "name" : "weapon_lower",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41246C70",
+          "y" : "4006245F"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 20,
+        "name" : "angry_upper1",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41246C70",
+          "y" : "C006245F"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 21,
+        "name" : "angry_lower1",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "408DD9A9",
+          "y" : "41C0BA2A"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 22,
+        "name" : "angry_upper2",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "408DD9A9",
+          "y" : "C1C0BA2A"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 23,
+        "name" : "angry_lower2",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "angle" : "3BD7F300",
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : "C053F6AA",
+          "y" : "BCB89E00"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "3F99999A",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 24,
+        "name" : "specular_light",
+        "opacity" : "3F000000",
+        "renderOrder" : "43480000",
+        "scale" : "3FE342AE"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41681206",
+          "y" : "41310625"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 25,
+        "name" : "die_upper1",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41672F1B",
+          "y" : "4178B50B"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 26,
+        "name" : "die_upper2",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41681206",
+          "y" : "C1310625"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 27,
+        "name" : "die_lower1",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "41672F1B",
+          "y" : "C178B50B"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 28,
+        "name" : "die_lower2",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "4031C2BB"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "401F786A",
+          "y" : "BCB17644"
+        },
+        "anchorB" : 0,
+        "bodyA" : 2,
+        "bodyB" : 7,
+        "collideConnected" : false,
+        "enableLimit" : false,
+        "enableMotor" : false,
+        "id" : 1,
+        "lowerLimit" : 0,
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "head_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : 0
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 
+        {
+          "x" : "C105D4F3",
+          "y" : "3F7EC2CE"
+        },
+        "bodyA" : 2,
+        "bodyB" : 1,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 9,
+        "lowerLimit" : "3F860A92",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm1_upper_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3FEA927F"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 
+        {
+          "x" : "C105D4F3",
+          "y" : "BF7EC2CE"
+        },
+        "bodyA" : 2,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 10,
+        "lowerLimit" : "BFEA927F",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm1_lower_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "BF860A92"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 
+        {
+          "x" : "C08F75A4",
+          "y" : "BEC48B5D"
+        },
+        "bodyA" : 1,
+        "bodyB" : 4,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 11,
+        "lowerLimit" : "BF860A92",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm2_upper_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3E860A92"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3FA8E688",
+          "y" : "3EDE7AFE"
+        },
+        "anchorB" : 
+        {
+          "x" : "C0DAB43A",
+          "y" : "BF4A09D7"
+        },
+        "bodyA" : 4,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 12,
+        "lowerLimit" : "BFDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm3_upper_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3E860A92"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 
+        {
+          "x" : "C08F75A4",
+          "y" : "3EC48B5D"
+        },
+        "bodyA" : 3,
+        "bodyB" : 6,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 13,
+        "lowerLimit" : "BE860A92",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm2_lower_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3F860A92"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3FA8E560",
+          "y" : "BEDE7AFA"
+        },
+        "anchorB" : 
+        {
+          "x" : "C0DAB43A",
+          "y" : "3F4A09D7"
+        },
+        "bodyA" : 6,
+        "bodyB" : 8,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 14,
+        "lowerLimit" : "BE860A92",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "arm3_lower_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3FDF66F3"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

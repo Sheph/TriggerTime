@@ -1,0 +1,2070 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F21FBDB",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35800000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 2,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3E4E4529",
+        "massData-center" : 
+        {
+          "x" : "35800000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3F80CC98",
+        "name" : "tail",
+        "position" : 
+        {
+          "x" : "C127DF4E",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 3,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35800000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35800000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part9",
+        "position" : 
+        {
+          "x" : "C11715C4",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 30,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35800000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 30,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35800000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part8",
+        "position" : 
+        {
+          "x" : "C1064C39",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 31,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 31,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part7",
+        "position" : 
+        {
+          "x" : "C0EB055B",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 32,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 32,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part6",
+        "position" : 
+        {
+          "x" : "C0C97246",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 33,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 33,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part5",
+        "position" : 
+        {
+          "x" : "C0A7DF31",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 34,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35000000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 34,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35000000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part4",
+        "position" : 
+        {
+          "x" : "C0864C1C",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 35,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 35,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part3",
+        "position" : 
+        {
+          "x" : "C049720F",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 36,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 36,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part2",
+        "position" : 
+        {
+          "x" : "C0064BE5",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 37,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F400000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "35400000" ],
+              "y" : [ "360B0AB8" ]
+            }
+          }
+        ],
+        "id" : 37,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3ECB9342",
+        "massData-center" : 
+        {
+          "x" : "35400000",
+          "y" : "360B0AB8"
+        },
+        "massData-mass" : "3FB4F4AC",
+        "name" : "part1",
+        "position" : 
+        {
+          "x" : "BF864B76",
+          "y" : "B75EBAC3"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40A00000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "density" : "3F4CCCCD",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 38,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F5AF75C",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "353963A2" ],
+              "y" : [ "360B0ABA" ]
+            }
+          }
+        ],
+        "id" : 38,
+        "linearDamping" : "40A00000",
+        "linearVelocity" : 0,
+        "massData-I" : "3F2C2FB3",
+        "massData-center" : 
+        {
+          "x" : "353963A3",
+          "y" : "360B0ABA"
+        },
+        "massData-mass" : "3FEB5AFE",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 38,
+        "center" : 
+        {
+          "x" : "3FB1482E",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "missile",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : "3FA86062"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "BE831924",
+          "y" : 0
+        },
+        "file" : "prison1/centipede_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "part",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "3FE4882D"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 34,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 17,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 34,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 18,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 34,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 19,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 31,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 29,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 31,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 30,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 31,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 31,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 33,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 32,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 33,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 33,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 33,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 34,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 32,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 35,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 32,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 36,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 32,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 37,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 38,
+        "center" : 
+        {
+          "x" : "3EB3A358",
+          "y" : 0
+        },
+        "file" : "prison1/centipede_head_attack0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 38,
+        "name" : "part",
+        "opacity" : 1,
+        "renderOrder" : "BF800000",
+        "scale" : "401513DC"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 39,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 40,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 41,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 30,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 42,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 30,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 43,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 30,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 44,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 35,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 45,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 35,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 46,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 35,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 47,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 36,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 48,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 36,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 49,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 36,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 50,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 37,
+        "center" : 0,
+        "file" : "prison1/centipede_body.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 51,
+        "name" : "body",
+        "opacity" : 1,
+        "renderOrder" : "C1000000",
+        "scale" : "3FA547A1"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 37,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "3FCCCB29"
+        },
+        "file" : "prison1/centipede_upperleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 52,
+        "name" : "upperleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 37,
+        "center" : 
+        {
+          "x" : "BE18E326",
+          "y" : "BFCCCB29"
+        },
+        "file" : "prison1/centipede_lowerleg0.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 53,
+        "name" : "lowerleg",
+        "opacity" : 1,
+        "renderOrder" : "C1300000",
+        "scale" : "40096B3C"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 2,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 6,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 2,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 7,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 2,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "id" : 8,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 3,
+        "bodyB" : 30,
+        "collideConnected" : false,
+        "id" : 77,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9EA0",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 3,
+        "bodyB" : 30,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 78,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9EA0",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 3,
+        "bodyB" : 30,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 79,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 30,
+        "bodyB" : 31,
+        "collideConnected" : false,
+        "id" : 80,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9EA0",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 30,
+        "bodyB" : 31,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 81,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9EA0",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 30,
+        "bodyB" : 31,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 82,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 31,
+        "bodyB" : 32,
+        "collideConnected" : false,
+        "id" : 83,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 31,
+        "bodyB" : 32,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 84,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 31,
+        "bodyB" : 32,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 85,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 32,
+        "bodyB" : 33,
+        "collideConnected" : false,
+        "id" : 86,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 32,
+        "bodyB" : 33,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 87,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 32,
+        "bodyB" : 33,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 88,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 33,
+        "bodyB" : 34,
+        "collideConnected" : false,
+        "id" : 89,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4968",
+          "y" : 0
+        },
+        "bodyA" : 33,
+        "bodyB" : 34,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 90,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4968",
+          "y" : 0
+        },
+        "bodyA" : 33,
+        "bodyB" : 34,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 91,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 34,
+        "bodyB" : 35,
+        "collideConnected" : false,
+        "id" : 92,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 34,
+        "bodyB" : 35,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 93,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E80",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 34,
+        "bodyB" : 35,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 94,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 35,
+        "bodyB" : 36,
+        "collideConnected" : false,
+        "id" : 95,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E98",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D495C",
+          "y" : 0
+        },
+        "bodyA" : 35,
+        "bodyB" : 36,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 96,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E98",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D495C",
+          "y" : 0
+        },
+        "bodyA" : 35,
+        "bodyB" : 36,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 97,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 36,
+        "bodyB" : 37,
+        "collideConnected" : false,
+        "id" : 98,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E98",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D495C",
+          "y" : 0
+        },
+        "bodyA" : 36,
+        "bodyB" : 37,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 99,
+        "lowerLimit" : "BEDF66F3",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3EDF66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9E98",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D495C",
+          "y" : 0
+        },
+        "bodyA" : 36,
+        "bodyB" : 37,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 100,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 37,
+        "bodyB" : 38,
+        "collideConnected" : false,
+        "id" : 101,
+        "maxLength" : "3F86683C",
+        "name" : "rope_joint",
+        "type" : "rope"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9B18",
+          "y" : "375EBAC3"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 37,
+        "bodyB" : 38,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 102,
+        "lowerLimit" : "BF32B8C2",
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "revolute_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3F32B8C2"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3EBE9B18",
+          "y" : "375EBAC3"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF2D4960",
+          "y" : 0
+        },
+        "bodyA" : 37,
+        "bodyB" : 38,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 103,
+        "name" : "weld_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

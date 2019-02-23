@@ -1,0 +1,318 @@
+{"frames": [
+
+{
+	"filename": "homer_idle.png",
+	"frame": {"x":4,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile0.png",
+	"frame": {"x":326,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile1.png",
+	"frame": {"x":648,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile10.png",
+	"frame": {"x":970,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile11.png",
+	"frame": {"x":1292,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile12.png",
+	"frame": {"x":1614,"y":4,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile13.png",
+	"frame": {"x":4,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile14.png",
+	"frame": {"x":326,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile15.png",
+	"frame": {"x":648,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile16.png",
+	"frame": {"x":970,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile17.png",
+	"frame": {"x":1292,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile18.png",
+	"frame": {"x":1614,"y":318,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile19.png",
+	"frame": {"x":4,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile2.png",
+	"frame": {"x":326,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile20.png",
+	"frame": {"x":648,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile21.png",
+	"frame": {"x":970,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile22.png",
+	"frame": {"x":1292,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile23.png",
+	"frame": {"x":1614,"y":632,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile24.png",
+	"frame": {"x":4,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile25.png",
+	"frame": {"x":326,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile26.png",
+	"frame": {"x":648,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile27.png",
+	"frame": {"x":970,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile28.png",
+	"frame": {"x":1292,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile29.png",
+	"frame": {"x":1614,"y":946,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile3.png",
+	"frame": {"x":4,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile30.png",
+	"frame": {"x":326,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile31.png",
+	"frame": {"x":648,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile32.png",
+	"frame": {"x":970,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile4.png",
+	"frame": {"x":1292,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile5.png",
+	"frame": {"x":1614,"y":1260,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile6.png",
+	"frame": {"x":4,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile7.png",
+	"frame": {"x":326,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile8.png",
+	"frame": {"x":648,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "homer_missile9.png",
+	"frame": {"x":970,"y":1574,"w":318,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":310},
+	"sourceSize": {"w":318,"h":310},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "homer1.png",
+	"format": "RGBA8888",
+	"size": {"w":1936,"h":1888},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e9dfa906f0c9d467e10d7db8d14669d6:d1e37abec452554a9949b1869ff2bdc0:95919d59b81346ec1d9f281153014d87$"
+}
+}

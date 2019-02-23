@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "keeper_gun16.png",
+	"frame": {"x":4,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile0.png",
+	"frame": {"x":452,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile1.png",
+	"frame": {"x":900,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile2.png",
+	"frame": {"x":1348,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile3.png",
+	"frame": {"x":4,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile4.png",
+	"frame": {"x":452,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile5.png",
+	"frame": {"x":900,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_missile6.png",
+	"frame": {"x":1348,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma0.png",
+	"frame": {"x":4,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma1.png",
+	"frame": {"x":452,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma2.png",
+	"frame": {"x":900,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma_start0.png",
+	"frame": {"x":1348,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma_start1.png",
+	"frame": {"x":4,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma_start2.png",
+	"frame": {"x":452,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma_start3.png",
+	"frame": {"x":900,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_plasma_start4.png",
+	"frame": {"x":1348,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "keeper4.png",
+	"format": "RGBA8888",
+	"size": {"w":1796,"h":1848},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2a96cba36e9d3ca33a13b0f0f1e42797:580dc65e64dcda5b3d25479d246f8440:bb389cc57d7636af48cd112f516532ec$"
+}
+}

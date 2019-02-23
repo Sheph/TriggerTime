@@ -1,0 +1,6 @@
+{
+    "loop": true,
+    "frames": [
+        ["common1/player_idle%0-12%.png", 18]
+    ]
+}

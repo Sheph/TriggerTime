@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["factory12/gorger_shoot%0-19%.png", 20],
+        ["factory7/gorger_shoot%20-24%.png", 20]
+    ],
+    "specials": [15]
+}

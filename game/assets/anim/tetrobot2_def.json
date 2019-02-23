@@ -1,0 +1,6 @@
+{
+    "loop": true,
+    "frames": [
+        ["common1/tetrobot2_walk%0-23%.png", 24]
+    ]
+}

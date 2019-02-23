@@ -1,0 +1,637 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "bitplane4",
+      "enemy",
+      "bitplane6",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "filter-maskBits" : 6,
+            "id" : 8,
+            "name" : "sensor",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "40A0E8AA", "C0666666", "C0666666", "40A0E8AA" ],
+              "y" : [ "4090AB9F", "4063AB9F", "C068EAF2", "C0A7AAA4" ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 2,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail6",
+        "position" : 
+        {
+          "x" : "C0B9999A",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 3,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail5",
+        "position" : 
+        {
+          "x" : "C1266666",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail4",
+        "position" : 
+        {
+          "x" : "C1700000",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 5,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail3",
+        "position" : 
+        {
+          "x" : "C19CCCCD",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 6,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail2",
+        "position" : 
+        {
+          "x" : "C1C1999A",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 7,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 7,
+        "linearVelocity" : 0,
+        "massData-mass" : "427B53D2",
+        "name" : "tail1",
+        "position" : 
+        {
+          "x" : "C1E66666",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 9,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "339FFFFF",
+                "3F9B84CB",
+                "4000E148",
+                "400C7ED0",
+                "40BE3C9F",
+                "40C49279",
+                "40D25072",
+                "40C7628D",
+                "40ACAF8E",
+                "408EBD66",
+                "404B681F",
+                "400337CA",
+                "3F813C36",
+                "3EA73472"
+              ],
+              "y" : 
+              [
+                "32FFFFF3",
+                "3CE2E324",
+                "3E9696A2",
+                "BC8AEA09",
+                "3D03EB98",
+                "3E9F279A",
+                "3EF4F15E",
+                "3F8E20EF",
+                "3FF2708F",
+                "401A4A8C",
+                "4026B04B",
+                "4014AFCD",
+                "3FDF3ABD",
+                "3F83866E"
+              ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearVelocity" : 0,
+        "massData-I" : "4439B01E",
+        "massData-center" : 
+        {
+          "x" : "40527668",
+          "y" : "3F8C5F5C"
+        },
+        "massData-mass" : "42773D2D",
+        "name" : "upper_lip",
+        "position" : 
+        {
+          "x" : "C06DF7B0",
+          "y" : "3BB49B00"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : "40A00000",
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "friction" : "3E4CCCCD",
+            "id" : 12,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "40C92824",
+                "4029C337",
+                "40194784",
+                "3F95F45E",
+                "351FFFF8",
+                "3E98398A",
+                "3F9194AF",
+                "4004EBC4",
+                "40613387",
+                "409707F2",
+                "40BB249E",
+                "40D03CDE"
+              ],
+              "y" : 
+              [
+                "3BDE44EF",
+                "BAEAD41F",
+                "BE811AFC",
+                "BC79E1D9",
+                "331FFFFF",
+                "BF8F7B9E",
+                "BFF303B0",
+                "C01A2435",
+                "C024BE62",
+                "C015BEF5",
+                "BFCC7DD4",
+                "BF255F57"
+              ]
+            }
+          }
+        ],
+        "id" : 9,
+        "linearVelocity" : 0,
+        "massData-I" : "443FB9FD",
+        "massData-center" : 
+        {
+          "x" : "40530A8D",
+          "y" : "BF8CB0AD"
+        },
+        "massData-mass" : "427DE7DF",
+        "name" : "lower_lip",
+        "position" : 
+        {
+          "x" : "C06E4040",
+          "y" : "BD485960"
+        },
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF1342D4",
+          "y" : 0
+        },
+        "file" : "common1/shroom_snake_head6.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "41000000",
+        "scale" : "41000000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40E00000",
+        "scale" : "40933333"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40C00000",
+        "scale" : "40933333"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40A00000",
+        "scale" : "40933333"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40800000",
+        "scale" : "40933333"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 6,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40400000",
+        "scale" : "40933333"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 0,
+        "file" : "common1/shroom_snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 7,
+        "name" : "image",
+        "opacity" : 1,
+        "renderOrder" : "40000000",
+        "scale" : "40933333"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

@@ -1,0 +1,68 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+        <script>
+            UIMainMenu = {};
+            function UIMainMenu.TransitionIn(document)
+                if #UIDocList == 0 then
+                    table.insert(UIDocList, "ui/main_menu.rml");
+                    return;
+                end
+                UIInTransition = true;
+                UITransitionElementIn(1, document:GetElementById("logo"), 0.35, 0, -720);
+                UITransitionElementIn(1, document:GetElementById("left_dummy"), 0.35, -720, 0);
+                UITransitionElementIn(1, document:GetElementById("right_dummy"), 0.35, 720, 0);
+                UITransitionElementIn(1, document:GetElementById("main_menu"), 0.35, 0, 720, function()
+                    UIInTransition = false;
+                end);
+            end
+            function UIMainMenu.TransitionOut(document, nextDoc)
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UITransitionElementOut(1, document:GetElementById("logo"), 0.35, 0, -720);
+                UITransitionElementOut(1, document:GetElementById("left_dummy"), 0.35, -720, 0);
+                UITransitionElementOut(1, document:GetElementById("right_dummy"), 0.35, 720, 0);
+                UITransitionElementOut(1, document:GetElementById("main_menu"), 0.35, 0, 720, function()
+                    UIInTransition = false;
+                    table.insert(UIDocList, "ui/"..nextDoc..".rml");
+                    local nd = document.context:LoadDocument("ui/"..nextDoc..".rml");
+                    document:Close();
+                    nd:Show();
+                end);
+            end
+            function UIMainMenu.OnCredits(document)
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("credits.lua", "");
+                end);
+            end
+        </script>
+</head>
+<body template="base" onload="UIMainMenu.TransitionIn(document);">
+    <div class="box1" id="logo">
+        <img src="/ui1/logo.png" id="logo_img"/>
+    </div>
+    <div id="main_menu_content">
+        <div class="box1" id="left_dummy">
+        </div>
+        <div class="box1" id="right_dummy">
+            <p style="margin: 0px; margin-top: 92%;">v1.03</p>
+        </div>
+        <div class="box1" id="main_menu">
+            <div id="main_buttons">
+                <button class="main_button" onclick="UIMainMenu.TransitionOut(document, 'skill');">[MAIN_MENU_PLAY]</button>
+                <button class="main_button" onclick="UIMainMenu.TransitionOut(document, 'options');">[MAIN_MENU_OPTIONS]</button>
+                <button class="main_button" onclick="UIMainMenu.TransitionOut(document, 'achievements');">[MAIN_MENU_ACHIEVEMENTS]</button>
+                <button class="main_button" onclick="UIMainMenu.OnCredits(document);">[MAIN_MENU_CREDITS]</button>
+                <button class="main_button" onclick="scene.quit = true;">[MAIN_MENU_QUIT]</button>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

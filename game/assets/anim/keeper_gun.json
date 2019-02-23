@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["keeper3/keeper_gun%0-15%.png", 12],
+        ["keeper4/keeper_gun16.png", 12]
+    ],
+    "specials": [6, 15]
+}

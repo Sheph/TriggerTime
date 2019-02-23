@@ -1,0 +1,113 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UICredits = {};
+
+        function UICredits.OnLoad(document)
+            document.style.top = "300px";
+            UIAddTimeoutOnce(1, 2.0, function()
+                local tweening = SingleTweening(40.0, const.EaseLinear, 0.0, -3810.0, false);
+                local t = 0;
+
+                local y1 = 0;
+                if (document.style.top ~= "0") and (document.style.top ~= "0.0000px") then
+                    y1 = document:GetAbsoluteTop();
+                end
+
+                UIAddTimeout0(1, function(cookie, dt)
+                    t = t + dt;
+                    local v = tweening:getValue(t);
+                    document.style.top = (y1 + v).."px";
+                    if tweening:finished(t) then
+                        UICancelTimeout(cookie);
+                    end
+                end);
+            end);
+        end
+
+        function UICredits.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("main_menu.lua", "");
+                end);
+            end
+        end
+    </script>
+</head>
+<body template="base" onload="UICredits.OnLoad(document);" onkeydown="UICredits.OnKeyDown(event, document);">
+    <div id="credits_contents">
+        <img src="/ui1/logo.png" id="credits_logo"/>
+        <p id="credits_version">v1.03</p>
+        <div id="credits_text">
+            <h1 class="credits_entry">[CREDITS_DESIGN]</h1>
+            <p class="credits_entry">[CREDITS_DESIGN_1]</p>
+            <h1 class="credits_entry">[CREDITS_ART]</h1>
+            <p class="credits_entry">[CREDITS_ART_1]</p>
+            <h1 class="credits_entry">[CREDITS_SOUND]</h1>
+            <p class="credits_entry">[CREDITS_SOUND_1]</p>
+            <h1 class="credits_entry">[CREDITS_MUSIC]</h1>
+            <p class="credits_entry">[CREDITS_MUSIC_1]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_2]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_3]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_4]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_5]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_6]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_7]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_8]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_9]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_10]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_11]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_12]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_13]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_14]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_15]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_16]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_17]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_18]</p>
+            <p class="credits_entry">[CREDITS_MUSIC_19]</p>
+            <h1 class="credits_entry">[CREDITS_RESOURCES_USED]</h1>
+            <h2 class="credits_entry">[CREDITS_RESOURCES_USED_ART]</h2>
+            <p class="credits_entry">[CREDITS_RESOURCES_USED_ART_1]</p>
+            <p class="credits_entry" style="margin-bottom: 20px;">[CREDITS_RESOURCES_USED_ART_2]</p>
+            <h2 class="credits_entry">[CREDITS_RESOURCES_USED_MUSIC]</h2>
+            <p class="credits_entry">[CREDITS_RESOURCES_USED_MUSIC_1]</p>
+            <h1 class="credits_entry">[CREDITS_ADDITIONAL_ART]</h1>
+            <p class="credits_entry">[CREDITS_ADDITIONAL_ART_1]</p>
+            <p class="credits_entry">[CREDITS_ADDITIONAL_ART_2A]<span class="credits_details">[CREDITS_ADDITIONAL_ART_2B]</span></p>
+            <p class="credits_entry">[CREDITS_ADDITIONAL_ART_3A]<span class="credits_details">[CREDITS_ADDITIONAL_ART_3B]</span></p>
+            <h1 class="credits_entry">[CREDITS_THANKS]</h1>
+            <p class="credits_entry">[CREDITS_THANKS_1A]<span class="credits_details">[CREDITS_THANKS_1B]<br/>[CREDITS_THANKS_1C]</span></p>
+            <p class="credits_entry">[CREDITS_THANKS_2A]<span class="credits_details">[CREDITS_THANKS_2B]<br/>[CREDITS_THANKS_2C]</span></p>
+            <h1 class="credits_entry">[CREDITS_CONTACTS]</h1>
+            <p class="credits_entry">[CREDITS_CONTACTS_1]</p>
+            <p class="credits_entry">[CREDITS_CONTACTS_2]</p>
+            <p class="credits_entry">[CREDITS_CONTACTS_3]</p>
+            <h1 class="credits_entry">[CREDITS_THIRD_PARTY_SW]</h1>
+            <p class="credits_entry2">Box2D - Copyright (c) 2006-2013 Erin Catto.</p>
+            <p class="credits_entry2">Lua - Copyright (c) 1994-2012 Lua.org, PUC-Rio.</p>
+            <p class="credits_entry2">LuaJIT - Copyright (c) 2005-2015 Mike Pall.</p>
+            <p class="credits_entry2">Luabind - Copyright (c) 2003 Daniel Wallin and Arvid Norberg.</p>
+            <p class="credits_entry2">libRocket - Copyright (c) 2008-2014 CodePoint Ltd, Shift Technology Ltd.</p>
+            <p class="credits_entry2">libpng - Copyright (c) 2004, 2006-2013 Glenn Randers-Pehrson.</p>
+            <p class="credits_entry2">log4cplus - Copyright (c) 1999-2009 Contributors to log4cplus project.</p>
+            <p class="credits_entry2">jsoncpp - Copyright (c) 2007-2010 Baptiste Lepilleur.</p>
+            <p class="credits_entry2">poly2tri - Copyright (c) 2009-2010 Poly2Tri Contributors.</p>
+            <p class="credits_entry2">Freetype - Copyright (c) 2006-2015 by David Turner, Robert Wilhelm, and Werner Lemberg.</p>
+            <p class="credits_entry2">libogg - Copyright (c) 2002, Xiph.org Foundation.</p>
+            <p class="credits_entry2">libvorbis - Copyright (c) 2002-2015 Xiph.org Foundation.</p>
+            <p class="credits_entry2">zlib - Copyright (c) 1995-2013 Jean-loup Gailly and Mark Adler.</p>
+            <h1 class="credits_entry">[CREDITS_THIRD_PARTY_TOOLS]</h1>
+            <p class="credits_entry">[CREDITS_THIRD_PARTY_TOOLS_1]</p>
+            <p class="credits_entry">[CREDITS_THIRD_PARTY_TOOLS_2]</p>
+            <p class="credits_entry">[CREDITS_THIRD_PARTY_TOOLS_3]</p>
+            <h1 class="credits_thanks">[CREDITS_THANKS_FOR_PLAYING]</h1>
+        </div>
+    </div>
+</body>
+</rml>

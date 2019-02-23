@@ -1,0 +1,2670 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "rock",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "custom1",
+      "custom2",
+      "garbage",
+      "vehicle",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_eshield",
+      "name" : "prob_ammo_eshield",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "alpha",
+      "name" : "alpha",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "shoot",
+      "name" : "shoot",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockAlly",
+      "name" : "blockAlly",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "probability1",
+      "name" : "probability1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "autoTarget",
+      "name" : "autoTarget",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "base",
+      "name" : "base",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "minAmmo",
+      "name" : "minAmmo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "huge",
+      "name" : "huge",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "unfoldRadius",
+      "name" : "unfoldRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "radius",
+      "name" : "radius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "glassy",
+      "name" : "glassy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "width",
+      "name" : "width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "mask",
+      "name" : "mask",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "circle_zorder",
+      "name" : "circle_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "rusted",
+      "name" : "rusted",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "assetPath",
+      "name" : "assetPath",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "amount",
+      "name" : "amount",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_height",
+      "name" : "image_height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain_hole"
+        },
+        
+        {
+          "entry" : "terrain_points"
+        },
+        
+        {
+          "entry" : "stripe"
+        },
+        
+        {
+          "entry" : "hermite_stripe"
+        },
+        
+        {
+          "entry" : "chain"
+        },
+        
+        {
+          "entry" : "polygon"
+        },
+        
+        {
+          "entry" : "line_stripe"
+        },
+        
+        {
+          "entry" : "proj"
+        },
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "split",
+      "name" : "split",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockPlayer",
+      "name" : "blockPlayer",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain"
+        },
+        
+        {
+          "entry" : "player"
+        },
+        
+        {
+          "entry" : "rock"
+        },
+        
+        {
+          "entry" : "dummy"
+        },
+        
+        {
+          "entry" : "shroom_cannon_red1"
+        },
+        
+        {
+          "entry" : "sensor"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red1"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red2"
+        },
+        
+        {
+          "entry" : "blocker"
+        },
+        
+        {
+          "entry" : "blocker2"
+        },
+        
+        {
+          "entry" : "jake"
+        },
+        
+        {
+          "entry" : "hermite_path"
+        },
+        
+        {
+          "entry" : "shroom_snake"
+        },
+        
+        {
+          "entry" : "tetrobot"
+        },
+        
+        {
+          "entry" : "tetrocrab"
+        },
+        
+        {
+          "entry" : "spawner1"
+        },
+        
+        {
+          "entry" : "teleport1"
+        },
+        
+        {
+          "entry" : "goal_area"
+        },
+        
+        {
+          "entry" : "weapon_station"
+        },
+        
+        {
+          "entry" : "scorp"
+        },
+        
+        {
+          "entry" : "barrel1"
+        },
+        
+        {
+          "entry" : "barrel2"
+        },
+        
+        {
+          "entry" : "turret1"
+        },
+        
+        {
+          "entry" : "pyrobot"
+        },
+        
+        {
+          "entry" : "keyl"
+        },
+        
+        {
+          "entry" : "laser_blocker"
+        },
+        
+        {
+          "entry" : "powerup_inventory"
+        },
+        
+        {
+          "entry" : "placeholder"
+        },
+        
+        {
+          "entry" : "rock_placeholder"
+        },
+        
+        {
+          "entry" : "vehicle_placeholder"
+        },
+        
+        {
+          "entry" : "boss_skull"
+        },
+        
+        {
+          "entry" : "spider"
+        },
+        
+        {
+          "entry" : "instance"
+        },
+        
+        {
+          "entry" : "powerup_helmet"
+        },
+        
+        {
+          "entry" : "baby_spider1"
+        },
+        
+        {
+          "entry" : "baby_spider2"
+        },
+        
+        {
+          "entry" : "spider_nest"
+        },
+        
+        {
+          "entry" : "weapon_trap"
+        },
+        
+        {
+          "entry" : "boss_queen"
+        },
+        
+        {
+          "entry" : "enforcer1"
+        },
+        
+        {
+          "entry" : "enforcer2"
+        },
+        
+        {
+          "entry" : "sentry1"
+        },
+        
+        {
+          "entry" : "sentry2"
+        },
+        
+        {
+          "entry" : "gorger1"
+        },
+        
+        {
+          "entry" : "powerup_ammo"
+        },
+        
+        {
+          "entry" : "roboarm"
+        },
+        
+        {
+          "entry" : "crate1"
+        },
+        
+        {
+          "entry" : "crate2"
+        },
+        
+        {
+          "entry" : "crate3"
+        },
+        
+        {
+          "entry" : "crate4"
+        },
+        
+        {
+          "entry" : "powerup_weapon"
+        },
+        
+        {
+          "entry" : "orbo"
+        },
+        
+        {
+          "entry" : "warder"
+        },
+        
+        {
+          "entry" : "keeper"
+        },
+        
+        {
+          "entry" : "powerup_backpack"
+        },
+        
+        {
+          "entry" : "powerup_earpiece"
+        },
+        
+        {
+          "entry" : "health_station"
+        },
+        
+        {
+          "entry" : "rod_bundle"
+        },
+        
+        {
+          "entry" : "garbage"
+        },
+        
+        {
+          "entry" : "boss_coreprotector"
+        },
+        
+        {
+          "entry" : "barrel3"
+        },
+        
+        {
+          "entry" : "acidworm1"
+        },
+        
+        {
+          "entry" : "centipede1"
+        },
+        
+        {
+          "entry" : "beetle1"
+        },
+        
+        {
+          "entry" : "beetle2"
+        },
+        
+        {
+          "entry" : "boat"
+        },
+        
+        {
+          "entry" : "powergen"
+        },
+        
+        {
+          "entry" : "boss_squid"
+        },
+        
+        {
+          "entry" : "mech"
+        },
+        
+        {
+          "entry" : "homer"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_visible",
+      "name" : "image_visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_fixedPos",
+      "name" : "image_fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_polygon",
+      "name" : "first_polygon",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "folded",
+      "name" : "folded",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "player_missile"
+        },
+        
+        {
+          "entry" : "enemy_missile"
+        },
+        
+        {
+          "entry" : "ally_missile"
+        },
+        
+        {
+          "entry" : "neutral_missile"
+        }
+      ],
+      "displayName" : "missileType",
+      "name" : "missileType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_point",
+      "name" : "first_point",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle1",
+      "name" : "angle1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_proxmine",
+      "name" : "prob_ammo_proxmine",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_shotgun",
+      "name" : "prob_ammo_shotgun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "foldable",
+      "name" : "foldable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_zorder",
+      "name" : "image_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_rlauncher",
+      "name" : "prob_ammo_rlauncher",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockRock",
+      "name" : "blockRock",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "dynomite"
+        },
+        
+        {
+          "entry" : "redKey"
+        },
+        
+        {
+          "entry" : "blueKey"
+        },
+        
+        {
+          "entry" : "yellowKey"
+        }
+      ],
+      "displayName" : "inventoryItem",
+      "name" : "inventoryItem",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle2",
+      "name" : "angle2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_machineGun",
+      "name" : "prob_ammo_machineGun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "gravityGun"
+        },
+        
+        {
+          "entry" : "blaster"
+        },
+        
+        {
+          "entry" : "shotgun"
+        },
+        
+        {
+          "entry" : "rlauncher"
+        },
+        
+        {
+          "entry" : "fireball"
+        },
+        
+        {
+          "entry" : "flamethrower"
+        },
+        
+        {
+          "entry" : "pistol"
+        },
+        
+        {
+          "entry" : "superBlaster"
+        },
+        
+        {
+          "entry" : "proxmine"
+        },
+        
+        {
+          "entry" : "chainsaw"
+        },
+        
+        {
+          "entry" : "lgun"
+        },
+        
+        {
+          "entry" : "machineGun"
+        },
+        
+        {
+          "entry" : "plasmagun"
+        },
+        
+        {
+          "entry" : "superShotgun"
+        },
+        
+        {
+          "entry" : "eshield"
+        }
+      ],
+      "displayName" : "weaponType",
+      "name" : "weaponType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo",
+      "name" : "prob_ammo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_plasmagun",
+      "name" : "prob_ammo_plasmagun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height2",
+      "name" : "height2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "cancelCollisions",
+      "name" : "cancelCollisions",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_gem",
+      "name" : "prob_gem",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_health",
+      "name" : "prob_health",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_width",
+      "name" : "image_width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockEnemy",
+      "name" : "blockEnemy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "height",
+      "name" : "height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height1",
+      "name" : "height1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/scenePropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40800000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "float" : 0,
+            "name" : "collisionImpulseMultiplier"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 86,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "metal10.png"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 8,
+            "filter-groupIndex" : -300,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "wall",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "3FD5E350",
+                "3FAD161C",
+                "3EDAB3D0",
+                "BF81C0C0",
+                "C0025918",
+                "BF7B12FC",
+                "BE9B09B0",
+                "BD8DB940",
+                "BE9B09B0",
+                "BF7B12FC",
+                "C0025918",
+                "BF81C036",
+                "3EDAB260",
+                "3FAD1518"
+              ],
+              "y" : 
+              [
+                "3907EB60",
+                "4000D058",
+                "407502B6",
+                "40A89CD3",
+                "40772AC3",
+                "40339661",
+                "3FBCDD09",
+                "3A128600",
+                "BFBCB82D",
+                "C03383F3",
+                "C0771855",
+                "C0A89AB1",
+                "C074FE7F",
+                "C000CC22"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 87,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : 1,
+                "name" : "step"
+              },
+              
+              {
+                "float" : 0,
+                "name" : "tension"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound6.png"
+              }
+            ],
+            "id" : 7,
+            "name" : "mound",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F19999A",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "3FAD1518",
+                "3EDAB260",
+                "BF81C036",
+                "C0025918",
+                "BF7B12FC",
+                "BE9B09B0",
+                "BD8DB940",
+                "BE9B09B0",
+                "BF7B12FC",
+                "C0025918",
+                "BF81C0C0",
+                "3EDAB3D0",
+                "3FAD161C",
+                "3FD5E350",
+                "3FAD1518",
+                "3EDAB260",
+                "BF81C036"
+              ],
+              "y" : 
+              [
+                "C000CC22",
+                "C074FE7F",
+                "C0A89AB1",
+                "C0771855",
+                "C03383F3",
+                "BFBCB82D",
+                "3A128600",
+                "3FBCDD09",
+                "40339661",
+                "40772AC3",
+                "40A89CD3",
+                "407502B6",
+                "4000D058",
+                "3907EB60",
+                "C000CC22",
+                "C074FE7F",
+                "C0A89AB1"
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearDamping" : "40800000",
+        "linearVelocity" : 0,
+        "massData-I" : "431CFBE9",
+        "massData-center" : 
+        {
+          "x" : "3444DA93",
+          "y" : "33E0F9CD"
+        },
+        "massData-mass" : "4191A6B7",
+        "name" : "pod_hatch",
+        "position" : 
+        {
+          "x" : "409D9EED",
+          "y" : "BB33DFEC"
+        },
+        "sleepingAllowed" : false,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40800000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "float" : 0,
+            "name" : "collisionImpulseMultiplier"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 30,
+                "name" : "num_sectors"
+              },
+              
+              {
+                "int" : -120,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground4.png"
+              },
+              
+              {
+                "color" : [ 187, 194, 187, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 54,
+            "id" : 1,
+            "name" : "floor",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40B6469E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 88,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "metal10.png"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 8,
+            "filter-groupIndex" : -300,
+            "friction" : "3E4CCCCD",
+            "id" : 2,
+            "name" : "wall",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "407B5771",
+                "40042359",
+                "B49CCB54",
+                "C004235A",
+                "C07B5776",
+                "C0ACF894",
+                "C0CB56F0",
+                "C0D5CDCD",
+                "C0CB56EF",
+                "C0ACF892",
+                "C07B576C",
+                "C0042350",
+                "33AB1993",
+                "40042364",
+                "407B5769",
+                "40299550",
+                "3FB24F75",
+                "3380523D",
+                "BFB24F63",
+                "C0299547",
+                "C0696944",
+                "C0893217",
+                "C090418D",
+                "C0893217",
+                "C0696946",
+                "C029954E",
+                "BFB24F71",
+                "B44D2492",
+                "3FB24F6F",
+                "4029954B"
+              ],
+              "y" : 
+              [
+                "40ACF893",
+                "40CB56F0",
+                "40D5CDCD",
+                "40CB56F0",
+                "40ACF892",
+                "407B576F",
+                "4004235A",
+                "B51CCB54",
+                "C004235F",
+                "C07B5774",
+                "C0ACF895",
+                "C0CB56F1",
+                "C0D5CDC8",
+                "C0CB56EB",
+                "C0ACF88C",
+                "C0696942",
+                "C0893217",
+                "C090418D",
+                "C0893218",
+                "C0696948",
+                "C029954D",
+                "BFB24F77",
+                "B4E41500",
+                "3FB24F71",
+                "40299549",
+                "40696944",
+                "40893217",
+                "4090418D",
+                "40893217",
+                "40696945"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 89,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : 1,
+                "name" : "step"
+              },
+              
+              {
+                "float" : 0,
+                "name" : "tension"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound6.png"
+              }
+            ],
+            "id" : 3,
+            "name" : "mound",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3F19999A",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "407B5769",
+                "40042364",
+                "33AB1993",
+                "C0042350",
+                "C07B576C",
+                "C0ACF892",
+                "C0CB56EF",
+                "C0D5CDCD",
+                "C0CB56F0",
+                "C0ACF894",
+                "C07B5776",
+                "C004235A",
+                "B49CCB54",
+                "40042359",
+                "407B5771",
+                "4029954B",
+                "3FB24F6F",
+                "B44D2492",
+                "BFB24F71",
+                "C029954E",
+                "C0696946",
+                "C0893217",
+                "C090418D",
+                "C0893217",
+                "C0696944",
+                "C0299547",
+                "BFB24F63",
+                "3380523D",
+                "3FB24F75",
+                "40299550",
+                "407B5769",
+                "40042364",
+                "33AB1993"
+              ],
+              "y" : 
+              [
+                "C0ACF88C",
+                "C0CB56EB",
+                "C0D5CDC8",
+                "C0CB56F1",
+                "C0ACF895",
+                "C07B5774",
+                "C004235F",
+                "B51CCB54",
+                "4004235A",
+                "407B576F",
+                "40ACF892",
+                "40CB56F0",
+                "40D5CDCD",
+                "40CB56F0",
+                "40ACF893",
+                "40696945",
+                "40893217",
+                "4090418D",
+                "40893217",
+                "40696944",
+                "40299549",
+                "3FB24F71",
+                "B4E41500",
+                "BFB24F77",
+                "C029954D",
+                "C0696948",
+                "C0893218",
+                "C090418D",
+                "C0893217",
+                "C0696942",
+                "C0ACF88C",
+                "C0CB56EB",
+                "C0D5CDC8"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 30,
+                "name" : "num_sectors"
+              },
+              
+              {
+                "int" : 85,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "glass1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 120 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 54,
+            "id" : 4,
+            "name" : "ceiling",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40B6469E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearDamping" : "40800000",
+        "linearVelocity" : 0,
+        "massData-I" : "459BE034",
+        "massData-center" : 
+        {
+          "x" : "BED90F3A",
+          "y" : "34ABAFD1"
+        },
+        "massData-mass" : "43803BC8",
+        "name" : "pod",
+        "position" : 0,
+        "sleepingAllowed" : false,
+        "type" : "dynamic"
+      },
+      
+      {
+        "active" : false,
+        "angle" : 0,
+        "angularDamping" : "40800000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "float" : 0,
+            "name" : "collisionImpulseMultiplier"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "blocker"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 86,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "metal10.png"
+              }
+            ],
+            "density" : 1,
+            "filter-groupIndex" : -300,
+            "filter-maskBits" : 54,
+            "friction" : "3E4CCCCD",
+            "id" : 15,
+            "name" : "wall",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "40C2CE69",
+                "40B96495",
+                "409E1301",
+                "405BE760",
+                "403FAFE8",
+                "408A7BED",
+                "40A24889",
+                "40AA7BED",
+                "40A24889",
+                "408A7BED",
+                "403DCCD4",
+                "405A0494",
+                "409E12E9",
+                "40B96459"
+              ],
+              "y" : 
+              [
+                "B9B91000",
+                "3FEDB0B3",
+                "406213AC",
+                "40A0CA11",
+                "408C9875",
+                "4044A720",
+                "3FCE7864",
+                "BBA37800",
+                "BFCFBF14",
+                "C0454A78",
+                "C08DF23F",
+                "C0A1D7F6",
+                "C0621F46",
+                "BFEDC7E8"
+              ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearDamping" : "40800000",
+        "linearVelocity" : 0,
+        "massData-I" : "4385A94C",
+        "massData-center" : 
+        {
+          "x" : "4099ABF1",
+          "y" : "BC4CBBD5"
+        },
+        "massData-mass" : "41055E9D",
+        "name" : "pod_blocker",
+        "position" : 0,
+        "sleepingAllowed" : false,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          }
+        ],
+        "id" : 6,
+        "linearVelocity" : 0,
+        "name" : "pod_mover",
+        "position" : 0,
+        "type" : "kinematic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF6D72E8",
+          "y" : "4081A306"
+        },
+        "colorTint" : [ 255, 255, 0, 80 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "3FC98B3E"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3F3B6858",
+          "y" : "BDC85EC0"
+        },
+        "colorTint" : [ 255, 255, 0, 80 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "3FC98B3E"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF5A2308",
+          "y" : "C080A812"
+        },
+        "colorTint" : [ 255, 255, 0, 80 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "3FC98B3E"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3EB5B2B0",
+          "y" : "4008F764"
+        },
+        "colorTint" : [ 255, 255, 0, 80 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "3FC98B3E"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3E823370",
+          "y" : "C0089D80"
+        },
+        "colorTint" : [ 255, 255, 0, 80 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40200000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "3FC98B3E"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "409D9EF4",
+          "y" : "BB33E000"
+        },
+        "anchorB" : 0,
+        "bodyA" : 3,
+        "bodyB" : 1,
+        "collideConnected" : false,
+        "dampingRatio" : 0,
+        "frequency" : 0,
+        "id" : 1,
+        "name" : "pod_hatch_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 6,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "correctionFactor" : "3FC00000",
+        "id" : 2,
+        "maxForce" : "460CA000",
+        "maxTorque" : "460CA000",
+        "name" : "pod_joint",
+        "referenceAngle" : 0,
+        "type" : "motor"
+      },
+      
+      {
+        "anchorA" : 0,
+        "anchorB" : 0,
+        "bodyA" : 3,
+        "bodyB" : 4,
+        "collideConnected" : false,
+        "dampingRatio" : 0,
+        "frequency" : 0,
+        "id" : 4,
+        "name" : "pod_blocker_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["common1/shroom_snake_head%1-8%.png", 12],
+        ["common1/shroom_snake_head0.png", 12]
+    ]
+}

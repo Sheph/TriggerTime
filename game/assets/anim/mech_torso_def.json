@@ -1,0 +1,6 @@
+{
+    "loop": true,
+    "frames": [
+        ["mech7/mech_torso_idle%0-24%.png", 25]
+    ]
+}

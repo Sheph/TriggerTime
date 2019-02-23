@@ -1,0 +1,174 @@
+{"frames": [
+
+{
+	"filename": "acidworm_attack0.png",
+	"frame": {"x":4,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_attack1.png",
+	"frame": {"x":165,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_attack2.png",
+	"frame": {"x":326,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_attack3.png",
+	"frame": {"x":487,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_attack4.png",
+	"frame": {"x":648,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head0.png",
+	"frame": {"x":809,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head1.png",
+	"frame": {"x":970,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head2.png",
+	"frame": {"x":1131,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head3.png",
+	"frame": {"x":1292,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head4.png",
+	"frame": {"x":1453,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_head5.png",
+	"frame": {"x":1614,"y":4,"w":157,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":158},
+	"sourceSize": {"w":157,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "acidworm_part.png",
+	"frame": {"x":4,"y":166,"w":144,"h":345},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":345},
+	"sourceSize": {"w":144,"h":345},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_attack0.png",
+	"frame": {"x":152,"y":166,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_attack1.png",
+	"frame": {"x":736,"y":166,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_attack2.png",
+	"frame": {"x":1320,"y":166,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_attack3.png",
+	"frame": {"x":4,"y":967,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_attack4.png",
+	"frame": {"x":588,"y":967,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "queen_head.png",
+	"frame": {"x":1172,"y":967,"w":580,"h":797},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":797},
+	"sourceSize": {"w":580,"h":797},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "spider1.png",
+	"format": "RGBA8888",
+	"size": {"w":1904,"h":1768},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3d1b5f88c3cda190642396cdb72bb0e2:24434331e07d50862da1711b96986e35:4b4ef8c25dde3331fe5381b9f9dcc6fb$"
+}
+}

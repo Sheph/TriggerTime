@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["natan4/natan_die%0-11%.png", 22]
+    ],
+    "specials": [4, 8]
+}

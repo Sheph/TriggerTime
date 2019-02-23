@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["subway1/cam_rec1.png", 3.3],
+        ["subway1/cam_rec2.png", 3.3]
+    ]
+}

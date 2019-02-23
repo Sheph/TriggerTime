@@ -1,0 +1,3458 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "rock",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "custom1",
+      "custom2",
+      "garbage",
+      "vehicle",
+      "enemyRock",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "amount",
+      "name" : "amount",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle2",
+      "name" : "angle2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle1",
+      "name" : "angle1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height1",
+      "name" : "height1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "i",
+      "name" : "i",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_zorder",
+      "name" : "image_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "assetPath",
+      "name" : "assetPath",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_gem",
+      "name" : "prob_gem",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "player_missile"
+        },
+        
+        {
+          "entry" : "enemy_missile"
+        },
+        
+        {
+          "entry" : "ally_missile"
+        },
+        
+        {
+          "entry" : "neutral_missile"
+        }
+      ],
+      "displayName" : "missileType",
+      "name" : "missileType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "cancelCollisions",
+      "name" : "cancelCollisions",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "radius",
+      "name" : "radius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockRock",
+      "name" : "blockRock",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "glassy",
+      "name" : "glassy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_eshield",
+      "name" : "prob_ammo_eshield",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockEnemy",
+      "name" : "blockEnemy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "huge",
+      "name" : "huge",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "unfoldRadius",
+      "name" : "unfoldRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_width",
+      "name" : "image_width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "width",
+      "name" : "width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "height",
+      "name" : "height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_health",
+      "name" : "prob_health",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "world",
+      "displayName" : "rootBody",
+      "name" : "rootBody",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "probability1",
+      "name" : "probability1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "autoTarget",
+      "name" : "autoTarget",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height2",
+      "name" : "height2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "circle_zorder",
+      "name" : "circle_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_rlauncher",
+      "name" : "prob_ammo_rlauncher",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "shoot",
+      "name" : "shoot",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_height",
+      "name" : "image_height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_proxmine",
+      "name" : "prob_ammo_proxmine",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "split",
+      "name" : "split",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "folded",
+      "name" : "folded",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_polygon",
+      "name" : "first_polygon",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_shotgun",
+      "name" : "prob_ammo_shotgun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "gravityGun"
+        },
+        
+        {
+          "entry" : "blaster"
+        },
+        
+        {
+          "entry" : "shotgun"
+        },
+        
+        {
+          "entry" : "rlauncher"
+        },
+        
+        {
+          "entry" : "fireball"
+        },
+        
+        {
+          "entry" : "flamethrower"
+        },
+        
+        {
+          "entry" : "pistol"
+        },
+        
+        {
+          "entry" : "superBlaster"
+        },
+        
+        {
+          "entry" : "proxmine"
+        },
+        
+        {
+          "entry" : "chainsaw"
+        },
+        
+        {
+          "entry" : "lgun"
+        },
+        
+        {
+          "entry" : "machineGun"
+        },
+        
+        {
+          "entry" : "plasmagun"
+        },
+        
+        {
+          "entry" : "superShotgun"
+        },
+        
+        {
+          "entry" : "eshield"
+        }
+      ],
+      "displayName" : "weaponType",
+      "name" : "weaponType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_machineGun",
+      "name" : "prob_ammo_machineGun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_visible",
+      "name" : "image_visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_plasmagun",
+      "name" : "prob_ammo_plasmagun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo",
+      "name" : "prob_ammo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain_hole"
+        },
+        
+        {
+          "entry" : "terrain_points"
+        },
+        
+        {
+          "entry" : "stripe"
+        },
+        
+        {
+          "entry" : "hermite_stripe"
+        },
+        
+        {
+          "entry" : "chain"
+        },
+        
+        {
+          "entry" : "polygon"
+        },
+        
+        {
+          "entry" : "line_stripe"
+        },
+        
+        {
+          "entry" : "proj"
+        },
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain"
+        },
+        
+        {
+          "entry" : "player"
+        },
+        
+        {
+          "entry" : "rock"
+        },
+        
+        {
+          "entry" : "dummy"
+        },
+        
+        {
+          "entry" : "shroom_cannon_red1"
+        },
+        
+        {
+          "entry" : "sensor"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red1"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red2"
+        },
+        
+        {
+          "entry" : "blocker"
+        },
+        
+        {
+          "entry" : "blocker2"
+        },
+        
+        {
+          "entry" : "jake"
+        },
+        
+        {
+          "entry" : "hermite_path"
+        },
+        
+        {
+          "entry" : "shroom_snake"
+        },
+        
+        {
+          "entry" : "tetrobot"
+        },
+        
+        {
+          "entry" : "tetrobot2"
+        },
+        
+        {
+          "entry" : "tetrocrab"
+        },
+        
+        {
+          "entry" : "spawner1"
+        },
+        
+        {
+          "entry" : "teleport1"
+        },
+        
+        {
+          "entry" : "goal_area"
+        },
+        
+        {
+          "entry" : "hint_area"
+        },
+        
+        {
+          "entry" : "weapon_station"
+        },
+        
+        {
+          "entry" : "scorp"
+        },
+        
+        {
+          "entry" : "barrel1"
+        },
+        
+        {
+          "entry" : "barrel2"
+        },
+        
+        {
+          "entry" : "turret1"
+        },
+        
+        {
+          "entry" : "pyrobot"
+        },
+        
+        {
+          "entry" : "keyl"
+        },
+        
+        {
+          "entry" : "laser_blocker"
+        },
+        
+        {
+          "entry" : "powerup_inventory"
+        },
+        
+        {
+          "entry" : "placeholder"
+        },
+        
+        {
+          "entry" : "rock_placeholder"
+        },
+        
+        {
+          "entry" : "vehicle_placeholder"
+        },
+        
+        {
+          "entry" : "ally_placeholder"
+        },
+        
+        {
+          "entry" : "boss_skull"
+        },
+        
+        {
+          "entry" : "spider"
+        },
+        
+        {
+          "entry" : "instance"
+        },
+        
+        {
+          "entry" : "powerup_helmet"
+        },
+        
+        {
+          "entry" : "baby_spider1"
+        },
+        
+        {
+          "entry" : "baby_spider2"
+        },
+        
+        {
+          "entry" : "spider_nest"
+        },
+        
+        {
+          "entry" : "weapon_trap"
+        },
+        
+        {
+          "entry" : "boss_queen"
+        },
+        
+        {
+          "entry" : "enforcer1"
+        },
+        
+        {
+          "entry" : "enforcer2"
+        },
+        
+        {
+          "entry" : "enforcer3"
+        },
+        
+        {
+          "entry" : "sentry1"
+        },
+        
+        {
+          "entry" : "sentry2"
+        },
+        
+        {
+          "entry" : "gorger1"
+        },
+        
+        {
+          "entry" : "powerup_ammo"
+        },
+        
+        {
+          "entry" : "roboarm"
+        },
+        
+        {
+          "entry" : "crate1"
+        },
+        
+        {
+          "entry" : "crate2"
+        },
+        
+        {
+          "entry" : "crate3"
+        },
+        
+        {
+          "entry" : "crate4"
+        },
+        
+        {
+          "entry" : "powerup_weapon"
+        },
+        
+        {
+          "entry" : "orbo"
+        },
+        
+        {
+          "entry" : "warder"
+        },
+        
+        {
+          "entry" : "keeper"
+        },
+        
+        {
+          "entry" : "powerup_backpack"
+        },
+        
+        {
+          "entry" : "powerup_earpiece"
+        },
+        
+        {
+          "entry" : "health_station"
+        },
+        
+        {
+          "entry" : "rod_bundle"
+        },
+        
+        {
+          "entry" : "garbage"
+        },
+        
+        {
+          "entry" : "boss_coreprotector"
+        },
+        
+        {
+          "entry" : "barrel3"
+        },
+        
+        {
+          "entry" : "acidworm1"
+        },
+        
+        {
+          "entry" : "centipede1"
+        },
+        
+        {
+          "entry" : "beetle1"
+        },
+        
+        {
+          "entry" : "beetle2"
+        },
+        
+        {
+          "entry" : "boat"
+        },
+        
+        {
+          "entry" : "powergen"
+        },
+        
+        {
+          "entry" : "powergen2"
+        },
+        
+        {
+          "entry" : "boss_squid"
+        },
+        
+        {
+          "entry" : "mech"
+        },
+        
+        {
+          "entry" : "homer"
+        },
+        
+        {
+          "entry" : "scientist"
+        },
+        
+        {
+          "entry" : "boss_chopper"
+        },
+        
+        {
+          "entry" : "creature"
+        },
+        
+        {
+          "entry" : "octopus"
+        },
+        
+        {
+          "entry" : "walker"
+        },
+        
+        {
+          "entry" : "snake"
+        },
+        
+        {
+          "entry" : "boss_buddy"
+        },
+        
+        {
+          "entry" : "boss_natan"
+        },
+        
+        {
+          "entry" : "guardian"
+        },
+        
+        {
+          "entry" : "guardian2"
+        },
+        
+        {
+          "entry" : "military1"
+        },
+        
+        {
+          "entry" : "sarge1"
+        },
+        
+        {
+          "entry" : "enemy_building"
+        },
+        
+        {
+          "entry" : "sawer"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "dynomite"
+        },
+        
+        {
+          "entry" : "redKey"
+        },
+        
+        {
+          "entry" : "blueKey"
+        },
+        
+        {
+          "entry" : "yellowKey"
+        }
+      ],
+      "displayName" : "inventoryItem",
+      "name" : "inventoryItem",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "minAmmo",
+      "name" : "minAmmo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "foldable",
+      "name" : "foldable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_point",
+      "name" : "first_point",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "mask",
+      "name" : "mask",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "base",
+      "name" : "base",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "rusted",
+      "name" : "rusted",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "dead",
+      "name" : "dead",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "alpha",
+      "name" : "alpha",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockAlly",
+      "name" : "blockAlly",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockPlayer",
+      "name" : "blockPlayer",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_fixedPos",
+      "name" : "image_fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "fixed",
+      "name" : "fixed",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/scenePropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "dummy"
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "key1",
+        "position" : 
+        {
+          "x" : "4180E2BF",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 2,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "3F5FEFE0",
+          "y" : "41073624"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BFDBBC5F",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 3,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "413E2A6E",
+          "y" : "BF243A60"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "C0413FE0",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 4,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "3FFE1690",
+          "y" : "C12CB725"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BFD8143C",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 5,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C122AACA",
+          "y" : "C00246DC"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3F355CA8",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 6,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C0F85A44",
+          "y" : "C119F6A5"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "C0162FB4",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 7,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "40EE0383",
+          "y" : "40A33DA5"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "C07B8FAE",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "centipede1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          }
+        ],
+        "id" : 8,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "410408D2",
+          "y" : "C0C75CE7"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3F0BB88A",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 9,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C0D2D948",
+          "y" : "40BBEA14"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3F79DCCE",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 10,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "410AD834",
+          "y" : "415108F6"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "400283AE",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 11,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "4156D6D4",
+          "y" : "C152059A"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FBE7526",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 12,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C15A98C6",
+          "y" : "C11D6907"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "404BB35B",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 13,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C183A8F3",
+          "y" : "BF259DE0"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FE95E20",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 14,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "3E9519C0",
+          "y" : "418220B4"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "407A6D60",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          }
+        ],
+        "id" : 15,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "415CE5B0",
+          "y" : "4151CC2E"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FCC3564",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "split"
+          }
+        ],
+        "id" : 16,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "BFC1EC70",
+          "y" : "C1703C38"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3F79C76E",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "split"
+          }
+        ],
+        "id" : 17,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "C120DB7E",
+          "y" : "411F1B40"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "403B9BF4",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "beetle1"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "autoTarget"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "shoot"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "split"
+          }
+        ],
+        "id" : 18,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "bug1",
+        "position" : 
+        {
+          "x" : "4156D6D2",
+          "y" : "40FC881C"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BCC66560",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "barrel3"
+          }
+        ],
+        "id" : 19,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "barrel",
+        "position" : 
+        {
+          "x" : "40D07971",
+          "y" : "C1777DE2"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BEFEE64A",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "barrel3"
+          }
+        ],
+        "id" : 20,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "barrel",
+        "position" : 
+        {
+          "x" : "C15E7870",
+          "y" : "40A971C0"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3FBE3EBA",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "barrel3"
+          }
+        ],
+        "id" : 21,
+        "linearVelocity" : 0,
+        "massData-mass" : 1,
+        "name" : "barrel",
+        "position" : 
+        {
+          "x" : "41814652",
+          "y" : "C0DC3568"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "3F490FDB",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              }
+            ],
+            "density" : 1,
+            "friction" : "3E4CCCCD",
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C046DEC0", "4046DEC0", "4046DEC0", "C046DEC0" ],
+              "y" : [ "C046DED0", "C046DED0", "4046DED0", "4046DED0" ]
+            }
+          }
+        ],
+        "id" : 22,
+        "linearVelocity" : 0,
+        "name" : "crate",
+        "position" : 
+        {
+          "x" : "41980000",
+          "y" : "41980000"
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : "3F490FDB",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              }
+            ],
+            "density" : 1,
+            "friction" : "3E4CCCCD",
+            "id" : 7,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C046DEC0", "4046DEC0", "4046DEC0", "C046DEC0" ],
+              "y" : [ "C046DED0", "C046DED0", "4046DED0", "4046DED0" ]
+            }
+          }
+        ],
+        "id" : 23,
+        "linearVelocity" : 0,
+        "name" : "crate",
+        "position" : 
+        {
+          "x" : "C1980000",
+          "y" : "C1980000"
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : "3F490FDB",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              }
+            ],
+            "density" : 1,
+            "friction" : "3E4CCCCD",
+            "id" : 8,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C046DEC0", "4046DEC0", "4046DEC0", "C046DEC0" ],
+              "y" : [ "C046DED0", "C046DED0", "4046DED0", "4046DED0" ]
+            }
+          }
+        ],
+        "id" : 24,
+        "linearVelocity" : 0,
+        "name" : "crate",
+        "position" : 
+        {
+          "x" : "41980000",
+          "y" : "C1980000"
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "terrain"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "detourable"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -135,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground2.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "friction" : "3E4CCCCD",
+            "id" : 1,
+            "name" : "floor2",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C1766572",
+                "C107A1A8",
+                "40A33B00",
+                "41792D3C",
+                "4190D1EE",
+                "41213A0C",
+                "C0A73B98",
+                "C15529FE",
+                "C181F8F8"
+              ],
+              "y" : 
+              [
+                "40BE8C10",
+                "414DEFBA",
+                "41866162",
+                "4137AE62",
+                "C09334C8",
+                "C1826038",
+                "C185AD7C",
+                "C156774B",
+                "C0B814B4"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -140,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground3.png"
+              },
+              
+              {
+                "color" : [ 150, 150, 150, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "friction" : "3E4CCCCD",
+            "id" : 3,
+            "name" : "floor",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C1C80000", "C1C80000", "41C80000", "41C80000" ],
+              "y" : [ "C1C80000", "41C80000", "41C80000", "C1C80000" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 90,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "color" : [ 100, 100, 100, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "wall22",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "409B4D63",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "3F349700" ],
+              "y" : [ "BF93CC10" ]
+            }
+          }
+        ],
+        "id" : 1238,
+        "linearVelocity" : 0,
+        "name" : "content1",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "C09195C9",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "41635F6C",
+          "y" : "C1422129"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0AA9BFB",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "4184D096",
+          "y" : "C100195E"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0BB1194",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "4196B046",
+          "y" : "C057BFD8"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "3BD7F300",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "3F1DF1C0",
+          "y" : "BF6593A0"
+        },
+        "colorTint" : [ 0, 255, 0, 180 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 25,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : 1,
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "light",
+        "opacity" : "3F000000",
+        "renderOrder" : "43480000",
+        "scale" : "3FE342AE"
+      },
+      
+      {
+        "angle" : "3DE5B580",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "3F1787C0",
+          "y" : "BF9A19D0"
+        },
+        "file" : "factory4/squid_pad.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C2D20000",
+        "scale" : "41DD888C"
+      },
+      
+      {
+        "angle" : "3DE5B580",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "3F1787C0",
+          "y" : "BF9A19D0"
+        },
+        "file" : "factory4/squid_heart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 7,
+        "name" : "heart",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "411D8F5C"
+      },
+      
+      {
+        "angle" : "C08791A0",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "40CC1BD0",
+          "y" : "41830985"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 8,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0627FB3",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "413085F2",
+          "y" : "416DCBDC"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 9,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C08708C0",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "417CF3D4",
+          "y" : "414396E0"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 10,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C062DC8D",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "4180E96A",
+          "y" : "40DC2448"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 11,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0830B7C",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "418F8D14",
+          "y" : "3FED6CB0"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 12,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C084371F",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C172A244",
+          "y" : "407EA188"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 13,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C066C7F9",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C1824B60",
+          "y" : "BFB1FAB8"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 14,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C096C192",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C177FFAE",
+          "y" : "C0CB88A0"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 15,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0A7B089",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C1604B86",
+          "y" : "C130B624"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 16,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0925389",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C12E2C78",
+          "y" : "C1739A0A"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 17,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0ACEF8F",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C0CDFF58",
+          "y" : "C184E2DE"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 18,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0939976",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "BFF27760",
+          "y" : "C18CEBF2"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 19,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0A80119",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "40056700",
+          "y" : "C1931A4F"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 20,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C095700D",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "40C725B8",
+          "y" : "C18F8A66"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 21,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0A9A226",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "4135547C",
+          "y" : "C180E3D9"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 22,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C09EB596",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "3F906F20",
+          "y" : "418341A9"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 23,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C08DA9A3",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C07F72F0",
+          "y" : "4173C2D2"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 24,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0A31CFA",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C10CD80C",
+          "y" : "41465C8E"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 25,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "C0924DEC",
+        "aspectScale" : 1,
+        "body" : 1238,
+        "center" : 
+        {
+          "x" : "C1490C30",
+          "y" : "410D1E66"
+        },
+        "colorTint" : [ 150, 150, 150, 255 ],
+        "file" : "factory4/plate1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 26,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "C3020000",
+        "scale" : "40A3D70A"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 27,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 28,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 29,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 30,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 6,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 31,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 32,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 33,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 9,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 34,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 10,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 35,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 11,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 36,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 12,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 37,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 13,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 38,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 14,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 39,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 15,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 40,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 16,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 41,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 17,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 42,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 18,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 43,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 19,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 44,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 20,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 45,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 21,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 46,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 22,
+        "center" : 0,
+        "file" : "factory1/crate2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 47,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "42A00000",
+        "scale" : "40C6DED1"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 23,
+        "center" : 0,
+        "file" : "factory1/crate2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 48,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "42A00000",
+        "scale" : "40C6DED1"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 24,
+        "center" : 0,
+        "file" : "factory1/crate2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 49,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "42A00000",
+        "scale" : "40C6DED1"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

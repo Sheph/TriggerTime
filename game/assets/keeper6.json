@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "keeper_crawlout0.png",
+	"frame": {"x":4,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout1.png",
+	"frame": {"x":452,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout10.png",
+	"frame": {"x":900,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout11.png",
+	"frame": {"x":1348,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout12.png",
+	"frame": {"x":4,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout13.png",
+	"frame": {"x":452,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout14.png",
+	"frame": {"x":900,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout2.png",
+	"frame": {"x":1348,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout3.png",
+	"frame": {"x":4,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout4.png",
+	"frame": {"x":452,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout5.png",
+	"frame": {"x":900,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout6.png",
+	"frame": {"x":1348,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout7.png",
+	"frame": {"x":4,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout8.png",
+	"frame": {"x":452,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout9.png",
+	"frame": {"x":900,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_melee9.png",
+	"frame": {"x":1348,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "keeper6.png",
+	"format": "RGBA8888",
+	"size": {"w":1796,"h":1848},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9d99ab3249025681a3705b7052a10fcb:ccc598ddcebfa8ac673ac3777fa6bd76:cd5bc39135b77bd0192e35e890e63362$"
+}
+}

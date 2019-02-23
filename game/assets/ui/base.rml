@@ -1,0 +1,10 @@
+<template name="base" content="content">
+<head>
+    <link type="text/rcss" href="rkt.rcss"/>
+    <link type="text/rcss" href="tt.rcss"/>
+</head>
+<body>
+    <div id="content">
+    </div>
+</body>
+</template>

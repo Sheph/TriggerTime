@@ -1,0 +1,45 @@
+// body
+addCustomProperty("body", "gravityGunAware", "gravityGunAware", "bool");
+addCustomProperty("body", "freezable", "freezable", "bool");
+addCustomProperty("body", "freezeRadius", "freezeRadius", "float");
+addCustomProperty("body", "freezePhysics", "freezePhysics", "bool");
+addCustomProperty("body", "detourable", "detourable", "bool");
+addCustomProperty("body", "collisionImpulseMultiplier", "collisionImpulseMultiplier", "float");
+addCustomProperty("body", "segId", "segId", "int");
+// fixture
+addCustomProperty("fixture", "class", "class", "string");
+insertCustomPropertyComboboxEntry("fixture", "class", "tentacle");
+addCustomProperty("fixture", "image", "image", "string");
+addCustomProperty("fixture", "zorder", "zorder", "int");
+addCustomProperty("fixture", "tension", "tension", "float");
+addCustomProperty("fixture", "step", "step", "float");
+addCustomProperty("fixture", "color", "color", "color");
+addCustomProperty("fixture", "image_flip", "image_flip", "bool");
+addCustomProperty("fixture", "width1", "width1", "float");
+addCustomProperty("fixture", "width2", "width2", "float");
+addCustomProperty("fixture", "num_iterations", "num_iterations", "int");
+// image
+addCustomProperty("image", "peffect", "peffect", "string");
+addCustomProperty("image", "light", "light", "string");
+insertCustomPropertyComboboxEntry("image", "light", "point");
+insertCustomPropertyComboboxEntry("image", "light", "cone");
+insertCustomPropertyComboboxEntry("image", "light", "line");
+insertCustomPropertyComboboxEntry("image", "light", "ring");
+addCustomProperty("image", "numRays", "numRays", "int");
+addCustomProperty("image", "softLength", "softLength", "float");
+addCustomProperty("image", "nearDistance", "nearDistance", "float");
+addCustomProperty("image", "distance", "distance", "float");
+addCustomProperty("image", "coneAngle", "coneAngle", "float");
+addCustomProperty("image", "xray", "xray", "bool");
+addCustomProperty("image", "visible", "visible", "bool");
+addCustomProperty("image", "dynamic", "dynamic", "bool");
+addCustomProperty("image", "diffuse", "diffuse", "bool");
+addCustomProperty("image", "reverse", "reverse", "bool");
+addCustomProperty("image", "intensity", "intensity", "float");
+addCustomProperty("image", "dummy", "dummy", "bool");
+addCustomProperty("image", "fixedPos", "fixedPos", "bool");
+addCustomProperty("image", "bothWays", "bothWays", "bool");
+addCustomProperty("image", "length", "length", "float");
+addCustomProperty("image", "nearOffset", "nearOffset", "float");
+addCustomProperty("image", "farDistance", "farDistance", "float");
+addCustomProperty("image", "hitBlockers", "hitBlockers", "bool");

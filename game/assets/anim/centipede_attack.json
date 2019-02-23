@@ -1,0 +1,7 @@
+{
+    "loop": false,
+    "frames": [
+        ["prison1/centipede_head_attack%1-4%.png", 12],
+        ["prison1/centipede_head_attack0.png", 12]
+    ]
+}

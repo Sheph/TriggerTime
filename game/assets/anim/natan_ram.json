@@ -1,0 +1,10 @@
+{
+    "loop": false,
+    "frames": [
+        ["natan3/natan_ram%0-6%.png", 14],
+        ["natan3/natan_ram7.png", 3.2],
+        ["natan3/natan_ram8.png", 2.6],
+        ["natan4/natan_ram%9-10%.png", 2.6]
+    ],
+    "specials": [6, 8]
+}

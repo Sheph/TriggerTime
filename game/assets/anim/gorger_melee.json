@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["factory7/gorger_melee%0-6%.png", 20],
+        ["factory13/gorger_melee%7-23%.png", 20]
+    ],
+    "specials": [14]
+}

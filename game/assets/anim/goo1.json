@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "clampY": true,
+    "frames": [
+        ["goo1/%0-10%.png", 20]
+    ]
+}

@@ -1,0 +1,31 @@
+<rml>
+<head>
+    <link type="text/template" href="base.rml" />
+    <script>
+        UIDialog = {};
+
+        function UIDialog.OnClose(document)
+            if UIInTransition then
+                return;
+            end
+            document:Close();
+        end
+
+        function UIDialog.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                UIDialog.OnClose(document);
+            end
+        end
+    </script>
+</head>
+<body template="base" onkeydown="UIDialog.OnKeyDown(event, document);">
+    <div id="dialog_content">
+        <p id="dialog_text">&nbsp;</p>
+        <p id="dialog_small_text">&nbsp;</p>
+        <div id="dialog_buttons">
+            <button id="dialog_yes">[DIALOG_YES]</button>
+            <button id="dialog_no" onclick="UIDialog.OnClose(document);">[DIALOG_NO]</button>
+        </div>
+    </div>
+</body>
+</rml>

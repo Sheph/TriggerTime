@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["badkeeper5/keeper_melee%0-8%.png", 10.5],
+        ["badkeeper6/keeper_melee9.png", 10.5]
+    ],
+    "specials": [6]
+}

@@ -1,0 +1,76 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 40%;
+            height: 60%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIPause = {};
+
+        function UIPause.OnLoad(document)
+            if #UIDocList == 0 then
+                table.insert(UIDocList, "ui/pause.rml");
+            end
+            UIWindow.TransitionIn(document);
+        end
+
+        function UIPause.TransitionBack(document)
+            UIWindow.TransitionReturn(document, function()
+                document:Close();
+                scene.paused = false;
+            end);
+        end
+
+        function UIPause.OnKeyDown(event, document)
+            if event.parameters['key_identifier'] == rocket.key_identifier.ESCAPE then
+                UIPause.TransitionBack(document);
+            end
+        end
+
+        function UIPause.Quit(document)
+            if UIInTransition then
+                return;
+            end
+
+            if document.context.focus_element.owner_document:IsModal() then
+                -- WAR: Hover chain doesn't get updated when showing modal dialog.
+                -- So it's possible that this function is called even when modal dialog
+                -- is displayed. So just check for that.
+                return;
+            end
+
+            local smallText = "&nbsp;";
+
+            if scene.playable then
+                smallText = tr.str47;
+            end
+
+            UIShowDialog(document, tr.str46, smallText, function(dialog)
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    dialog:Close();
+                    document:Close();
+                    scene:setNextLevel("main_menu.lua", "");
+                end);
+            end);
+        end
+    </script>
+</head>
+<body template="window" onload="UIPause.OnLoad(document);" onkeydown="UIPause.OnKeyDown(event, document);">
+    [PAUSE_TITLE]
+    <div id="pause_buttons">
+        <button class="pause_button" onclick="UIPause.TransitionBack(document);">[PAUSE_RESUME]</button>
+        <button class="pause_button" onclick="UIWindow.TransitionOut(document, 'options');">[PAUSE_OPTIONS]</button>
+        <button class="pause_button" onclick="UIPause.Quit(document);">[PAUSE_MAIN_MENU]</button>
+    </div>
+</body>
+</rml>

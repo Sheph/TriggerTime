@@ -1,0 +1,1215 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "float" : 0,
+            "name" : "collisionImpulseMultiplier"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 1,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "40079778" ],
+              "y" : [ "4008E33F" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 3,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BF50295A" ],
+              "y" : [ "403A9A2C" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C03B8812" ],
+              "y" : [ "3F3F1023" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 5,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C007AD43" ],
+              "y" : [ "C00B4F0E" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 6,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "3F4D8E43" ],
+              "y" : [ "C03AC2CE" ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 32,
+            "id" : 7,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "403B28E1" ],
+              "y" : [ "BF45029B" ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "name" : "root",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 0,
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF50295A",
+          "y" : "403A9A2C"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "40079778",
+          "y" : "4008E33F"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "403B28E1",
+          "y" : "BF45029B"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3F4D8E43",
+          "y" : "C03AC2CE"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "C007AD43",
+          "y" : "C00B4F0E"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "C03B8812",
+          "y" : "3F3F1023"
+        },
+        "file" : "prison1/rod1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 7,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40400000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 0,
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 8,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "40079778",
+          "y" : "4008E33F"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 9,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF50295A",
+          "y" : "403A9A2C"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 10,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "C03B8812",
+          "y" : "3F3F1023"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 11,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "C007AD43",
+          "y" : "C00B4F0E"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 12,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3F4D8E43",
+          "y" : "C03AC2CE"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 13,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "403B28E1",
+          "y" : "BF45029B"
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40066666",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : "420C0000",
+            "name" : "farDistance"
+          },
+          
+          {
+            "float" : "3FC00000",
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "42480000",
+            "name" : "length"
+          },
+          
+          {
+            "float" : "40A00000",
+            "name" : "nearDistance"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "nearOffset"
+          },
+          
+          {
+            "float" : "41200000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "bothWays"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 14,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "40000000"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

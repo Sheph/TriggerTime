@@ -1,0 +1,10 @@
+<rml>
+<head>
+    <script>
+        function UIDummy()
+        end
+    </script>
+</head>
+<body onload="UIDummy();">
+</body>
+</rml>

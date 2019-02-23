@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "keeper_crawlout15.png",
+	"frame": {"x":4,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_crawlout16.png",
+	"frame": {"x":452,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death0.png",
+	"frame": {"x":900,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death1.png",
+	"frame": {"x":1348,"y":4,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death10.png",
+	"frame": {"x":4,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death11.png",
+	"frame": {"x":452,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death12.png",
+	"frame": {"x":900,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death13.png",
+	"frame": {"x":1348,"y":465,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death2.png",
+	"frame": {"x":4,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death3.png",
+	"frame": {"x":452,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death4.png",
+	"frame": {"x":900,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death5.png",
+	"frame": {"x":1348,"y":926,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death6.png",
+	"frame": {"x":4,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death7.png",
+	"frame": {"x":452,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death8.png",
+	"frame": {"x":900,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "keeper_death9.png",
+	"frame": {"x":1348,"y":1387,"w":444,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":457},
+	"sourceSize": {"w":444,"h":457},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "keeper7.png",
+	"format": "RGBA8888",
+	"size": {"w":1796,"h":1848},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7c46f89a5be0681cb655986d0dc5a720:deec8e88abc477b17acf7e24acd7485b:ec945b1d682a2dc2eece2e12d77613b7$"
+}
+}

@@ -1,0 +1,184 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 80%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIVideo = {};
+
+        function UIVideo.Apply(document)
+            if UIInTransition then
+                return;
+            end
+            if document:GetElementById("vid_apply_button"):IsClassSet("inactive") then
+                return;
+            end
+
+            local elemRes = Element.As.ElementFormControlSelect(document:GetElementById("vid_resolutions"));
+            local elemFullscreen = Element.As.ElementFormControlInput(document:GetElementById("vid_fullscreen"));
+            local elemMsaa = Element.As.ElementFormControlSelect(document:GetElementById("vid_msaa"));
+            local elemVsync = Element.As.ElementFormControlInput(document:GetElementById("vid_vsync"));
+            local elemTexFilter = Element.As.ElementFormControlSelect(document:GetElementById("vid_texfilter"));
+
+            platform:changeVideoMode(elemFullscreen.checked, elemRes.selection, elemMsaa.selection, elemVsync.checked, (elemTexFilter.selection == 1));
+
+            local nd = document.context:LoadDocument("ui/video.rml");
+            document:Close();
+            nd:Show();
+        end
+
+        function UIVideo.UpdateApply(document)
+            local elemRes = Element.As.ElementFormControlSelect(document:GetElementById("vid_resolutions"));
+            local elemFullscreen = Element.As.ElementFormControlInput(document:GetElementById("vid_fullscreen"));
+            local elemMsaa = Element.As.ElementFormControlSelect(document:GetElementById("vid_msaa"));
+            local elemVsync = Element.As.ElementFormControlInput(document:GetElementById("vid_vsync"));
+            local elemTexFilter = Element.As.ElementFormControlSelect(document:GetElementById("vid_texfilter"));
+            local elemApply = document:GetElementById("vid_apply_button");
+
+            if (elemRes.selection == settings.videoMode) and
+                (elemFullscreen.checked == settings.fullscreen) and
+                (elemMsaa.selection == settings.msaaMode) and
+                (elemVsync.checked == settings.vsync) and
+                ((elemTexFilter.selection == 1) == settings.trilinearFilter) then
+                elemApply:SetClass("inactive", true);
+            else
+                elemApply:SetClass("inactive", false);
+            end
+        end
+
+        function UIVideo.UpdateResolutions(document)
+            local elemFullscreen = Element.As.ElementFormControlInput(document:GetElementById("vid_fullscreen"));
+            local elemRes = Element.As.ElementFormControlSelect(document:GetElementById("vid_resolutions"));
+
+            for i = 1, UIListSize(elemRes.options), 1 do
+                elemRes:Remove(0);
+            end
+
+            local modes;
+            if elemFullscreen.checked then
+                modes = platform.desktopVideoModes;
+            else
+                modes = platform.winVideoModes;
+            end
+            for i = 1, #modes, 1 do
+                elemRes:Add(modes[i][1].."x"..modes[i][2], i - 1);
+            end
+            if elemFullscreen.checked then
+                elemRes.selection = platform.desktopVideoMode;
+            else
+                elemRes.selection = platform.defaultVideoMode;
+            end
+
+            UIVideo.UpdateApply(document);
+        end
+
+        function UIVideo.OnLoad(document)
+            UIWindow.TransitionIn(document);
+
+            local elemFullscreen = Element.As.ElementFormControlInput(document:GetElementById("vid_fullscreen"));
+
+            elemFullscreen.checked = settings.fullscreen;
+
+            if platform.desktopVideoMode < 0 then
+                elemFullscreen.disabled = true;
+            end
+
+            local elemRes = Element.As.ElementFormControlSelect(document:GetElementById("vid_resolutions"));
+
+            for i = 1, UIListSize(elemRes.options), 1 do
+                elemRes:Remove(0);
+            end
+
+            local modes;
+            if settings.fullscreen then
+                modes = platform.desktopVideoModes;
+            else
+                modes = platform.winVideoModes;
+            end
+            for i = 1, #modes, 1 do
+                elemRes:Add(modes[i][1].."x"..modes[i][2], i - 1);
+            end
+            elemRes.selection = settings.videoMode;
+
+            local elemMsaa = Element.As.ElementFormControlSelect(document:GetElementById("vid_msaa"));
+
+            for i = 1, #platform.msaaModes, 1 do
+                if i == 1 then
+                    elemMsaa:Add(tr.ui.OFF, i - 1);
+                else
+                    elemMsaa:Add(platform.msaaModes[i].."x", i - 1);
+                end
+            end
+
+            elemMsaa.selection = settings.msaaMode;
+
+            local elemVsync = Element.As.ElementFormControlInput(document:GetElementById("vid_vsync"));
+
+            elemVsync.checked = settings.vsync;
+
+            if not platform.vsyncSupported then
+                elemVsync.disabled = true;
+            end
+
+            local elemTexFilter = Element.As.ElementFormControlSelect(document:GetElementById("vid_texfilter"));
+
+            if settings.trilinearFilter then
+                elemTexFilter.selection = 1;
+            else
+                elemTexFilter.selection = 0;
+            end
+        end
+    </script>
+</head>
+<body template="window" onload="UIVideo.OnLoad(document);">
+    [VIDEO_TITLE]
+    <div id="video_options">
+        <div class="video_option_row">
+            <div class="video_option_name">[VIDEO_RESOLUTION]</div>
+            <div class="video_option_value">
+                <select id="vid_resolutions" onchange="UIVideo.UpdateApply(document);">
+                </select>
+            </div>
+        </div>
+        <div class="video_option_row">
+            <div class="video_option_name">[VIDEO_FULLSCREEN]</div>
+            <div class="video_option_value">
+                <input type="checkbox" id="vid_fullscreen" onchange="UIVideo.UpdateResolutions(document);" />
+            </div>
+        </div>
+        <div class="video_option_row">
+            <div class="video_option_name">[VIDEO_AA]</div>
+            <div class="video_option_value">
+                <select style="width: 140px;" id="vid_msaa" onchange="UIVideo.UpdateApply(document);">
+                </select>
+            </div>
+        </div>
+        <div class="video_option_row">
+            <div class="video_option_name">[VIDEO_VSYNC]</div>
+            <div class="video_option_value">
+                <input type="checkbox" id="vid_vsync" onchange="UIVideo.UpdateApply(document);" />
+            </div>
+        </div>
+        <div class="video_option_row">
+            <div class="video_option_name">[VIDEO_FILTER]</div>
+            <div class="video_option_value">
+                <select style="width: 380px;" id="vid_texfilter" onchange="UIVideo.UpdateApply(document);">
+                    <option value="0" selected>[VIDEO_FILTER_BILINEAR]</option>
+                    <option value="1">[VIDEO_FILTER_TRILINEAR]</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="video_option_buttons">
+        <button id="video_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+        <button id="vid_apply_button" class="inactive" onclick="UIVideo.Apply(document);">[APPLY]</button>
+    </div>
+</body>
+</rml>

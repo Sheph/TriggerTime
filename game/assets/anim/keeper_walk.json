@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["keeper1/keeper_walk%3-12%.png", 24],
+        ["keeper1/keeper_walk%0-2%.png", 24]
+    ]
+}

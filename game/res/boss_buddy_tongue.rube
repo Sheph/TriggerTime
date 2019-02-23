@@ -1,0 +1,2102 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "rock",
+      "enemy",
+      "enemyBuilding",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "filter-maskBits" : 512,
+            "id" : 1,
+            "name" : "sensor",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "3EB2C3E0", "BFCB72AC", "BFCB72AC", "3EB2C3E0" ],
+              "y" : [ "3F9CD960", "3F9CD960", "BF9857E6", "BF9857E6" ]
+            }
+          },
+          
+          {
+            "density" : "3E800000",
+            "filter-categoryBits" : 16,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 65511,
+            "id" : 44,
+            "name" : "root",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C00134B0",
+                "BF930520",
+                "3F91DC60",
+                "4006F3D0",
+                "4006F3D0",
+                "3F5C49C0",
+                "BF8BE060",
+                "C00134B0"
+              ],
+              "y" : 
+              [
+                "BF2A8B10",
+                "BF9F9C28",
+                "BF9F9C28",
+                "BF180ED0",
+                "3F004E48",
+                "3FA51A0C",
+                "3FA51A0C",
+                "3F2B7180"
+              ]
+            }
+          }
+        ],
+        "id" : 44,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "406E6D84",
+        "massData-center" : 
+        {
+          "x" : "3529C000",
+          "y" : "3368A001"
+        },
+        "massData-mass" : "4011F477",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 0,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 17,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 83,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 83,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "BFF4EF35",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 1,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 88,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 88,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C044E243",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 2,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 89,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 89,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C087A64C",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 3,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 90,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 90,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C0ACDB62",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 4,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 91,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 91,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C0D21077",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 5,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 92,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 92,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C0F7458D",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 6,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 93,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 93,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C10E3D51",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 7,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 94,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 94,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C120D7DC",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 8,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 95,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 95,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1337247",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 9,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 96,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 96,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1460D1B",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "bone1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E800000",
+            "filter-categoryBits" : 0,
+            "filter-groupIndex" : 400,
+            "filter-maskBits" : 0,
+            "friction" : "3E4CCCCD",
+            "id" : 97,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 97,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "3EC90FDB",
+        "massData-mass" : "3F490FDB",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C158A787",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 44,
+        "center" : 
+        {
+          "x" : "BF049614",
+          "y" : 0
+        },
+        "colorTint" : [ 255, 255, 0, 150 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 15,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40400000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : 1,
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : "40000000",
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "dynamic"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "reverse"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "light",
+        "opacity" : 1,
+        "scale" : "4006680B"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 44,
+        "center" : 
+        {
+          "x" : "BF78155D",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : false,
+            "name" : "visible"
+          }
+        ],
+        "file" : "prison1/chain2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "chain",
+        "opacity" : "3F000000",
+        "renderOrder" : "41800000",
+        "scale" : "4004B7C3"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 44,
+        "center" : 
+        {
+          "x" : "BD5D38F6",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "eyelet",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : "3FAAB8EA"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 44,
+        "center" : 
+        {
+          "x" : "3FD90F2C",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "missile",
+        "opacity" : 1,
+        "renderOrder" : "42C80000",
+        "scale" : "3FAAB8EA"
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "aspectScale" : 1,
+        "body" : 44,
+        "center" : 
+        {
+          "x" : "3D8E2800",
+          "y" : "3CE49C00"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "visible"
+          }
+        ],
+        "file" : "subway1/buddy2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 11,
+        "name" : "root",
+        "opacity" : 1,
+        "renderOrder" : "41900000",
+        "scale" : "4086AE86"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "BF0369C0",
+          "y" : "3340BEB8"
+        },
+        "anchorB" : 
+        {
+          "x" : "BFB33333",
+          "y" : 0
+        },
+        "bodyA" : 83,
+        "bodyB" : 44,
+        "collideConnected" : false,
+        "dampingRatio" : 0,
+        "frequency" : 0,
+        "id" : 3,
+        "name" : "joint53",
+        "referenceAngle" : "C0490FDB",
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 83,
+        "bodyB" : 88,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 76,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 88,
+        "bodyB" : 89,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 77,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 89,
+        "bodyB" : 90,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 78,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 90,
+        "bodyB" : 91,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 79,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 91,
+        "bodyB" : 92,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 80,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 92,
+        "bodyB" : 93,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 81,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 93,
+        "bodyB" : 94,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 82,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 94,
+        "bodyB" : 95,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 83,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 95,
+        "bodyB" : 96,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 84,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F100F20",
+          "y" : "B3E9A582"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF19999A",
+          "y" : 0
+        },
+        "bodyA" : 96,
+        "bodyB" : 97,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40800000",
+        "id" : 85,
+        "name" : "joint52",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

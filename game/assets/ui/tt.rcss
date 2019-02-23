@@ -1,0 +1,1180 @@
+body
+{
+    font-family: Xolonium;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50;
+    font-charset: U+0020-007E, U+0400-04FF;
+    color: white;
+}
+
+select
+{
+    display: block;
+    height: 45px;
+    padding-left: 10px;
+    vertical-align: middle;
+
+    width: 250px;
+
+    background-color: #2b4125;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+}
+
+select:hover
+{
+    background-color: #446a39;
+}
+
+select selectbox
+{
+    border-style: solid;
+    border-width: 5px;
+    border-top: 0px;
+    border-color: #adff95;
+
+    padding: 0px;
+
+    max-height: 290px;
+    overflow-y: auto;
+}
+
+select selectbox option
+{
+    padding-left: 10px;
+}
+
+select selectbox option:nth-child(even)
+{
+    background-color: #2b4125;
+}
+
+select selectbox option:nth-child(odd)
+{
+    background-color: #2b4125;
+}
+
+select selectbox option:hover
+{
+    background-color: #446a39;
+}
+
+select selectarrow
+{
+    margin-right: 3px;
+    margin-top: 3px;
+    width: 32px;
+    height: 30px;
+    icon-decorator: image;
+    icon-image: /ui1/combo.png;
+}
+
+select selectarrow:active,
+select selectarrow:checked
+{
+    icon-image: /ui1/combo_hover.png;
+}
+
+input.checkbox
+{
+    display:block;
+    border-top: 5px #adff95;
+    border-right: 5px #adff95;
+    border-bottom: 5px #adff95;
+    border-left: 5px #adff95;
+    background-color: #2b4125;
+    width: 40px;
+    height: 40px;
+}
+
+input.checkbox:disabled
+{
+    background-color: grey;
+}
+
+input.checkbox:hover
+{
+    background-color: #446a39;
+}
+
+input.checkbox:hover:disabled
+{
+    background-color: grey;
+}
+
+input.checkbox:checked
+{
+    checkbox-decorator: image;
+    checkbox-image: /ui1/check.png;
+}
+
+button
+{
+    display: block;
+    background-color: #2b4125;
+    text-align: center;
+    padding: 0px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px #adff95;
+    border-left: 5px #adff95;
+    border-right: 5px #adff95;
+    border-bottom: 5px #adff95;
+    font-size: 30;
+}
+
+button:hover
+{
+    background-color: #446a39;
+}
+
+button.inactive
+{
+    color: grey;
+}
+
+button:hover.inactive
+{
+    background-color: #2b4125;
+}
+
+button:hover.noresponse
+{
+    background-color: #2b4125;
+}
+
+scrollbarvertical
+{
+    width: 37px;
+    border-left: 5px #adff95;
+    background: #2b4125;
+}
+
+scrollbarvertical slidertrack
+{
+    width: 42px;
+    border-bottom: 5px #adff95;
+    border-top: 5px #adff95;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+scrollbarvertical sliderbar
+{
+    margin-left: 7px;
+    width: 23px;
+    min-height: 46px;
+
+    border-top: 5px #adff95;
+    border-left: 5px #adff95;
+    border-right: 5px #adff95;
+    border-bottom: 5px #adff95;
+}
+
+scrollbarvertical sliderbar:hover
+{
+    background: #446a39;
+}
+
+scrollbarvertical sliderarrowdec
+{
+    margin-left: 7px;
+    width: 32px;
+    height: 30px;
+
+    icon-decorator: image;
+    icon-image: /ui1/scroll.png;
+}
+
+scrollbarvertical sliderarrowdec:active
+{
+    icon-image: /ui1/scroll_hover.png;
+}
+
+scrollbarvertical sliderarrowinc
+{
+    margin-left: 7px;
+    width: 32px;
+    height: 30px;
+
+    icon-decorator: image;
+    icon-image: /ui1/combo.png;
+}
+
+scrollbarvertical sliderarrowinc:active
+{
+    icon-image: /ui1/combo_hover.png;
+}
+
+input.range
+{
+    display: block;
+    width: 300px;
+}
+
+input.range slidertrack
+{
+    background: #2b4125;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    height: 20px;
+    margin-top: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+input.range sliderbar
+{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    background: #2b4125;
+    height: 44px;
+    width: 20px;
+}
+
+input.range sliderbar:hover,
+input.range sliderbar:active
+{
+    background: #446a39;
+}
+
+input.range:disabled sliderbar:hover,
+input.range:disabled sliderbar:active
+{
+    background-color: #2b4125;
+}
+
+div#content
+{
+    z-index: 2;
+
+    width: auto;
+    height: 100%;
+
+    overflow: hidden auto;
+
+    text-align: center;
+}
+
+div.box1
+{
+    padding: 10px 30px;
+
+    background-decorator: tiled-box;
+    background-top-left-image: /ui1/box1.png@200 0% 0% 15.990991% 16.2100457%;
+    background-top-right-image: /ui1/box1.png@200 84.009009% 0% 100% 16.2100457%;
+    background-top-image: /ui1/box1.png@200 repeat-truncate 15.990991% 0% 84.009009% 16.2100457%;
+    background-bottom-left-image: /ui1/box1.png@200 0% 83.7899543% 15.990991% 100%;
+    background-bottom-right-image: /ui1/box1.png@200 84.009009% 83.7899543% 100% 100%;
+    background-bottom-image: /ui1/box1.png@200 repeat-truncate 15.990991% 83.7899543% 84.009009% 100%;
+    background-left-image: /ui1/box1.png@200 repeat-truncate 0% 16.2100457% 15.990991% 83.7899543%;
+    background-center-image: /ui1/box1.png@200 repeat-truncate 15.990991% 16.2100457% 84.009009% 83.7899543%;
+}
+
+img#logo_img
+{
+    height: 140px;
+}
+
+div#logo
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    width: 120%;
+    margin: auto;
+
+    position: absolute;
+    top: -30px;
+}
+
+div#main_menu_content
+{
+    position: absolute;
+    top: 180px;
+    height: 100%;
+    width: auto;
+}
+
+div#left_dummy
+{
+    position: absolute;
+    left: -10.5%;
+    width: 20%;
+    height: 69%;
+}
+
+div#right_dummy
+{
+    position: absolute;
+    left: 85.5%;
+    width: 20%;
+    height: 69%;
+    font-size: 20px;
+    text-align: left;
+}
+
+div#main_menu
+{
+    position: absolute;
+    width: 63%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.main_button
+{
+    width: 450px;
+    height: 50px;
+    font-size: 35;
+}
+
+div#main_buttons
+{
+    margin-top: 10px;
+}
+
+div#option_buttons
+{
+    margin-top: 0px;
+}
+
+button.options_button
+{
+    width: 320px;
+    height: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+button.options_back_button
+{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+}
+
+div#mission_buttons
+{
+    margin-top: 0px;
+}
+
+button.mission_button
+{
+    display: inline-block;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+button.mission_button p
+{
+    margin-top: -5px;
+}
+
+img.mission_thumbnail
+{
+    margin: 5px;
+    maring-bottom: 0px;
+    height: 105px;
+}
+
+p#mission_list_name
+{
+    padding-top: 50px;
+    font-size: 30;
+}
+
+button.missions_back_button
+{
+    margin-top: 50px;
+    maring-bottom: auto;
+    width: 150px;
+    height: 40px;
+}
+
+div#video_options
+{
+    padding-top: 20px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div.video_option_row
+{
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+div.video_option_name
+{
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+div.video_option_value
+{
+    width: 45%;
+    display: inline-block;
+}
+
+div#video_option_buttons
+{
+    padding-top: 20px;
+    padding-left: 300px;
+}
+
+button#video_back_button
+{
+    display: inline;
+    float: left;
+    margin: 35px;
+    width: 150px;
+    height: 40px;
+}
+
+button#vid_apply_button
+{
+    display: inline;
+    float: left;
+    margin: 35px;
+    width: 210px;
+    height: 40px;
+}
+
+div#audio_options
+{
+    padding-top: 100px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div.audio_option_row
+{
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin: 5px;
+    margin-top: 35px;
+}
+
+div.audio_option_name
+{
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+div.audio_option_value
+{
+    height: 44px;
+    width: 40%;
+    display: inline-block;
+}
+
+button.audio_back_button
+{
+    margin-top: 120px;
+    width: 150px;
+    height: 40px;
+}
+
+div#controls_options
+{
+    padding-top: 0px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div.controls_row
+{
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin-top: 5px;
+}
+
+div.control_name
+{
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+div.control_value
+{
+    width: 50%;
+    display: inline-block;
+}
+
+button.control_box
+{
+    text-align: left;
+    padding-left: 5px;
+    width: 450px;
+    margin: 0px;
+    font-size: 25;
+}
+
+button.controls_back_button
+{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+div#pause_buttons
+{
+    margin-top: 15px;
+}
+
+button.pause_button
+{
+    width: 280px;
+    height: 40px;
+}
+
+div#dialog_content
+{
+    width: 60%;
+    height: 25%;
+
+    margin:auto;
+
+    padding: 10px 30px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    background: #2b4125;
+    font-size: 30;
+}
+
+p#dialog_small_text
+{
+    font-size: 20;
+}
+
+div#dialog_buttons
+{
+    margin-top: 35px;
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+}
+
+button#dialog_yes,
+button#dialog_no
+{
+    display: inline-block;
+    margin: 15px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+div#gameover_text
+{
+    margin-top: 230px;
+    font-size: 60px;
+    color: red;
+}
+
+div#gameover_buttons
+{
+    margin-top: 150px;
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    visibility: hidden;
+}
+
+button#gameover_menu_button,
+button#gameover_restart_button
+{
+    display: inline-block;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 40px;
+}
+
+div#completed_rows
+{
+    padding-top: 50px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div.completed_row
+{
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin-top: 5px;
+    font-size: 35px;
+    visibility: hidden;
+}
+
+div.completed_name
+{
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+div.completed_value
+{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    color: yellow;
+}
+
+div#completed_buttons
+{
+    margin-top: 50px;
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    visibility: hidden;
+}
+
+button#completed_menu_button,
+button#completed_next_button
+{
+    display: inline-block;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 40px;
+}
+
+div#shop_contents
+{
+    padding-top: 0px;
+    width: auto;
+    height: auto;
+}
+
+div#shop_left
+{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: 85%;
+    padding: 5px;
+}
+
+p#shop_left_title
+{
+    font-size: 35px;
+}
+
+img#shop_left_image
+{
+    margin-top: 10px;
+    height: 270px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+}
+
+div#shop_left_text
+{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+div#shop_right
+{
+    display: inline-block;
+    float: left;
+    width: 56%;
+    height: 85%;
+    padding: 5px;
+    font-size: 25px;
+}
+
+p#shop_gems
+{
+    text-align: left;
+}
+
+p#shop_notice
+{
+    text-align: left;
+}
+
+img.gem_icon
+{
+    vertical-align: middle;
+    height: 30px;
+    margin: 0px;
+    margin-top: -5px;
+    margin-right: 3px;
+}
+
+div#shop_items_header
+{
+    margin-top: 15px;
+}
+
+div.shop_header_cell
+{
+    display: inline-block;
+    float: left;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    border-left: 0px;
+    background-color: #2b4125;
+}
+
+div.shop_header_cell1
+{
+    border-left: 5px;
+    width: 355px;
+}
+
+div.shop_header_cell2
+{
+    width: 120px;
+}
+
+div.shop_header_cell3
+{
+    width: 150px;
+}
+
+div#shop_items
+{
+    width: 635px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    border-top: 0px;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+div.shop_row
+{
+    width: 600px;
+}
+
+div.shop_cell
+{
+    display: inline-block;
+    float: left;
+    background-color: #2b4125;
+    height: 200px;
+    padding: 5px;
+}
+
+div.shop_cell1
+{
+    width: 340px;
+    margin-right: 2.5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+div.shop_cell2
+{
+    width: 110px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+div.shop_cell3
+{
+    width: 98px;
+    margin-left: 2.5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+img.shop_item_icon
+{
+    float: left;
+    margin-right: 5px;
+}
+
+p.shop_item_title
+{
+    text-align: left;
+    color: red;
+}
+
+p.shop_item_description
+{
+    text-align: left;
+    font-size: 20px;
+}
+
+div#shop_buttons
+{
+    margin-top: 20px;
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+}
+
+button#shop_back_button,
+button#shop_start_button
+{
+    display: inline-block;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+button#shop_life_less,
+button#shop_life_more
+{
+    display: inline-block;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+input#shop_item1
+{
+    margin-left: 30%;
+    margin-top: 35%;
+}
+
+input#shop_item2
+{
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+input#shop_item3
+{
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+div.shop_cell2_contents
+{
+    margin-top: 40%;
+}
+
+div#shop_life_picker
+{
+    margin-top: 10%;
+}
+
+div#credits_contents
+{
+    overflow-y: visible;
+    width: auto;
+    height: 90%;
+}
+
+img#credits_logo
+{
+    height: 140px;
+    margin: 0px;
+}
+
+p#credits_version
+{
+    margin: 0px;
+    font-size: 30px;
+}
+
+div#credits_text
+{
+    margin-top: 200px;
+}
+
+h1.credits_entry
+{
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 45px;
+}
+
+h1.credits_thanks
+{
+    font-size: 35px;
+    margin-top: 370px;
+}
+
+h2.credits_entry
+{
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+p.credits_entry
+{
+    font-size: 30px;
+}
+
+p.credits_entry2
+{
+    font-size: 23px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+span.credits_details
+{
+    font-size: 22px;
+}
+
+div#brightness_options
+{
+    padding-top: 0px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div#brightness_bg
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+}
+
+div#brightness_square
+{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+}
+
+input#brightness_gamma
+{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+button.brightness_back_button
+{
+    margin-top: 80px;
+    width: 150px;
+    height: 40px;
+}
+
+div#skill_buttons
+{
+    margin-top: 0px;
+}
+
+button.skill_button
+{
+    display: inline-block;
+    margin: 0px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 332px;
+    height: 330px;
+}
+
+button.skill_back_button
+{
+    margin-top: 80px;
+    maring-bottom: auto;
+    width: 150px;
+    height: 40px;
+}
+
+p.skill_name
+{
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+
+p.skill_prop
+{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 6px;
+}
+
+div#gamepad_options
+{
+    padding-top: 5px;
+    font-size: 25;
+    width: auto;
+    height: auto;
+}
+
+div.gamepad_row
+{
+    width: auto;
+    display: inline-block;
+    clear: left;
+    float: left;
+    margin-top: 5px;
+}
+
+div.gamepad_name
+{
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+div.gamepad_value
+{
+    width: 50%;
+    display: inline-block;
+}
+
+button.gamepad_box
+{
+    text-align: left;
+    padding-left: 5px;
+    width: 450px;
+    margin: 0px;
+    font-size: 25;
+}
+
+button.gamepad_back_button
+{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+input#gamepad_stick_dz,
+input#gamepad_trigger_dz
+{
+    margin-bottom: 35px;
+}
+
+div#ach_items
+{
+    width: 825px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #adff95;
+    max-height: 465px;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ach_row
+{
+    width: 825px;
+}
+
+div.ach_icon_cell
+{
+    display: inline-block;
+    float: left;
+    background-color: #2b4125;
+    height: 100px;
+    padding: 5px;
+    width: 100px;
+    margin-right: 2.5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+div.ach_text_cell
+{
+    display: inline-block;
+    float: left;
+    background-color: #2b4125;
+    height: 100px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 643px;
+    margin-left: 2.5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+img.ach_icon
+{
+    float: left;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+}
+
+p.ach_name
+{
+    text-align: left;
+    font-size: 30px;
+}
+
+p.ach_name.inactive
+{
+    color: grey;
+}
+
+p.ach_description
+{
+    text-align: left;
+    font-size: 18px;
+}
+
+p.ach_description.inactive
+{
+    color: grey;
+}
+
+button#ach_back_button
+{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+}

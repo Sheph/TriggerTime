@@ -1,0 +1,192 @@
+{"frames": [
+
+{
+	"filename": "natan_idle18.png",
+	"frame": {"x":4,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle19.png",
+	"frame": {"x":518,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee0.png",
+	"frame": {"x":1032,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee1.png",
+	"frame": {"x":4,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee2.png",
+	"frame": {"x":518,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee3.png",
+	"frame": {"x":1032,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee4.png",
+	"frame": {"x":4,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee5.png",
+	"frame": {"x":518,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee6.png",
+	"frame": {"x":1032,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee7.png",
+	"frame": {"x":4,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee8.png",
+	"frame": {"x":518,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee9.png",
+	"frame": {"x":1032,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_pre_shoot0.png",
+	"frame": {"x":1032,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_pre_shoot1.png",
+	"frame": {"x":4,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_pre_shoot2.png",
+	"frame": {"x":518,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_pre_shoot3.png",
+	"frame": {"x":1032,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_shoot0.png",
+	"frame": {"x":1032,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_shoot1.png",
+	"frame": {"x":4,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_shoot2.png",
+	"frame": {"x":518,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_shoot3.png",
+	"frame": {"x":1032,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "natan2.png",
+	"format": "RGBA8888",
+	"size": {"w":1546,"h":2002},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ba3eacece8701fb4e64dc2817819d024:f3af88fd8f450743bed2f14d49a273ba:c3a22a2d1b4295e3698711f8c4e9af84$"
+}
+}

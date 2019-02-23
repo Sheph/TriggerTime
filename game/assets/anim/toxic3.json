@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "clampY": true,
+    "frames": [
+        ["toxic3/%0-15%.png", 20]
+    ]
+}

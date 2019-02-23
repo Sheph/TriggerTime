@@ -1,0 +1,183 @@
+{"frames": [
+
+{
+	"filename": "natan_melee10.png",
+	"frame": {"x":4,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_melee11.png",
+	"frame": {"x":518,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram0.png",
+	"frame": {"x":1032,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram1.png",
+	"frame": {"x":4,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram2.png",
+	"frame": {"x":518,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram3.png",
+	"frame": {"x":1032,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram4.png",
+	"frame": {"x":4,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram5.png",
+	"frame": {"x":518,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram6.png",
+	"frame": {"x":1032,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram7.png",
+	"frame": {"x":4,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_ram8.png",
+	"frame": {"x":518,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe0.png",
+	"frame": {"x":1032,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe1.png",
+	"frame": {"x":1032,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe2.png",
+	"frame": {"x":4,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe3.png",
+	"frame": {"x":518,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe4.png",
+	"frame": {"x":1032,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe5.png",
+	"frame": {"x":4,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe6.png",
+	"frame": {"x":518,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_syringe7.png",
+	"frame": {"x":1032,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "natan3.png",
+	"format": "RGBA8888",
+	"size": {"w":1546,"h":2002},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ad6c31f6d29d0667e9ba99ee791b09ed:d7f891321a634a470f5500be244bc210:943fdd5475a6c29bb5cf45a45dc1ce10$"
+}
+}

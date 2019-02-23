@@ -1,0 +1,9 @@
+{
+    "loop": false,
+    "frames": [
+        ["badkeeper6/keeper_crawlout%0-14%.png", 6.7],
+        ["badkeeper7/keeper_crawlout15.png", 6.7],
+        ["badkeeper7/keeper_crawlout16.png", 1]
+    ],
+    "specials": [11]
+}

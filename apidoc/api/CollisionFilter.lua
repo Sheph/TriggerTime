@@ -1,0 +1,7 @@
+--- Collision filter class.
+-- Simple way to filter collisions is to use RUBE's filter
+-- category, mask and group index. This class provides more
+-- collision filtering opportunities, it's intended to be used as a base
+-- class for different collision filters.
+--
+-- @classmod CollisionFilter

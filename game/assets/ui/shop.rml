@@ -1,0 +1,218 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 90%;
+            height: 95%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIShop = {};
+        UIShop.ExtraLife = 0;
+        UIShop.NumGems = userData.numGems;
+        UIShop.Level = "";
+        UIShop.Info = {};
+        UIShop.Info["e1m1"] = { "1. "..tr.str25, "/ui1/e1m1.png", tr.str36};
+        UIShop.Info["e1m2"] = { "2. "..tr.str26, "/ui1/e1m2.png", tr.str37};
+        UIShop.Info["e1m3"] = { "3. "..tr.str27, "/ui1/e1m3.png", tr.str38};
+        UIShop.Info["e1m4"] = { "4. "..tr.str28, "/ui1/e1m4.png", tr.str39};
+        UIShop.Info["e1m5"] = { "5. "..tr.str29, "/ui1/e1m5.png", tr.str40};
+        UIShop.Info["e1m6"] = { "6. "..tr.str30, "/ui1/e1m6.png", tr.str41};
+        UIShop.Info["e1m7"] = { "7. "..tr.str31, "/ui1/e1m7.png", tr.str42};
+        UIShop.Info["e1m8"] = { "8. "..tr.str32, "/ui1/e1m8.png", tr.str43};
+        UIShop.Info["e1m9"] = { "9. "..tr.str33, "/ui1/e1m9.png", tr.str44};
+        UIShop.Info["e1m10"] = { "10. "..tr.str34, "/ui1/e1m10.png", tr.str45};
+        UIShop.Info["e1m12"] = { "12. "..tr.str52, "/ui1/e1m12.png", tr.str53};
+
+        function UIShop.LessLife(document)
+            if document:GetElementById("shop_life_less"):IsClassSet("inactive") then
+                return;
+            end
+            UIShop.NumGems = UIShop.NumGems + UpgradeManager.getCost(const.UpgradeIdExtraLife);
+            UIShop.ExtraLife = UIShop.ExtraLife - 1;
+            UIShop.UpdateControls(document);
+        end
+
+        function UIShop.MoreLife(document)
+            if document:GetElementById("shop_life_more"):IsClassSet("inactive") then
+                return;
+            end
+            UIShop.NumGems = UIShop.NumGems - UpgradeManager.getCost(const.UpgradeIdExtraLife);
+            UIShop.ExtraLife = UIShop.ExtraLife + 1;
+            UIShop.UpdateControls(document);
+        end
+
+        function UIShop.OnItem(document, i)
+            local elem = Element.As.ElementFormControlInput(document:GetElementById("shop_item"..i));
+
+            if elem.checked then
+                UIShop.NumGems = UIShop.NumGems - UpgradeManager.getCost(i);
+            else
+                UIShop.NumGems = UIShop.NumGems + UpgradeManager.getCost(i);
+            end
+            UIShop.UpdateControls(document);
+        end
+
+        function UIShop.UpdateControls(document)
+            document:GetElementById("shop_my_gems").inner_rml = "x"..UIShop.NumGems;
+
+            document:GetElementById("shop_lifes").inner_rml = UIShop.ExtraLife;
+
+            local elemLifeLess = document:GetElementById("shop_life_less");
+            local elemLifeMore = document:GetElementById("shop_life_more");
+
+            if UIShop.NumGems >= UpgradeManager.getCost(const.UpgradeIdExtraLife) then
+                elemLifeMore:SetClass("inactive", false);
+            else
+                elemLifeMore:SetClass("inactive", true);
+            end
+
+            if UIShop.ExtraLife > 0 then
+                elemLifeLess:SetClass("inactive", false);
+            else
+                elemLifeLess:SetClass("inactive", true);
+            end
+
+            for i = const.UpgradeIdMoreAmmo, const.UpgradeIdMax, 1 do
+                local elem = Element.As.ElementFormControlInput(document:GetElementById("shop_item"..i));
+
+                if (not elem.checked) and (UIShop.NumGems < UpgradeManager.getCost(i)) then
+                    elem.disabled = true;
+                else
+                    elem.disabled = false;
+                end
+            end
+        end
+
+        function UIShop.OnShow(document)
+            document:GetElementById("shop_left_title").inner_rml = UIShop.Info[UIShop.Level][1];
+            document:GetElementById("shop_left_image"):SetAttribute("src", UIShop.Info[UIShop.Level][2]);
+            document:GetElementById("shop_left_text").inner_rml = UIShop.Info[UIShop.Level][3];
+
+            UIShop.UpdateControls(document);
+
+            for i = 0, const.UpgradeIdMax, 1 do
+                document:GetElementById("shop_cost"..i).inner_rml = "x"..UpgradeManager.getCost(i);
+            end
+        end
+
+        function UIShop.OnStart(document)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UIFadeOut(function()
+                upgradeManager:clear();
+                upgradeManager:give(const.UpgradeIdExtraLife, UIShop.ExtraLife);
+                for i = const.UpgradeIdMoreAmmo, const.UpgradeIdMax, 1 do
+                    local elem = Element.As.ElementFormControlInput(document:GetElementById("shop_item"..i));
+                    if elem.checked then
+                        upgradeManager:give(i, 1);
+                    end
+                end
+                document:Close();
+                scene:setNextLevel(UIShop.Level..".lua", UIShop.Level..".json");
+            end);
+        end
+    </script>
+</head>
+<body template="window" onshow="UIShop.OnShow(document);">
+    [SHOP_TITLE]
+    <div id="shop_contents">
+        <div id="shop_left">
+            <p id="shop_left_title">&nbsp;</p>
+            <img id="shop_left_image" />
+            <div id="shop_left_text">&nbsp;</div>
+        </div>
+        <div id="shop_right">
+            <p id="shop_gems">[SHOP_YOU_HAVE]<img src="/common2/powerup_gem_spin0.png" class="gem_icon"/><span style="color: yellow;" id="shop_my_gems">&nbsp;</span></p>
+            <div id="shop_items_header">
+                <div class="shop_header_cell shop_header_cell1">
+                    [SHOP_ITEM]
+                </div>
+                <div class="shop_header_cell shop_header_cell2">
+                    [SHOP_COST]
+                </div>
+                <div class="shop_header_cell shop_header_cell3">
+                    [SHOP_EQUIPPED]
+                </div>
+            </div>
+            <div id="shop_items">
+                <div class="shop_row">
+                    <div class="shop_cell shop_cell1" style="height: 120px;">
+                        <img src="/common1/upgrade_life.png" class="shop_item_icon" style="height: 32px;"/>
+                        <p class="shop_item_title">[SHOP_EXTRA_LIFE]</p>
+                        <p class="shop_item_description">[SHOP_EXTRA_LIFE_ABOUT]</p>
+                    </div>
+                    <div class="shop_cell shop_cell2" style="height: 120px;">
+                        <div class="shop_cell2_contents">
+                            <img src="/common2/powerup_gem_spin0.png" class="gem_icon"/><span style="color: yellow;" id="shop_cost0">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="shop_cell shop_cell3" style="height: 120px;">
+                        <div id="shop_life_picker">
+                            <p style="font-size: 25px; color: #adff95;" id="shop_lifes">&nbsp;</p>
+                            <button id="shop_life_less" onclick="UIShop.LessLife(document);"><p style="margin-top: -7px;">-</p></button>
+                            <button id="shop_life_more" onclick="UIShop.MoreLife(document);"><p style="margin-top: -7px;">+</p></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_row">
+                    <div class="shop_cell shop_cell1" style="height: 120px;">
+                        <img src="/common1/upgrade_ammo.png" class="shop_item_icon" style="height: 36px;"/>
+                        <p class="shop_item_title">[SHOP_AMMO]</p>
+                        <p class="shop_item_description">[SHOP_AMMO_ABOUT]</p>
+                    </div>
+                    <div class="shop_cell shop_cell2" style="height: 120px;">
+                        <div class="shop_cell2_contents">
+                            <img src="/common2/powerup_gem_spin0.png" class="gem_icon"/><span style="color: yellow;" id="shop_cost1">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="shop_cell shop_cell3" style="height: 120px;">
+                        <input type="checkbox" id="shop_item1" onchange="UIShop.OnItem(document, 1);" />
+                    </div>
+                </div>
+                <div class="shop_row">
+                    <div class="shop_cell shop_cell1" style="height: 90px;">
+                        <img src="/common1/upgrade_armor.png" class="shop_item_icon" style="height: 36px;"/>
+                        <p class="shop_item_title">[SHOP_ARMOR]</p>
+                        <p class="shop_item_description">[SHOP_ARMOR_ABOUT]</p>
+                    </div>
+                    <div class="shop_cell shop_cell2" style="height: 90px;">
+                        <div class="shop_cell2_contents">
+                            <img src="/common2/powerup_gem_spin0.png" class="gem_icon"/><span style="color: yellow;" id="shop_cost2">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="shop_cell shop_cell3" style="height: 90px;">
+                        <input type="checkbox" id="shop_item2" onchange="UIShop.OnItem(document, 2);" />
+                    </div>
+                </div>
+                <div class="shop_row">
+                    <div class="shop_cell shop_cell1" style="height: 90px;">
+                        <img src="/common1/upgrade_blaster.png" class="shop_item_icon" style="height: 30px;"/>
+                        <p class="shop_item_title">[SHOP_BLASTER]</p>
+                        <p class="shop_item_description">[SHOP_BLASTER_ABOUT]</p>
+                    </div>
+                    <div class="shop_cell shop_cell2" style="height: 90px;">
+                        <div class="shop_cell2_contents">
+                            <img src="/common2/powerup_gem_spin0.png" class="gem_icon"/><span style="color: yellow;" id="shop_cost3">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="shop_cell shop_cell3" style="height: 90px;">
+                        <input type="checkbox" id="shop_item3" onchange="UIShop.OnItem(document, 3);" />
+                    </div>
+                </div>
+            </div>
+            <p id="shop_notice">[SHOP_NOTICE]</p>
+            <div id="shop_buttons">
+                <button id="shop_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+                <button id="shop_start_button" onclick="UIShop.OnStart(document);">[START]</button>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

@@ -1,0 +1,4924 @@
+
+{
+  "activeScript" : "bool sortFunc(body a, body b) {\n    return a.getCustomInt(\"segId\") < b.getCustomInt(\"segId\");\n}\n\nvoid main()\n{\n    body[] bodies = ab();\n    body[] fb;\n    for (uint i = 0; i < bodies.length; i++) {\n        if (bodies[i].getName() == \"tentacle\") {\n            fb.insertLast(bodies[i]);\n        }\n    }    \n    fb = sortBodies(fb, sortFunc);\n    float a = 4;\n    float b = 3;\n    for (uint i = 0; i < fb.length; i++) {\n        float c = float(i) / (fb.length - 1);\n        c = (1 - c) + c * (b / a);\n        fb[i].getFixtures()[0].getShape(0).setRadius(fb[0].getFixtures()[0].getShape(0).getRadius() * c);\n        image[] fimgs = fb[0].getImages();\n        image[] imgs = fb[i].getImages();\n        for (uint j = 0; j < imgs.length; j++) {\n            for (uint k = 0; k < fimgs.length; k++) {\n                if (imgs[j].getName() == fimgs[k].getName()) {\n                    imgs[j].setCenter(fimgs[k].center * c);\n                    imgs[j].setHeight(fimgs[k].getHeight() * c);\n                }\n            }\n        }\n        if (i > 1) {\n            fb[i].setPos(fb[i-1].pos - (fb[0].pos - fb[1].pos) * c);\n        }\n    }\n    joint[] jnts = aj();\n    for (uint i = 0; i < jnts.length; i++) {\n        if (jnts[i].getName() == \"tentacle_joint\") { \n            jnts[i].setLocalAnchorB(jnts[i].getBodyB().getLocalPoint((jnts[i].getBodyA().pos + jnts[i].getBodyB().pos) * 0.5));\n            jnts[i].setLocalAnchorA(jnts[i].getBodyA().getLocalPoint(jnts[i].getBodyB().getWorldPoint(jnts[i].getLocalAnchorB())));\n        }\n    }\n}",
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "rock",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "custom1",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "enemyRock",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/objectPropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : "C011361E",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 2048,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 1,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "401215A5",
+                "3FAA097C",
+                "3F3B94F3",
+                "BF215DCB",
+                "C04B9987",
+                "C01E3226",
+                "BF0B7F1D",
+                "3FBC92B2"
+              ],
+              "y" : 
+              [
+                "3FAC06C2",
+                "3FC27577",
+                "BE8ADE63",
+                "BD19D4F5",
+                "3FBB1D4A",
+                "3E6A85AC",
+                "BF94F187",
+                "BF83CCFA"
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "416619C7",
+        "massData-center" : 
+        {
+          "x" : "B3B2B183",
+          "y" : "343DDC9B"
+        },
+        "massData-mass" : "40B76024",
+        "name" : "fang",
+        "position" : 
+        {
+          "x" : "3F0CDA7F",
+          "y" : "408649CF"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "BF5F66F3",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 2048,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "BFBC92B2",
+                "3F0B7F1D",
+                "401E3226",
+                "404B9987",
+                "3F215DCB",
+                "BF3B94F3",
+                "BFAA097C",
+                "C01215A5"
+              ],
+              "y" : 
+              [
+                "BF83CCFA",
+                "BF94F187",
+                "3E6A85AC",
+                "3FBB1D4A",
+                "BD19D4F5",
+                "BE8ADE63",
+                "3FC27577",
+                "3FAC06C2"
+              ]
+            }
+          }
+        ],
+        "id" : 2,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "416619C6",
+        "massData-center" : 
+        {
+          "x" : 0,
+          "y" : "3432B183"
+        },
+        "massData-mass" : "40B76024",
+        "name" : "fang",
+        "position" : 
+        {
+          "x" : "3F0CDA7F",
+          "y" : "C08649CF"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "C0490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 2048,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 3,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "401215A5",
+                "3FAA097C",
+                "3F3B94F3",
+                "BF215DCB",
+                "C04B9987",
+                "C01E3226",
+                "BF0B7F1D",
+                "3FBC92B2"
+              ],
+              "y" : 
+              [
+                "3FAC06C2",
+                "3FC27577",
+                "BE8ADE63",
+                "BD19D4F5",
+                "3FBB1D4A",
+                "3E6A85AC",
+                "BF94F187",
+                "BF83CCFA"
+              ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "416619C7",
+        "massData-center" : 
+        {
+          "x" : "B3B2B183",
+          "y" : "343DDC9B"
+        },
+        "massData-mass" : "40B76024",
+        "name" : "fang",
+        "position" : 
+        {
+          "x" : "4042D4FE",
+          "y" : "4034007E"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 2048,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 4,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "BFBC92B2",
+                "3F0B7F1D",
+                "401E3226",
+                "404B9987",
+                "3F215DCB",
+                "BF3B94F3",
+                "BFAA097C",
+                "C01215A5"
+              ],
+              "y" : 
+              [
+                "BF83CCFA",
+                "BF94F187",
+                "3E6A85AC",
+                "3FBB1D4A",
+                "BD19D4F5",
+                "BE8ADE63",
+                "3FC27577",
+                "3FAC06C2"
+              ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "416619C6",
+        "massData-center" : 
+        {
+          "x" : 0,
+          "y" : "3432B183"
+        },
+        "massData-mass" : "40B76024",
+        "name" : "fang",
+        "position" : 
+        {
+          "x" : "4042D4FE",
+          "y" : "C034007E"
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3E4CCCCD",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 5,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "4007F340",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BFBED9D6" ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "414B319E",
+        "massData-center" : 
+        {
+          "x" : "BFBED9D6",
+          "y" : 0
+        },
+        "massData-mass" : "4035737A",
+        "name" : "eye",
+        "position" : 
+        {
+          "x" : "3FE66666",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 1,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 58,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FFCA1B0",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 58,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "413EAFD3",
+        "massData-mass" : "40C3CE40",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C0A93088",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 0,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 16,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40400000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 59,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40000000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 59,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "41490FDB",
+        "massData-mass" : "40C90FDB",
+        "name" : "tentacle_base",
+        "position" : 
+        {
+          "x" : "C0326110",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 20,
+                "name" : "num_iterations"
+              },
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "3E99999A",
+                "name" : "step"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40200000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "filter-maskBits" : 126,
+            "id" : 6,
+            "name" : "sensor",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C03FD92B", "C03FD92B", "4093952D", "4093952D" ],
+              "y" : [ "41080000", "C1080000", "C1080000", "41080000" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 20,
+                "name" : "num_iterations"
+              },
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "3E99999A",
+                "name" : "step"
+              },
+              
+              {
+                "float" : "40800000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40200000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "snake1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 2048,
+            "filter-groupIndex" : -500,
+            "friction" : "3E4CCCCD",
+            "id" : 60,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40197571",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BE7C6380" ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 60,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "41D41599",
+        "massData-center" : 
+        {
+          "x" : "BE7C637F",
+          "y" : 0
+        },
+        "massData-mass" : "41107F9C",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 2,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 61,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FF9435E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 61,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "4134B7E8",
+        "massData-mass" : "40BE9E74",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C0F71596",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 3,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 62,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FF5E50E",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 62,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "412B2566",
+        "massData-mass" : "40B9807E",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C121F695",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 4,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 63,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FF286BC",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 63,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "4121F589",
+        "massData-mass" : "40B47458",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C147DBA2",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 5,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 64,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FEF286C",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 64,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "411925AB",
+        "massData-mass" : "40AF7A07",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C16D39F3",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 6,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 65,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FEBCA1B",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 65,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "4110B321",
+        "massData-mass" : "40AA9188",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C18908C4",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 7,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 66,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE86BCA",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 66,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "41089B4E",
+        "massData-mass" : "40A5BADA",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C19B3130",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 8,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 67,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE50D79",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 67,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "4100DBA1",
+        "massData-mass" : "40A0F600",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1AD163E",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 9,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 68,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE1AF29",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 68,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40F2E326",
+        "massData-mass" : "409C42FA",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1BEB7ED",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 69,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FDE50D8",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 69,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40E4B53D",
+        "massData-mass" : "4097A1C4",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1D0163E",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 11,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 70,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FDAF287",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 70,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40D728A3",
+        "massData-mass" : "40931262",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1E13130",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 12,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 71,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FD79436",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 71,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40CA387B",
+        "massData-mass" : "408E94D2",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C1F208C4",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 13,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 72,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FD435E5",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 72,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40BDDFFC",
+        "massData-mass" : "408A2913",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C2014E7D",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 14,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 73,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FD0D794",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 73,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40B21A78",
+        "massData-mass" : "4085CF29",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C20976E9",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 15,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 74,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FCD7943",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 74,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40A6E34B",
+        "massData-mass" : "40818710",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C2117DA6",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 16,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 75,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FCA1AF2",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 75,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "409C35E8",
+        "massData-mass" : "407AA196",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C21962B3",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 17,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 76,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC6BCA2",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 76,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "40920DD5",
+        "massData-mass" : "407258B2",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C2212611",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 18,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 77,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC35E51",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 77,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "408866A6",
+        "massData-mass" : "406A3372",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C228C7C0",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "angularDamping" : "40400000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 19,
+            "name" : "segId"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "glassy"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "gravityGunAware"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 0,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width1"
+              },
+              
+              {
+                "float" : "40000000",
+                "name" : "width2"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "tentacle"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "tentacle1.png"
+              },
+              
+              {
+                "bool" : false,
+                "name" : "image_flip"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : "3F000000",
+            "filter-categoryBits" : 32,
+            "filter-groupIndex" : -700,
+            "friction" : "3E4CCCCD",
+            "id" : 78,
+            "name" : "tentacle",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FC00000",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ 0 ]
+            }
+          }
+        ],
+        "id" : 78,
+        "linearDamping" : "40400000",
+        "linearVelocity" : 0,
+        "massData-I" : "407E7811",
+        "massData-mass" : "406231D6",
+        "name" : "tentacle",
+        "position" : 
+        {
+          "x" : "C23047C0",
+          "y" : 0
+        },
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 2,
+        "center" : 
+        {
+          "x" : "3F22CD85",
+          "y" : "3E85821D"
+        },
+        "file" : "subway1/snake_fang.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41980000",
+        "scale" : "40363B07"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 3,
+        "center" : 
+        {
+          "x" : "BF1268FB",
+          "y" : "3E858221"
+        },
+        "file" : "subway1/snake_fang.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : 1,
+        "scale" : "40363B07"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BF1268FB",
+          "y" : "3E858221"
+        },
+        "file" : "subway1/snake_fang.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41980000",
+        "scale" : "40363B07"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 
+        {
+          "x" : "3F22CD85",
+          "y" : "3E85821D"
+        },
+        "file" : "subway1/snake_fang.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 4,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : 1,
+        "scale" : "40363B07"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 
+        {
+          "x" : "40497070",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "missile",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : 1
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 
+        {
+          "x" : "4001B238",
+          "y" : 0
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "d.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "gun",
+        "opacity" : 1,
+        "renderOrder" : "43480000",
+        "scale" : 1
+      },
+      
+      {
+        "angle" : "3FC90FDB",
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 0,
+        "file" : "subway1/snake_head.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 16,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41A00000",
+        "scale" : "40C2142A"
+      },
+      
+      {
+        "angle" : "3BD7F300",
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 
+        {
+          "x" : "3FDCED91",
+          "y" : 0
+        },
+        "colorTint" : [ 0, 0, 255, 255 ],
+        "customProperties" : 
+        [
+          
+          {
+            "int" : 10,
+            "name" : "numRays"
+          },
+          
+          {
+            "float" : "40800000",
+            "name" : "distance"
+          },
+          
+          {
+            "float" : 1,
+            "name" : "intensity"
+          },
+          
+          {
+            "float" : 0,
+            "name" : "softLength"
+          },
+          
+          {
+            "name" : "light",
+            "string" : "point"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "diffuse"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "xray"
+          }
+        ],
+        "file" : "l.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 21,
+        "name" : "light",
+        "opacity" : "3F000000",
+        "renderOrder" : "43480000",
+        "scale" : "3FE342AE"
+      },
+      
+      {
+        "angle" : "4096CBE4",
+        "aspectScale" : 1,
+        "body" : 78,
+        "center" : 
+        {
+          "x" : "400152A8",
+          "y" : 0
+        },
+        "file" : "subway1/snake_tail.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 22,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41700000",
+        "scale" : "3FC51EB8"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 59,
+        "center" : 
+        {
+          "x" : "3FA49944",
+          "y" : "C028C2D3"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 23,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3FA2162A"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 66,
+        "center" : 
+        {
+          "x" : "3F957034",
+          "y" : "C019379E"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 43,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F932855"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 62,
+        "center" : 
+        {
+          "x" : "3F9E19F4",
+          "y" : "C0221973"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 44,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9BB03D"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 73,
+        "center" : 
+        {
+          "x" : "3F864723",
+          "y" : "C009AC69"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 45,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F843A80"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 74,
+        "center" : 
+        {
+          "x" : "3F841CB3",
+          "y" : "C00773F3"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 46,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F821887"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 75,
+        "center" : 
+        {
+          "x" : "3F81F243",
+          "y" : "C0053B7E"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 47,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F7FED19"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 61,
+        "center" : 
+        {
+          "x" : "3FA04464",
+          "y" : "C02451E8"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 48,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9DD236"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 76,
+        "center" : 
+        {
+          "x" : "3F7F8FA7",
+          "y" : "C0030309"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 49,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F7BA927"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 64,
+        "center" : 
+        {
+          "x" : "3F99C514",
+          "y" : "C01DA889"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 50,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F976C49"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 67,
+        "center" : 
+        {
+          "x" : "3F9345C3",
+          "y" : "C016FF28"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 51,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F91065B"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 69,
+        "center" : 
+        {
+          "x" : "3F8EF0E4",
+          "y" : "C0128E3E"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 52,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8CC268"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 71,
+        "center" : 
+        {
+          "x" : "3F8A9C03",
+          "y" : "C00E1D53"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 53,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F887E74"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 58,
+        "center" : 
+        {
+          "x" : "3FA26ED4",
+          "y" : "C0268A5E"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 54,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9FF431"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 70,
+        "center" : 
+        {
+          "x" : "3F8CC674",
+          "y" : "C01055C9"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 55,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8AA06E"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 68,
+        "center" : 
+        {
+          "x" : "3F911B54",
+          "y" : "C014C6B4"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 56,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8EE462"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 78,
+        "center" : 
+        {
+          "x" : "3F76E5E6",
+          "y" : "BFFD243C"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 57,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F73213F"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 63,
+        "center" : 
+        {
+          "x" : "3F9BEF83",
+          "y" : "C01FE0FD"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 58,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F998E42"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 72,
+        "center" : 
+        {
+          "x" : "3F887193",
+          "y" : "C00BE4DE"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 59,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F865C7A"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 65,
+        "center" : 
+        {
+          "x" : "3F979AA4",
+          "y" : "C01B7013"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 60,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F954A4F"
+      },
+      
+      {
+        "angle" : "3FFADC57",
+        "aspectScale" : 1,
+        "body" : 77,
+        "center" : 
+        {
+          "x" : "3F7B3AC6",
+          "y" : "C000CA94"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 61,
+        "name" : "fang1",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F776533"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 59,
+        "center" : 
+        {
+          "x" : "3FBB8B6E",
+          "y" : "402353EC"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 62,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3FA2162A"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 66,
+        "center" : 
+        {
+          "x" : "3FAA4553",
+          "y" : "401448D3"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 63,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F932855"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 62,
+        "center" : 
+        {
+          "x" : "3FB4243E",
+          "y" : "401CE174"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 64,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9BB03D"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 73,
+        "center" : 
+        {
+          "x" : "3F98FF38",
+          "y" : "40053DBA"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 65,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F843A80"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 74,
+        "center" : 
+        {
+          "x" : "3F96877D",
+          "y" : "40031791"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 66,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F821887"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 75,
+        "center" : 
+        {
+          "x" : "3F940FC2",
+          "y" : "4000F169"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 67,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F7FED19"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 61,
+        "center" : 
+        {
+          "x" : "3FB69BF8",
+          "y" : "401F079B"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 68,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9DD236"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 76,
+        "center" : 
+        {
+          "x" : "3F919808",
+          "y" : "3FFD9683"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 69,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F7BA927"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 64,
+        "center" : 
+        {
+          "x" : "3FAF34C9",
+          "y" : "40189523"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 70,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F976C49"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 67,
+        "center" : 
+        {
+          "x" : "3FA7CD98",
+          "y" : "401222AB"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 71,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F91065B"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 69,
+        "center" : 
+        {
+          "x" : "3FA2DE23",
+          "y" : "400DD65B"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 72,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8CC268"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 71,
+        "center" : 
+        {
+          "x" : "3F9DEEAE",
+          "y" : "40098A0A"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 73,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F887E74"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 58,
+        "center" : 
+        {
+          "x" : "3FB913B4",
+          "y" : "40212DC4"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 74,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F9FF431"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 70,
+        "center" : 
+        {
+          "x" : "3FA06668",
+          "y" : "400BB032"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 75,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8AA06E"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 68,
+        "center" : 
+        {
+          "x" : "3FA555DE",
+          "y" : "400FFC83"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 76,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F8EE462"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 78,
+        "center" : 
+        {
+          "x" : "3F8CA892",
+          "y" : "3FF4FDE2"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 77,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F73213F"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 63,
+        "center" : 
+        {
+          "x" : "3FB1AC83",
+          "y" : "401ABB4B"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 78,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F998E42"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 72,
+        "center" : 
+        {
+          "x" : "3F9B76F3",
+          "y" : "400763E2"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 79,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F865C7A"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 65,
+        "center" : 
+        {
+          "x" : "3FACBD0E",
+          "y" : "40166EFB"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 80,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F954A4F"
+      },
+      
+      {
+        "angle" : "40E7AE36",
+        "aspectScale" : 1,
+        "body" : 77,
+        "center" : 
+        {
+          "x" : "3F8F204D",
+          "y" : "3FF94A33"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 81,
+        "name" : "fang2",
+        "opacity" : "3F000000",
+        "renderOrder" : "BF800000",
+        "scale" : "3F776533"
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 
+        {
+          "x" : "403D8A09",
+          "y" : "3F34ADDE"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 82,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41880000",
+        "scale" : "3FA2162A"
+      },
+      
+      {
+        "angle" : "40490FDB",
+        "aspectScale" : 1,
+        "body" : 60,
+        "center" : 
+        {
+          "x" : "403D8A09",
+          "y" : "BF34ADDE"
+        },
+        "file" : "subway1/snake_fang2.png",
+        "filter" : 1,
+        "flip" : true,
+        "id" : 83,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "41880000",
+        "scale" : "3FA2162A"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3E773408",
+          "y" : "4010ABAD"
+        },
+        "anchorB" : 
+        {
+          "x" : "3FD73E03",
+          "y" : "3F8102DE"
+        },
+        "bodyA" : 60,
+        "bodyB" : 1,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : true,
+        "id" : 1,
+        "lowerLimit" : "BFC90FDB",
+        "maxMotorTorque" : "463B8000",
+        "motorSpeed" : "41060A92",
+        "name" : "fang_joint",
+        "referenceAngle" : "C011361E",
+        "type" : "revolute",
+        "upperLimit" : "3F060A92"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3E8141FA",
+          "y" : "C012A032"
+        },
+        "anchorB" : 
+        {
+          "x" : "BFD35673",
+          "y" : "3F7F29A0"
+        },
+        "bodyA" : 60,
+        "bodyB" : 2,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : true,
+        "id" : 2,
+        "lowerLimit" : "BF060A92",
+        "maxMotorTorque" : "463B8000",
+        "motorSpeed" : "C1060A92",
+        "name" : "fang_joint",
+        "referenceAngle" : "BF5F66F3",
+        "type" : "revolute",
+        "upperLimit" : "3FC90FDB"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3FAD0AEE",
+          "y" : "3FDB64CA"
+        },
+        "anchorB" : 
+        {
+          "x" : "3FD89F0D",
+          "y" : "3F8C9C33"
+        },
+        "bodyA" : 60,
+        "bodyB" : 3,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : true,
+        "id" : 3,
+        "lowerLimit" : "BF9C61AA",
+        "maxMotorTorque" : "463B8000",
+        "motorSpeed" : "41060A92",
+        "name" : "fang_joint",
+        "referenceAngle" : "C0490FDB",
+        "type" : "revolute",
+        "upperLimit" : "3F5F66F3"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3FB02200",
+          "y" : "BFE4A9F4"
+        },
+        "anchorB" : 
+        {
+          "x" : "BFD587FC",
+          "y" : "3F835708"
+        },
+        "bodyA" : 60,
+        "bodyB" : 4,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : true,
+        "id" : 4,
+        "lowerLimit" : "BF5F66F3",
+        "maxMotorTorque" : "463B8000",
+        "motorSpeed" : "C1060A92",
+        "name" : "fang_joint",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : "3F9C61AA"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3E9E323C",
+          "y" : 0
+        },
+        "anchorB" : 
+        {
+          "x" : "BFBED9D7",
+          "y" : 0
+        },
+        "bodyA" : 60,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "dampingRatio" : 0,
+        "frequency" : 0,
+        "id" : 7,
+        "name" : "joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3FA00000",
+          "y" : "B3EAAC7A"
+        },
+        "anchorB" : 
+        {
+          "x" : "BFA00000",
+          "y" : "33EAAC7A"
+        },
+        "bodyA" : 59,
+        "bodyB" : 58,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 57,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F9BCA1C",
+          "y" : "B3E47F85"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF9BCA1C",
+          "y" : "33E47F85"
+        },
+        "bodyA" : 58,
+        "bodyB" : 61,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 59,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F99AF28",
+          "y" : "B3E16908"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF99AF28",
+          "y" : "33E16908"
+        },
+        "bodyA" : 61,
+        "bodyB" : 62,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 60,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F979438",
+          "y" : "B3DE5291"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF979430",
+          "y" : "33DE5285"
+        },
+        "bodyA" : 62,
+        "bodyB" : 63,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 61,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F957940",
+          "y" : "B3DB3C0E"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF957948",
+          "y" : "33DB3C1A"
+        },
+        "bodyA" : 63,
+        "bodyB" : 64,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 62,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F935E58",
+          "y" : "B3D825A3"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF935E50",
+          "y" : "33D82597"
+        },
+        "bodyA" : 64,
+        "bodyB" : 65,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 63,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F914360",
+          "y" : "B3D50F20"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF914360",
+          "y" : "33D50F20"
+        },
+        "bodyA" : 65,
+        "bodyB" : 66,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 64,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F8F2870",
+          "y" : "B3D1F8A9"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF8F2870",
+          "y" : "33D1F8A9"
+        },
+        "bodyA" : 66,
+        "bodyB" : 67,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 65,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F8D0D80",
+          "y" : "B3CEE232"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF8D0D70",
+          "y" : "33CEE21A"
+        },
+        "bodyA" : 67,
+        "bodyB" : 68,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 66,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F8AF290",
+          "y" : "B3CBCBBA"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF8AF280",
+          "y" : "33CBCBA3"
+        },
+        "bodyA" : 68,
+        "bodyB" : 69,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 67,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F88D790",
+          "y" : "B3C8B52C"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF88D790",
+          "y" : "33C8B52C"
+        },
+        "bodyA" : 69,
+        "bodyB" : 70,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 68,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F86BCA0",
+          "y" : "B3C59EB5"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF86BCA0",
+          "y" : "33C59EB5"
+        },
+        "bodyA" : 70,
+        "bodyB" : 71,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 69,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F84A1B0",
+          "y" : "B3C2883E"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF84A1B0",
+          "y" : "33C2883E"
+        },
+        "bodyA" : 71,
+        "bodyB" : 72,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 70,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F8286C0",
+          "y" : "B3BF71C6"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF8286C0",
+          "y" : "33BF71C6"
+        },
+        "bodyA" : 72,
+        "bodyB" : 73,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 71,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F806BE0",
+          "y" : "B3BC5B67"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF806BC0",
+          "y" : "33BC5B38"
+        },
+        "bodyA" : 73,
+        "bodyB" : 74,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 72,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F7CA180",
+          "y" : "B3B944A9"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF7CA1C0",
+          "y" : "33B944D8"
+        },
+        "bodyA" : 74,
+        "bodyB" : 75,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 73,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F786BC0",
+          "y" : "B3B62E49"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF786BC0",
+          "y" : "33B62E49"
+        },
+        "bodyA" : 75,
+        "bodyB" : 76,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 74,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F7435C0",
+          "y" : "B3B317BB"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF743600",
+          "y" : "33B317EA"
+        },
+        "bodyA" : 76,
+        "bodyB" : 77,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 75,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3F700000",
+          "y" : "B3B0015B"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF700000",
+          "y" : "33B0015B"
+        },
+        "bodyA" : 77,
+        "bodyB" : 78,
+        "collideConnected" : false,
+        "dampingRatio" : "3F333333",
+        "frequency" : "40000000",
+        "id" : 76,
+        "name" : "tentacle_joint",
+        "referenceAngle" : 0,
+        "type" : "weld"
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "BFE8AB48",
+          "y" : "28000000"
+        },
+        "anchorB" : 
+        {
+          "x" : "BF782DB0",
+          "y" : "33B600C5"
+        },
+        "bodyA" : 60,
+        "bodyB" : 59,
+        "collideConnected" : false,
+        "dampingRatio" : 0,
+        "frequency" : 0,
+        "id" : 77,
+        "name" : "joint",
+        "referenceAngle" : "40490FDB",
+        "type" : "weld"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

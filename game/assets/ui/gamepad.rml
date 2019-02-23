@@ -1,0 +1,252 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 95%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIGamepad = {};
+        UIGamepad.BindingTimer = nil;
+        UIGamepad.ActionId = 0;
+        UIGamepad.Cancel = {};
+
+        function UIGamepad.BindingText(i)
+            local ib0 = input:gamepadBinding(i):ib(0);
+            local ib1 = input:gamepadBinding(i):ib(1);
+
+            if ib0:empty() then
+                return "&nbsp;";
+            end
+
+            local str = ib0.str;
+
+            if not ib1:empty() then
+                str = str.." "..tr.ui.OR.." "..ib1.str;
+            end
+
+            return str;
+        end
+
+        function UIGamepad.ClearBinding(idx, ib)
+            for i = 0, const.ActionGamepadIdMax, 1 do
+                if i ~= idx then
+                    if input:gamepadBinding(i):ib(1):equal(ib) then
+                        input:gamepadBinding(i):ib(1):clear();
+                    end
+                    if input:gamepadBinding(i):ib(0):equal(ib) then
+                        input:gamepadBinding(i):ib(0):assign(input:gamepadBinding(i):ib(1));
+                        input:gamepadBinding(i):ib(1):clear();
+                    end
+                end
+            end
+        end
+
+        function UIGamepad.UpdateBindings(document)
+            for i = 0, const.ActionGamepadIdMax, 1 do
+                local elem = document:GetElementById("control"..i);
+                elem.inner_rml = UIGamepad.BindingText(i);
+            end
+        end
+
+        function UIGamepad.OnLoad(document)
+            UIWindow.TransitionIn(document);
+            UIGamepad.UpdateBindings(document);
+
+            local elemStickDz = Element.As.ElementFormControlInput(document:GetElementById("gamepad_stick_dz"));
+            local elemTriggerDz = Element.As.ElementFormControlInput(document:GetElementById("gamepad_trigger_dz"));
+
+            elemStickDz.value = input.gamepad.stickDeadzone;
+            elemTriggerDz.value = input.gamepad.triggerDeadzone;
+        end
+
+        function UIGamepad.UpdateStickDeadzone(document)
+            local elem = Element.As.ElementFormControlInput(document:GetElementById("gamepad_stick_dz"));
+            input.gamepad.stickDeadzone = tonumber(elem.value);
+        end
+
+        function UIGamepad.UpdateTriggerDeadzone(document)
+            local elem = Element.As.ElementFormControlInput(document:GetElementById("gamepad_trigger_dz"));
+            input.gamepad.triggerDeadzone = tonumber(elem.value);
+        end
+
+        function UIGamepad.OnClick(document, i)
+            if UIInTransition then
+                return;
+            end
+
+            if UIGamepad.Cancel["control"..i] ~= nil then
+                return;
+            end
+
+            for j = 0, const.ActionGamepadIdMax, 1 do
+                document:GetElementById("control"..j):SetClass("noresponse", true);
+            end
+            document:GetElementById("control_back"):SetClass("noresponse", true);
+            Element.As.ElementFormControlInput(document:GetElementById("gamepad_stick_dz")).disabled = true;
+            Element.As.ElementFormControlInput(document:GetElementById("gamepad_trigger_dz")).disabled = true;
+
+            UIGamepad.BindingTimer = UIAddTimeout0(1, function(cookie, dt)
+                for k = const.GamepadUnknown + 1, const.GamepadButtonMax, 1 do
+                    if (k ~= const.GamepadStart) and (k ~= const.GamepadBack) and input.gamepad:triggered(k) then
+                        local str = InputGamepadBinding.buttonToString(k);
+
+                        local ib0 = input:gamepadBinding(UIGamepad.ActionId):ib(0);
+                        local ib1 = input:gamepadBinding(UIGamepad.ActionId):ib(1);
+
+                        if (ib0:empty()) then
+                            ib0:setButton(k);
+                            UIGamepad.ClearBinding(UIGamepad.ActionId, ib0);
+                        elseif ((not ib0:empty()) and (not ib1:empty())) then
+                            ib0:setButton(k);
+                            ib1:clear();
+                            UIGamepad.ClearBinding(UIGamepad.ActionId, ib0);
+                        else
+                            ib1:setButton(k);
+                            if ib0:equal(ib1) then
+                                ib1:clear();
+                            else
+                                UIGamepad.ClearBinding(UIGamepad.ActionId, ib1);
+                            end
+                        end
+
+                        UIGamepad.UpdateBindings(document);
+
+                        document.context:ShowMouseCursor(true);
+                        UICancelTimeout(UIGamepad.BindingTimer);
+                        UIGamepad.BindingTimer = nil;
+                        for j = 0, const.ActionGamepadIdMax, 1 do
+                            document:GetElementById("control"..j):SetClass("noresponse", false);
+                        end
+                        document:GetElementById("control_back"):SetClass("noresponse", false);
+                        Element.As.ElementFormControlInput(document:GetElementById("gamepad_stick_dz")).disabled = false;
+                        Element.As.ElementFormControlInput(document:GetElementById("gamepad_trigger_dz")).disabled = false;
+                        break;
+                    end
+                end
+            end);
+            UIGamepad.ActionId = i;
+            document.context:ShowMouseCursor(false);
+
+            local ib0 = input:gamepadBinding(i):ib(0);
+            local ib1 = input:gamepadBinding(i):ib(1);
+
+            local elem = document:GetElementById("control"..i);
+
+            if ib0:empty() or ((not ib0:empty()) and (not ib1:empty())) then
+                elem.inner_rml = "???";
+            else
+                elem.inner_rml = ib0.str.." "..tr.ui.OR.." ???";
+            end
+        end
+
+        function UIGamepad.OnKeyDown(event, document)
+            if UIGamepad.BindingTimer == nil then
+                UIWindow.OnKeyDown(event, document);
+                return;
+            end
+
+            if event.parameters['key_identifier'] ~= rocket.key_identifier.ESCAPE then
+                return;
+            end
+
+            if input.gamepad:triggered(const.GamepadB) then
+                return;
+            end
+
+            UIGamepad.UpdateBindings(document);
+
+            document.context:ShowMouseCursor(true);
+            UICancelTimeout(UIGamepad.BindingTimer);
+            UIGamepad.BindingTimer = nil;
+            for j = 0, const.ActionGamepadIdMax, 1 do
+                document:GetElementById("control"..j):SetClass("noresponse", false);
+            end
+            document:GetElementById("control_back"):SetClass("noresponse", false);
+            Element.As.ElementFormControlInput(document:GetElementById("gamepad_stick_dz")).disabled = false;
+            Element.As.ElementFormControlInput(document:GetElementById("gamepad_trigger_dz")).disabled = false;
+        end
+
+        function UIGamepad.TransitionBack(document)
+            if UIGamepad.Cancel["control_back"] == nil then
+                UIWindow.TransitionBack(document);
+            end
+        end
+
+        function UIGamepad.OnControlMouseDown(event, document)
+            if UIGamepad.BindingTimer ~= nil then
+                UIGamepad.Cancel[event.target_element.id] = true;
+            else
+                UIGamepad.Cancel[event.target_element.id] = nil;
+            end
+        end
+    </script>
+</head>
+<body template="window" onload="UIGamepad.OnLoad(document);" onkeydown="UIGamepad.OnKeyDown(event, document);">
+    [GAMEPAD_TITLE]
+    <div id="gamepad_options">
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_MOVE]</div>
+            <div class="gamepad_value" style="text-align: left;">[GAMEPAD_LEFTSTICK]</div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_AIM]</div>
+            <div class="gamepad_value" style="text-align: left;">[GAMEPAD_RIGHTSTICK]</div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_PRIMARY_FIRE]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control0" onclick="UIGamepad.OnClick(document, 0);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_SECONDARY_FIRE]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control1" onclick="UIGamepad.OnClick(document, 1);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_PRIMARY_SWITCH]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control2" onclick="UIGamepad.OnClick(document, 2);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_SECONDARY_SWITCH]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control3" onclick="UIGamepad.OnClick(document, 3);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_INTERACT]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control4" onclick="UIGamepad.OnClick(document, 4);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name">[GAMEPAD_RUN]</div>
+            <div class="gamepad_value">
+                <button class="gamepad_box" id="control5" onclick="UIGamepad.OnClick(document, 5);" onmousedown="UIGamepad.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name" style="height: 45px;">[GAMEPAD_STICK_DEADZONE]</div>
+            <div class="gamepad_value">
+                <input type="range" min="0.01" max="0.99" step="0.01" id="gamepad_stick_dz" onchange="UIGamepad.UpdateStickDeadzone(document);" />
+            </div>
+        </div>
+        <div class="gamepad_row">
+            <div class="gamepad_name" style="height: 45px;">[GAMEPAD_TRIGGER_DEADZONE]</div>
+            <div class="gamepad_value">
+                <input type="range" min="0.01" max="0.99" step="0.01" id="gamepad_trigger_dz" onchange="UIGamepad.UpdateTriggerDeadzone(document);" />
+            </div>
+        </div>
+    </div>
+    <button class="gamepad_back_button" onclick="UIGamepad.TransitionBack(document);" id="control_back" onmousedown="UIGamepad.OnControlMouseDown(event, document);">[BACK]</button>
+</body>
+</rml>

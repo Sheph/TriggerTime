@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["common1/player_leg%0-8%.png", 36],
+        ["common1/player_leg%7-1%.png", 36]
+    ]
+}

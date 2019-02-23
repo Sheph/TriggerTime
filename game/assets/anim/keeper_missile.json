@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["keeper4/keeper_missile%0-6%.png", 10.5],
+        ["keeper5/keeper_missile%7-13%.png", 10.5]
+    ],
+    "specials": [6]
+}

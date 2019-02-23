@@ -1,0 +1,247 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 95%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIControls = {};
+        UIControls.BindingInProgress = false;
+        UIControls.ActionId = 0;
+        UIControls.Cancel = {};
+
+        function UIControls.BindingText(i)
+            local ib0 = input:binding(i):ib(0);
+            local ib1 = input:binding(i):ib(1);
+
+            if ib0:empty() then
+                return "&nbsp;";
+            end
+
+            local str = ib0.str;
+
+            if not ib1:empty() then
+                str = str.." "..tr.ui.OR.." "..ib1.str;
+            end
+
+            return str;
+        end
+
+        function UIControls.ClearBinding(idx, ib)
+            for i = 0, const.ActionIdMax, 1 do
+                if i ~= idx then
+                    if input:binding(i):ib(1):equal(ib) then
+                        input:binding(i):ib(1):clear();
+                    end
+                    if input:binding(i):ib(0):equal(ib) then
+                        input:binding(i):ib(0):assign(input:binding(i):ib(1));
+                        input:binding(i):ib(1):clear();
+                    end
+                end
+            end
+        end
+
+        function UIControls.UpdateBindings(document)
+            for i = 0, const.ActionIdMax, 1 do
+                local elem = document:GetElementById("control"..i);
+                elem.inner_rml = UIControls.BindingText(i);
+            end
+        end
+
+        function UIControls.OnLoad(document)
+            UIWindow.TransitionIn(document);
+            UIControls.UpdateBindings(document);
+        end
+
+        function UIControls.OnClick(document, i)
+            if UIInTransition then
+                return;
+            end
+
+            if UIControls.Cancel["control"..i] ~= nil then
+                return;
+            end
+
+            for j = 0, const.ActionIdMax, 1 do
+                document:GetElementById("control"..j):SetClass("noresponse", true);
+            end
+            document:GetElementById("control_back"):SetClass("noresponse", true);
+
+            UIControls.BindingInProgress = true;
+            UIControls.ActionId = i;
+            document.context:ShowMouseCursor(false);
+
+            local ib0 = input:binding(i):ib(0);
+            local ib1 = input:binding(i):ib(1);
+
+            local elem = document:GetElementById("control"..i);
+
+            if ib0:empty() or ((not ib0:empty()) and (not ib1:empty())) then
+                elem.inner_rml = "???";
+            else
+                elem.inner_rml = ib0.str.." "..tr.ui.OR.." ???";
+            end
+        end
+
+        function UIControls.OnKeyDown(event, document)
+            if not UIControls.BindingInProgress then
+                UIWindow.OnKeyDown(event, document);
+                return;
+            end
+
+            if event.parameters['key_identifier'] ~= rocket.key_identifier.ESCAPE then
+                local str = InputBinding.keyToString(event.parameters['key_identifier']);
+                if str ~= "" then
+                    local ib0 = input:binding(UIControls.ActionId):ib(0);
+                    local ib1 = input:binding(UIControls.ActionId):ib(1);
+
+                    if (ib0:empty()) then
+                        ib0:setKey(event.parameters['key_identifier']);
+                        UIControls.ClearBinding(UIControls.ActionId, ib0);
+                    elseif ((not ib0:empty()) and (not ib1:empty())) then
+                        ib0:setKey(event.parameters['key_identifier']);
+                        ib1:clear();
+                        UIControls.ClearBinding(UIControls.ActionId, ib0);
+                    else
+                        ib1:setKey(event.parameters['key_identifier']);
+                        if ib0:equal(ib1) then
+                            ib1:clear();
+                        else
+                            UIControls.ClearBinding(UIControls.ActionId, ib1);
+                        end
+                    end
+                end
+            end
+
+            UIControls.UpdateBindings(document);
+
+            document.context:ShowMouseCursor(true);
+            UIControls.BindingInProgress = false;
+            for j = 0, const.ActionIdMax, 1 do
+                document:GetElementById("control"..j):SetClass("noresponse", false);
+            end
+            document:GetElementById("control_back"):SetClass("noresponse", false);
+        end
+
+        function UIControls.OnMouseDown(event, document)
+            if not UIControls.BindingInProgress then
+                return;
+            end
+
+            local ib0 = input:binding(UIControls.ActionId):ib(0);
+            local ib1 = input:binding(UIControls.ActionId):ib(1);
+
+            if (ib0:empty()) then
+                ib0:setMb(event.parameters['button'] == 0);
+                UIControls.ClearBinding(UIControls.ActionId, ib0);
+            elseif ((not ib0:empty()) and (not ib1:empty())) then
+                ib0:setMb(event.parameters['button'] == 0);
+                ib1:clear();
+                UIControls.ClearBinding(UIControls.ActionId, ib0);
+            else
+                ib1:setMb(event.parameters['button'] == 0);
+                if ib0:equal(ib1) then
+                    ib1:clear();
+                else
+                    UIControls.ClearBinding(UIControls.ActionId, ib1);
+                end
+            end
+
+            UIControls.UpdateBindings(document);
+
+            document.context:ShowMouseCursor(true);
+            UIControls.BindingInProgress = false;
+            for j = 0, const.ActionIdMax, 1 do
+                document:GetElementById("control"..j):SetClass("noresponse", false);
+            end
+            document:GetElementById("control_back"):SetClass("noresponse", false);
+        end
+
+        function UIControls.TransitionBack(document)
+            if UIControls.Cancel["control_back"] == nil then
+                UIWindow.TransitionBack(document);
+            end
+        end
+
+        function UIControls.OnControlMouseDown(event, document)
+            if UIControls.BindingInProgress then
+                UIControls.Cancel[event.target_element.id] = true;
+            else
+                UIControls.Cancel[event.target_element.id] = nil;
+            end
+        end
+    </script>
+</head>
+<body template="window" onload="UIControls.OnLoad(document);" onkeydown="UIControls.OnKeyDown(event, document);" onmousedown="UIControls.OnMouseDown(event, document);">
+    [CONTROLS_TITLE]
+    <div id="controls_options">
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_MOVE_UP]</div>
+            <div class="control_value">
+                <button class="control_box" id="control0" onclick="UIControls.OnClick(document, 0);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_MOVE_DOWN]</div>
+            <div class="control_value">
+                <button class="control_box" id="control1" onclick="UIControls.OnClick(document, 1);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_MOVE_LEFT]</div>
+            <div class="control_value">
+                <button class="control_box" id="control2" onclick="UIControls.OnClick(document, 2);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_MOVE_RIGHT]</div>
+            <div class="control_value">
+                <button class="control_box" id="control3" onclick="UIControls.OnClick(document, 3);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_PRIMARY_FIRE]</div>
+            <div class="control_value">
+                <button class="control_box" id="control4" onclick="UIControls.OnClick(document, 4);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_SECONDARY_FIRE]</div>
+            <div class="control_value">
+                <button class="control_box" id="control5" onclick="UIControls.OnClick(document, 5);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_PRIMARY_SWITCH]</div>
+            <div class="control_value">
+                <button class="control_box" id="control6" onclick="UIControls.OnClick(document, 6);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_SECONDARY_SWITCH]</div>
+            <div class="control_value">
+                <button class="control_box" id="control7" onclick="UIControls.OnClick(document, 7);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_INTERACT]</div>
+            <div class="control_value">
+                <button class="control_box" id="control8" onclick="UIControls.OnClick(document, 8);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+        <div class="controls_row">
+            <div class="control_name">[CONTROLS_RUN]</div>
+            <div class="control_value">
+                <button class="control_box" id="control9" onclick="UIControls.OnClick(document, 9);" onmousedown="UIControls.OnControlMouseDown(event, document);">&nbsp;</button>
+            </div>
+        </div>
+    </div>
+    <button class="controls_back_button" onclick="UIControls.TransitionBack(document);" id="control_back" onmousedown="UIControls.OnControlMouseDown(event, document);">[BACK]</button>
+</body>
+</rml>

@@ -1,0 +1,64 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 80%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIGameOver = {};
+
+        function UIGameOver.OnLoad(document)
+            if #UIDocList == 0 then
+                userData:giveGems(scene.player:findPlayerComponent().numGems);
+                scene.player:findPlayerComponent().numGems = 0;
+                table.insert(UIDocList, "ui/gameover.rml");
+                audio:stopAll(2.0);
+                UIStainedGlass(1, {0, 0, 0, 0}, {0, 0, 0, 0.8}, const.EaseLinear, 2.0, function(obj)
+                    document:Show();
+                    audio:createStream("gameover.ogg"):play();
+                    UIAddTimeoutOnce(1, 1.0, function()
+                        document:GetElementById("gameover_buttons").style.visibility = "visible";
+                    end);
+                end)
+            else
+                document:GetElementById("gameover_buttons").style.visibility = "visible";
+                UIWindow.TransitionIn(document);
+            end
+        end
+
+        function UIGameOver.OnKeyDown(event, document)
+        end
+
+        function UIGameOver.OnMainMenu(document)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UIFadeOut(function()
+                document:Close();
+                scene:setNextLevel("main_menu.lua", "");
+            end);
+        end
+
+        function UIGameOver.OnRestart(document)
+            UIWindow.TransitionOutFunc(document, function()
+                document:Close();
+                showMissionDetails(scene.basePath);
+            end);
+        end
+    </script>
+</head>
+<body template="window" onload="UIGameOver.OnLoad(document);" onkeydown="UIGameOver.OnKeyDown(event, document);">
+    <div id="gameover_text">[GAMEOVER_TITLE]</div>
+    <div id="gameover_buttons">
+        <button id="gameover_menu_button" onclick="UIGameOver.OnMainMenu(document);">[GAMEOVER_MAIN_MENU]</button>
+        <button id="gameover_restart_button" onclick="UIGameOver.OnRestart(document);">[GAMEOVER_TRY_AGAIN]</button>
+    </div>
+</body>
+</rml>

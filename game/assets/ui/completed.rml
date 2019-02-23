@@ -1,0 +1,134 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 80%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        function UICompleted.OnLoad(document)
+            document:GetElementById("completed_mission").inner_rml = UICompleted.Mission;
+            document:GetElementById("completed_killed").inner_rml = UICompleted.Killed;
+            document:GetElementById("completed_accuracy").inner_rml = UICompleted.Accuracy;
+            document:GetElementById("completed_time").inner_rml = UICompleted.Time;
+            if (UICompleted.NextLevelName ~= "e1m5") or (not MFDemo) then
+                document:GetElementById("completed_next_mission").inner_rml = UICompleted.NextMission;
+            else
+                document:GetElementById("completed_next_mission_label").inner_rml = "&nbsp;";
+            end
+
+            if (UICompleted.NoShop) or ((UICompleted.NextLevelName == "e1m5") and MFDemo) then
+                document:GetElementById("completed_next_button").inner_rml = tr.ui.NEXT;
+            end
+
+            if #UIDocList == 0 then
+                userData:giveGems(scene.player:findPlayerComponent().numGems);
+                scene.player:findPlayerComponent().numGems = 0;
+                userData:setLevelAccessible(UICompleted.NextLevelName);
+                table.insert(UIDocList, "ui/completed.rml");
+                audio:stopAll(2.0);
+                UIStainedGlass(1, {0, 0, 0, 0}, {0, 0, 0, 0.8}, const.EaseLinear, 2.0, function(obj)
+                    document:Show();
+                    audio:createStream("theme.ogg"):play();
+                    local function textHit(i)
+                        if i == 5 then
+                            document:GetElementById("completed_buttons").style.visibility = "visible";
+                            audio:playSound("text_hit.ogg");
+                            return;
+                        end
+                        document:GetElementById("row"..i).style.visibility = "visible";
+                        audio:playSound("text_hit.ogg");
+                        if i == 4 then
+                            UIAddTimeoutOnce(1, 1.0, textHit, i + 1);
+                        else
+                            UIAddTimeoutOnce(1, 0.5, textHit, i + 1);
+                        end
+                    end
+                    UIAddTimeoutOnce(1, 0.5, textHit, 0);
+                end)
+            else
+                for i = 0, 4, 1 do
+                    document:GetElementById("row"..i).style.visibility = "visible";
+                end
+                document:GetElementById("completed_buttons").style.visibility = "visible";
+                UIWindow.TransitionIn(document);
+            end
+        end
+
+        function UICompleted.OnKeyDown(event, document)
+        end
+
+        function UICompleted.OnMainMenu(document)
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UIFadeOut(function()
+                document:Close();
+                scene:setNextLevel("main_menu.lua", "");
+            end);
+        end
+
+        function UICompleted.OnNext(document)
+            if ((UICompleted.NextLevelName == "e1m5") and MFDemo) then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel("endofdemo.lua", "");
+                end);
+            elseif UICompleted.NoShop then
+                if UIInTransition then
+                    return;
+                end
+                UIInTransition = true;
+                UIFadeOut(function()
+                    document:Close();
+                    scene:setNextLevel(UICompleted.NextLevelName..".lua", UICompleted.NextLevelName..".json");
+                end);
+            else
+                UIWindow.TransitionOutFunc(document, function()
+                    document:Close();
+                    showMissionDetails(UICompleted.NextLevelName);
+                end);
+            end
+        end
+    </script>
+</head>
+<body template="window" onload="UICompleted.OnLoad(document);" onkeydown="UICompleted.OnKeyDown(event, document);">
+    [COMPLETED_TITLE]
+    <div id="completed_rows">
+        <div class="completed_row" id="row0">
+            <div class="completed_name">[COMPLETED_MISSION]</div>
+            <div class="completed_value" id="completed_mission">&nbsp;</div>
+        </div>
+        <div class="completed_row" id="row1">
+            <div class="completed_name">[COMPLETED_KILLED]</div>
+            <div class="completed_value" id="completed_killed">&nbsp;</div>
+        </div>
+        <div class="completed_row" id="row2">
+            <div class="completed_name">[COMPLETED_ACCURACY]</div>
+            <div class="completed_value" id="completed_accuracy">&nbsp;</div>
+        </div>
+        <div class="completed_row" id="row3">
+            <div class="completed_name">[COMPLETED_TIME]</div>
+            <div class="completed_value" id="completed_time">&nbsp;</div>
+        </div>
+        <div class="completed_row" id="row4">
+            <div class="completed_name" id="completed_next_mission_label">[COMPLETED_NEXT_MISSION]</div>
+            <div class="completed_value" id="completed_next_mission">&nbsp;</div>
+        </div>
+    </div>
+    <div id="completed_buttons">
+        <button id="completed_menu_button" onclick="UICompleted.OnMainMenu(document);">[COMPLETED_MAIN_MENU]</button>
+        <button id="completed_next_button" onclick="UICompleted.OnNext(document);">[COMPLETED_NEXT]</button>
+    </div>
+</body>
+</rml>

@@ -1,0 +1,192 @@
+{"frames": [
+
+{
+	"filename": "gorger_angry12.png",
+	"frame": {"x":4,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_angry13.png",
+	"frame": {"x":413,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_angry14.png",
+	"frame": {"x":822,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle0.png",
+	"frame": {"x":1231,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle1.png",
+	"frame": {"x":4,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle10.png",
+	"frame": {"x":413,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle11.png",
+	"frame": {"x":822,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle12.png",
+	"frame": {"x":1231,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle13.png",
+	"frame": {"x":4,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle14.png",
+	"frame": {"x":413,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle15.png",
+	"frame": {"x":822,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle16.png",
+	"frame": {"x":1231,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle2.png",
+	"frame": {"x":4,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle3.png",
+	"frame": {"x":413,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle4.png",
+	"frame": {"x":822,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle5.png",
+	"frame": {"x":1231,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle6.png",
+	"frame": {"x":4,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle7.png",
+	"frame": {"x":413,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle8.png",
+	"frame": {"x":822,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_idle9.png",
+	"frame": {"x":1231,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "factory10.png",
+	"format": "RGBA8888",
+	"size": {"w":1640,"h":1939},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ceb06cdb720b77bed6044baf866108ce:57f4faa6d4b5311230ed64dbbacfdc93:a885eeed190139e9dff2c64524db41b9$"
+}
+}

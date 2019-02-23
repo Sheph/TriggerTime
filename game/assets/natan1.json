@@ -1,0 +1,174 @@
+{"frames": [
+
+{
+	"filename": "natan_idle0.png",
+	"frame": {"x":4,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle1.png",
+	"frame": {"x":518,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle10.png",
+	"frame": {"x":1032,"y":4,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle11.png",
+	"frame": {"x":4,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle12.png",
+	"frame": {"x":518,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle13.png",
+	"frame": {"x":1032,"y":337,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle14.png",
+	"frame": {"x":4,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle15.png",
+	"frame": {"x":518,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle16.png",
+	"frame": {"x":1032,"y":670,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle17.png",
+	"frame": {"x":4,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle2.png",
+	"frame": {"x":518,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle3.png",
+	"frame": {"x":1032,"y":1003,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle4.png",
+	"frame": {"x":4,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle5.png",
+	"frame": {"x":518,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle6.png",
+	"frame": {"x":1032,"y":1336,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle7.png",
+	"frame": {"x":4,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle8.png",
+	"frame": {"x":518,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "natan_idle9.png",
+	"frame": {"x":1032,"y":1669,"w":510,"h":329},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":329},
+	"sourceSize": {"w":510,"h":329},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "natan1.png",
+	"format": "RGBA8888",
+	"size": {"w":1546,"h":2002},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a8f76bcacb0d31da35b795e7dd16e42f:d7d5c954ae561e2b8beb5e1f862c173b:07dafb557dff9d12059b6904132e77f3$"
+}
+}

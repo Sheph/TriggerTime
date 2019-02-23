@@ -1,0 +1,1 @@
+optirun ./tt

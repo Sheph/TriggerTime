@@ -1,0 +1,351 @@
+
+{
+  "activeScript" : "body b = getBody(\"root\");\nvec2 d = b.pos - b.getWorldCenter();\ntranslate(b.getFixtures(), d);\ntranslate(b.getImages(), d);\n",
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "bitplane3",
+      "bitplane4",
+      "enemy",
+      "bitplane6",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : "40800000",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 16,
+            "filter-maskBits" : 65519,
+            "id" : 2,
+            "name" : "fixture",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "BF86E070",
+                "BF4D8AFB",
+                "BE8FF64E",
+                "BDE9EE40",
+                "3F29076A",
+                "3F186708",
+                "BD947376",
+                "BE8FF64E",
+                "BF0D6EDA",
+                "BF42DB87",
+                "BEBAB3CC",
+                "3E60F3E6",
+                "3F331D5F",
+                "3F9F0276",
+                "3FC1BC51",
+                "4000EC30",
+                "3FEF257C",
+                "3F91A8C4",
+                "3F8BA4A3",
+                "3F532B6F",
+                "3E9B372E",
+                "3F085FFE",
+                "3ECB4C6A",
+                "3F487C20",
+                "3F545F67",
+                "3F1DBEC0",
+                "3E4B9501",
+                "BE0FAD78",
+                "3D57F96E",
+                "3F231655",
+                "3F733980",
+                "3FCC6BA0",
+                "3FD7096F",
+                "3F733980",
+                "3F532B6F",
+                "3E22BFB4",
+                "BE4A71E1",
+                "BF081745",
+                "BF583A49",
+                "BF817BD4",
+                "BFC3C73F",
+                "BFD8F770",
+                "BF922DCC",
+                "BFAC3935",
+                "C008DD7D",
+                "C004DBBB",
+                "BFA9B7FD",
+                "BF8C98CC"
+              ],
+              "y" : 
+              [
+                "BF85A07D",
+                "BFC542C6",
+                "BFF356EF",
+                "C0095CE4",
+                "BFED454C",
+                "BFBFEB1E",
+                "BFB53BBE",
+                "BFBFEB1E",
+                "BFA288EA",
+                "BF3F81FF",
+                "BF3B8044",
+                "BF9482BF",
+                "BF9D3143",
+                "BF8A7E5F",
+                "BF8F2B17",
+                "BF24CBA7",
+                "BE9EA1D4",
+                "BEF1839E",
+                "BF3F81FF",
+                "BF5A3854",
+                "BF48DB6F",
+                "BEB40071",
+                "BE27AD11",
+                "3DB1868E",
+                "3F1B101B",
+                "3F4A7FCC",
+                "3F47D3F1",
+                "3F834D08",
+                "3FA606E3",
+                "3FC8C0BE",
+                "3FA8B2C0",
+                "3FAE0A67",
+                "3FDE569C",
+                "40046E67",
+                "3FF4290C",
+                "3FE5B9C4",
+                "3FC8C0BE",
+                "3F874EC1",
+                "3F8AA58C",
+                "3F6BE3B8",
+                "3FC532E9",
+                "3FB60DEB",
+                "3F412659",
+                "3E58FB6C",
+                "3E81DC63",
+                "3CEFF776",
+                "3D146759",
+                "BED1E550"
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearDamping" : "40800000",
+        "linearVelocity" : 0,
+        "massData-I" : "412CEFBA",
+        "massData-center" : 
+        {
+          "x" : "B40C035E",
+          "y" : "3322ECA5"
+        },
+        "massData-mass" : "40C91FBC",
+        "name" : "root",
+        "position" : 0,
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "BD877872",
+          "y" : "BD204B05"
+        },
+        "file" : "common1/tetrobot.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "image",
+        "opacity" : "3F000000",
+        "renderOrder" : "40A00000",
+        "scale" : "4084A171"
+      },
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 
+        {
+          "x" : "3F371A88",
+          "y" : "3EC0E578"
+        },
+        "customProperties" : 
+        [
+          
+          {
+            "bool" : true,
+            "name" : "dummy"
+          }
+        ],
+        "file" : "common1/bullet1.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "missile",
+        "opacity" : 1,
+        "scale" : 1
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

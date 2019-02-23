@@ -1,0 +1,4003 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "general",
+      "player",
+      "ally",
+      "rock",
+      "enemy",
+      "enemyBuilding",
+      "gizmo",
+      "custom1",
+      "custom2",
+      "garbage",
+      "vehicle",
+      "enemyRock",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockPlayer",
+      "name" : "blockPlayer",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "minAmmo",
+      "name" : "minAmmo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "world",
+      "displayName" : "rootBody",
+      "name" : "rootBody",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_rlauncher",
+      "name" : "prob_ammo_rlauncher",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_height",
+      "name" : "image_height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height2",
+      "name" : "height2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_iterations",
+      "name" : "num_iterations",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "height1",
+      "name" : "height1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "dynomite"
+        },
+        
+        {
+          "entry" : "redKey"
+        },
+        
+        {
+          "entry" : "blueKey"
+        },
+        
+        {
+          "entry" : "yellowKey"
+        }
+      ],
+      "displayName" : "inventoryItem",
+      "name" : "inventoryItem",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_health",
+      "name" : "prob_health",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "gravityGunAware",
+      "name" : "gravityGunAware",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "unfoldRadius",
+      "name" : "unfoldRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilPass",
+      "name" : "stencilPass",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezable",
+      "name" : "freezable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "peffect",
+      "name" : "peffect",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "gravityGun"
+        },
+        
+        {
+          "entry" : "blaster"
+        },
+        
+        {
+          "entry" : "shotgun"
+        },
+        
+        {
+          "entry" : "rlauncher"
+        },
+        
+        {
+          "entry" : "fireball"
+        },
+        
+        {
+          "entry" : "flamethrower"
+        },
+        
+        {
+          "entry" : "pistol"
+        },
+        
+        {
+          "entry" : "superBlaster"
+        },
+        
+        {
+          "entry" : "proxmine"
+        },
+        
+        {
+          "entry" : "chainsaw"
+        },
+        
+        {
+          "entry" : "lgun"
+        },
+        
+        {
+          "entry" : "machineGun"
+        },
+        
+        {
+          "entry" : "plasmagun"
+        },
+        
+        {
+          "entry" : "superShotgun"
+        },
+        
+        {
+          "entry" : "eshield"
+        }
+      ],
+      "displayName" : "weaponType",
+      "name" : "weaponType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "bothWays",
+      "name" : "bothWays",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilSet",
+      "name" : "stencilSet",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_visible",
+      "name" : "image_visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "distance",
+      "name" : "distance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "farDistance",
+      "name" : "farDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "alpha",
+      "name" : "alpha",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "num_sectors",
+      "name" : "num_sectors",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_fixedPos",
+      "name" : "image_fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width1",
+      "name" : "width1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "foldable",
+      "name" : "foldable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "numRays",
+      "name" : "numRays",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "width2",
+      "name" : "width2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "point"
+        },
+        
+        {
+          "entry" : "cone"
+        },
+        
+        {
+          "entry" : "line"
+        },
+        
+        {
+          "entry" : "ring"
+        }
+      ],
+      "displayName" : "light",
+      "name" : "light",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain"
+        },
+        
+        {
+          "entry" : "player"
+        },
+        
+        {
+          "entry" : "rock"
+        },
+        
+        {
+          "entry" : "dummy"
+        },
+        
+        {
+          "entry" : "shroom_cannon_red1"
+        },
+        
+        {
+          "entry" : "sensor"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red1"
+        },
+        
+        {
+          "entry" : "shroom_guardian_red2"
+        },
+        
+        {
+          "entry" : "blocker"
+        },
+        
+        {
+          "entry" : "blocker2"
+        },
+        
+        {
+          "entry" : "jake"
+        },
+        
+        {
+          "entry" : "hermite_path"
+        },
+        
+        {
+          "entry" : "shroom_snake"
+        },
+        
+        {
+          "entry" : "tetrobot"
+        },
+        
+        {
+          "entry" : "tetrocrab"
+        },
+        
+        {
+          "entry" : "spawner1"
+        },
+        
+        {
+          "entry" : "teleport1"
+        },
+        
+        {
+          "entry" : "goal_area"
+        },
+        
+        {
+          "entry" : "weapon_station"
+        },
+        
+        {
+          "entry" : "scorp"
+        },
+        
+        {
+          "entry" : "barrel1"
+        },
+        
+        {
+          "entry" : "barrel2"
+        },
+        
+        {
+          "entry" : "turret1"
+        },
+        
+        {
+          "entry" : "pyrobot"
+        },
+        
+        {
+          "entry" : "keyl"
+        },
+        
+        {
+          "entry" : "laser_blocker"
+        },
+        
+        {
+          "entry" : "powerup_inventory"
+        },
+        
+        {
+          "entry" : "placeholder"
+        },
+        
+        {
+          "entry" : "rock_placeholder"
+        },
+        
+        {
+          "entry" : "vehicle_placeholder"
+        },
+        
+        {
+          "entry" : "boss_skull"
+        },
+        
+        {
+          "entry" : "spider"
+        },
+        
+        {
+          "entry" : "instance"
+        },
+        
+        {
+          "entry" : "powerup_helmet"
+        },
+        
+        {
+          "entry" : "baby_spider1"
+        },
+        
+        {
+          "entry" : "baby_spider2"
+        },
+        
+        {
+          "entry" : "spider_nest"
+        },
+        
+        {
+          "entry" : "weapon_trap"
+        },
+        
+        {
+          "entry" : "boss_queen"
+        },
+        
+        {
+          "entry" : "enforcer1"
+        },
+        
+        {
+          "entry" : "enforcer2"
+        },
+        
+        {
+          "entry" : "enforcer3"
+        },
+        
+        {
+          "entry" : "sentry1"
+        },
+        
+        {
+          "entry" : "sentry2"
+        },
+        
+        {
+          "entry" : "gorger1"
+        },
+        
+        {
+          "entry" : "powerup_ammo"
+        },
+        
+        {
+          "entry" : "roboarm"
+        },
+        
+        {
+          "entry" : "crate1"
+        },
+        
+        {
+          "entry" : "crate2"
+        },
+        
+        {
+          "entry" : "crate3"
+        },
+        
+        {
+          "entry" : "crate4"
+        },
+        
+        {
+          "entry" : "powerup_weapon"
+        },
+        
+        {
+          "entry" : "orbo"
+        },
+        
+        {
+          "entry" : "warder"
+        },
+        
+        {
+          "entry" : "keeper"
+        },
+        
+        {
+          "entry" : "powerup_backpack"
+        },
+        
+        {
+          "entry" : "powerup_earpiece"
+        },
+        
+        {
+          "entry" : "health_station"
+        },
+        
+        {
+          "entry" : "rod_bundle"
+        },
+        
+        {
+          "entry" : "garbage"
+        },
+        
+        {
+          "entry" : "boss_coreprotector"
+        },
+        
+        {
+          "entry" : "barrel3"
+        },
+        
+        {
+          "entry" : "acidworm1"
+        },
+        
+        {
+          "entry" : "centipede1"
+        },
+        
+        {
+          "entry" : "beetle1"
+        },
+        
+        {
+          "entry" : "beetle2"
+        },
+        
+        {
+          "entry" : "boat"
+        },
+        
+        {
+          "entry" : "powergen"
+        },
+        
+        {
+          "entry" : "powergen2"
+        },
+        
+        {
+          "entry" : "boss_squid"
+        },
+        
+        {
+          "entry" : "mech"
+        },
+        
+        {
+          "entry" : "homer"
+        },
+        
+        {
+          "entry" : "scientist"
+        },
+        
+        {
+          "entry" : "boss_chopper"
+        },
+        
+        {
+          "entry" : "creature"
+        },
+        
+        {
+          "entry" : "octopus"
+        },
+        
+        {
+          "entry" : "walker"
+        },
+        
+        {
+          "entry" : "snake"
+        },
+        
+        {
+          "entry" : "boss_buddy"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "width",
+      "name" : "width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_gem",
+      "name" : "prob_gem",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_zorder",
+      "name" : "image_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "assetPath",
+      "name" : "assetPath",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilUse",
+      "name" : "stencilUse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezeRadius",
+      "name" : "freezeRadius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_shotgun",
+      "name" : "prob_ammo_shotgun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "softLength",
+      "name" : "softLength",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "reverse",
+      "name" : "reverse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "height",
+      "name" : "height",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_eshield",
+      "name" : "prob_ammo_eshield",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "dead",
+      "name" : "dead",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "huge",
+      "name" : "huge",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_polygon",
+      "name" : "first_polygon",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image",
+      "name" : "image",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearOffset",
+      "name" : "nearOffset",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "split",
+      "name" : "split",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "i",
+      "name" : "i",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "player_missile"
+        },
+        
+        {
+          "entry" : "enemy_missile"
+        },
+        
+        {
+          "entry" : "ally_missile"
+        },
+        
+        {
+          "entry" : "neutral_missile"
+        }
+      ],
+      "displayName" : "missileType",
+      "name" : "missileType",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "stencilRef",
+      "name" : "stencilRef",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "mask",
+      "name" : "mask",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "image_width",
+      "name" : "image_width",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "first_point",
+      "name" : "first_point",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "shoot",
+      "name" : "shoot",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "circle_zorder",
+      "name" : "circle_zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "folded",
+      "name" : "folded",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_proxmine",
+      "name" : "prob_ammo_proxmine",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "left"
+        },
+        
+        {
+          "entry" : "right"
+        },
+        
+        {
+          "entry" : "top"
+        },
+        
+        {
+          "entry" : "bottom"
+        }
+      ],
+      "displayName" : "base",
+      "name" : "base",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dummy",
+      "name" : "dummy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "segId",
+      "name" : "segId",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "image_flip",
+      "name" : "image_flip",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "fixedPos",
+      "name" : "fixedPos",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle1",
+      "name" : "angle1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "length",
+      "name" : "length",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "intensity",
+      "name" : "intensity",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockAlly",
+      "name" : "blockAlly",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockRock",
+      "name" : "blockRock",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "zorder",
+      "name" : "zorder",
+      "type" : "int"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "cancelCollisions",
+      "name" : "cancelCollisions",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "diffuse",
+      "name" : "diffuse",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "detourable",
+      "name" : "detourable",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "tension",
+      "name" : "tension",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_machineGun",
+      "name" : "prob_ammo_machineGun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "amount",
+      "name" : "amount",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "freezePhysics",
+      "name" : "freezePhysics",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "collisionImpulseMultiplier",
+      "name" : "collisionImpulseMultiplier",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "blockEnemy",
+      "name" : "blockEnemy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "terrain_hole"
+        },
+        
+        {
+          "entry" : "terrain_points"
+        },
+        
+        {
+          "entry" : "stripe"
+        },
+        
+        {
+          "entry" : "hermite_stripe"
+        },
+        
+        {
+          "entry" : "chain"
+        },
+        
+        {
+          "entry" : "polygon"
+        },
+        
+        {
+          "entry" : "line_stripe"
+        },
+        
+        {
+          "entry" : "proj"
+        },
+        
+        {
+          "entry" : "tentacle"
+        }
+      ],
+      "displayName" : "class",
+      "name" : "class",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "xray",
+      "name" : "xray",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "dynamic",
+      "name" : "dynamic",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "hitBlockers",
+      "name" : "hitBlockers",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "keep"
+        },
+        
+        {
+          "entry" : "zero"
+        },
+        
+        {
+          "entry" : "replace"
+        },
+        
+        {
+          "entry" : "incr"
+        },
+        
+        {
+          "entry" : "decr"
+        }
+      ],
+      "displayName" : "stencilFail",
+      "name" : "stencilFail",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "step",
+      "name" : "step",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "radius",
+      "name" : "radius",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "color",
+      "name" : "color",
+      "type" : "color"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "autoTarget",
+      "name" : "autoTarget",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "nearDistance",
+      "name" : "nearDistance",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo_plasmagun",
+      "name" : "prob_ammo_plasmagun",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "visible",
+      "name" : "visible",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "rusted",
+      "name" : "rusted",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "angle2",
+      "name" : "angle2",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "glassy",
+      "name" : "glassy",
+      "type" : "bool"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "probability1",
+      "name" : "probability1",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "comboboxEntries" : 
+      [
+        
+        {
+          "entry" : "less"
+        },
+        
+        {
+          "entry" : "lequal"
+        },
+        
+        {
+          "entry" : "greater"
+        },
+        
+        {
+          "entry" : "gequal"
+        },
+        
+        {
+          "entry" : "equal"
+        },
+        
+        {
+          "entry" : "notequal"
+        }
+      ],
+      "displayName" : "stencilFunc",
+      "name" : "stencilFunc",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "body",
+      "displayName" : "prob_ammo",
+      "name" : "prob_ammo",
+      "type" : "float"
+    },
+    
+    {
+      "class" : "image",
+      "displayName" : "coneAngle",
+      "name" : "coneAngle",
+      "type" : "float"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "displayOptions" : 
+    {
+      "propertyDisplayFilterScriptFile" : "../rube/scenePropFilter.rs"
+    },
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "compactZeroVecs" : true,
+      "saveFullPathForImages" : false,
+      "saveFullPathForSamplerOutput" : false,
+      "saveImagePathsRelativeToRUBEFile" : true,
+      "saveSamplerOutputPathsRelativeToRUBEFile" : false,
+      "useGsonFormat" : false,
+      "useHumanReadableFloats" : false,
+      "usePrettyPrint" : false
+    },
+    "gravity" : 0,
+    "metabody" : 
+    [
+      
+      {
+        "angle" : "3FC90FDB",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "teleport1"
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "name" : "teleport1",
+        "position" : 0,
+        "type" : "static"
+      },
+      
+      {
+        "angle" : "400F079C",
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "rock"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "detourable"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 87,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "polygon"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "plaster1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 30,
+            "name" : "wall4",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "414ED91C",
+                "414A53DC",
+                "413CF6E4",
+                "412757D5",
+                "40E7B9A1",
+                "4102D520",
+                "410C15A0",
+                "410F36C8",
+                "410C15A0",
+                "4102D520",
+                "40E7B99F",
+                "412757D3",
+                "413CF6DC",
+                "414A53D4"
+              ],
+              "y" : 
+              [
+                "B43D8B98",
+                "402C062B",
+                "40A843E4",
+                "40F32A02",
+                "40A85BB5",
+                "4069006C",
+                "3FEE3502",
+                "3437C934",
+                "BFEE3506",
+                "C0690063",
+                "C0A85BAD",
+                "C0F32A02",
+                "C0A843E2",
+                "C02C0655"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 88,
+                "name" : "zorder"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "right"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "top"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound4.png"
+              }
+            ],
+            "id" : 32,
+            "name" : "mound4",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE66666",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "413CF6E4",
+                "414A53DC",
+                "414ED91C",
+                "414A53D4",
+                "413CF6DC",
+                "412757D3",
+                "40E7B99F",
+                "4102D520",
+                "410C15A0",
+                "410F36C8",
+                "410C15A0",
+                "4102D520",
+                "40E7B9A1",
+                "412757D5",
+                "413CF6E4",
+                "414A53DC",
+                "414ED91C"
+              ],
+              "y" : 
+              [
+                "40A843E4",
+                "402C062B",
+                "B43D8B98",
+                "C02C0655",
+                "C0A843E2",
+                "C0F32A02",
+                "C0A85BAD",
+                "C0690063",
+                "BFEE3506",
+                "3437C934",
+                "3FEE3502",
+                "4069006C",
+                "40A85BB5",
+                "40F32A02",
+                "40A843E4",
+                "402C062B",
+                "B43D8B98"
+              ]
+            }
+          }
+        ],
+        "id" : 2,
+        "linearVelocity" : 0,
+        "massData-I" : "45D02616",
+        "massData-center" : 
+        {
+          "x" : "4124EFF9",
+          "y" : "36333D28"
+        },
+        "massData-mass" : "42591882",
+        "name" : "teleport1_door",
+        "position" : 0,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "sensor"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "filter-maskBits" : 2,
+            "id" : 1,
+            "name" : "fixture",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40A00F74",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ "389E2F39" ]
+            }
+          }
+        ],
+        "id" : 3,
+        "linearVelocity" : 0,
+        "name" : "chamber1_cp",
+        "position" : 0,
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "float" : "42480000",
+            "name" : "freezeRadius"
+          },
+          
+          {
+            "name" : "class",
+            "string" : "blocker"
+          },
+          
+          {
+            "bool" : false,
+            "name" : "freezable"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 8,
+            "filter-maskBits" : 638,
+            "friction" : "3E4CCCCD",
+            "id" : 23,
+            "name" : "points",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "C229C52D",
+                "C2425EBA",
+                "C23EEC8E",
+                "C2358638",
+                "C2274EF0",
+                "C21517D8",
+                "C1E8F8F0",
+                "C1994D10",
+                "C11EE680",
+                "BF4DB600",
+                "4078C320",
+                "3EE2F360"
+              ],
+              "y" : 
+              [
+                "C182E5FC",
+                "C182E5FC",
+                "C1ACD128",
+                "C1DD5038",
+                "C20483FC",
+                "C2192D88",
+                "C2326E99",
+                "C2418443",
+                "C2458804",
+                "C24193F8",
+                "C23A6D51",
+                "C222E136"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 8,
+            "filter-maskBits" : 638,
+            "friction" : "3E4CCCCD",
+            "id" : 25,
+            "name" : "points",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "3F3FABD0",
+                "40835C67",
+                "3F9C8C00",
+                "C077D180",
+                "C11F8340",
+                "C181DF20",
+                "C1BB5650",
+                "C1E81B60",
+                "C2086F08",
+                "C21DD100",
+                "C22E8580",
+                "C23A3710",
+                "C2423BC8",
+                "C2428754",
+                "C22B3BE0"
+              ],
+              "y" : 
+              [
+                "41A88CA8",
+                "41D64A7F",
+                "41DEA390",
+                "41E7FE68",
+                "41EAAAA4",
+                "41E6A848",
+                "41D548B8",
+                "41C29308",
+                "41A5D76C",
+                "417CD5C0",
+                "411F4948",
+                "408625E0",
+                "C02F6450",
+                "C069B31C",
+                "C069B31C"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              }
+            ],
+            "density" : 1,
+            "filter-categoryBits" : 8,
+            "filter-maskBits" : 638,
+            "friction" : "3E4CCCCD",
+            "id" : 26,
+            "name" : "points",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "41326088",
+                "41702BE6",
+                "4194C570",
+                "41C6E2F0",
+                "41DAEEC0",
+                "41E7A0E0",
+                "41EAF840",
+                "41E6F5E0",
+                "41DCEFF0",
+                "41D03DC0",
+                "41BB86E0",
+                "419C1F00",
+                "416E7D8C",
+                "4136E6FA"
+              ],
+              "y" : 
+              [
+                "C207C710",
+                "C222D5B7",
+                "C21547C6",
+                "C1E5BC54",
+                "C1B39ECE",
+                "C1838274",
+                "C126CC38",
+                "C0827618",
+                "3FD7DA60",
+                "40CE5060",
+                "4131FEF8",
+                "41826D38",
+                "41A5221E",
+                "4165C73E"
+              ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearVelocity" : 0,
+        "name" : "blocker",
+        "position" : 
+        {
+          "x" : "41200000",
+          "y" : "41200000"
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "sensor"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "filter-maskBits" : 2,
+            "id" : 14,
+            "name" : "fixture",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "41AE9914",
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0 ],
+              "y" : [ "39AC8D3C" ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearVelocity" : 0,
+        "name" : "chamber0_cp",
+        "position" : 0,
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "customProperties" : 
+        [
+          
+          {
+            "name" : "class",
+            "string" : "terrain"
+          },
+          
+          {
+            "bool" : true,
+            "name" : "detourable"
+          }
+        ],
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -129,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground5.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 2,
+            "name" : "floor4",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "4099999A",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "3F9EE130", "BF4252A0", "C1FE85C9", "C20742E4" ],
+              "y" : [ 0, 0, 0, 0 ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -129,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground5.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 3,
+            "name" : "floor5",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "4099999A",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BF2602BD", "3ECB0EC4", "4184FA02", "418D55FA" ],
+              "y" : [ "3F87786E", "BF25B1D6", "C1D905EC", "C1E6AA70" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 90,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "plaster1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 4,
+            "name" : "wall0",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "414FF11D",
+                "4127ECE5",
+                "40FDB13E",
+                "40AA0142",
+                "402A8B70",
+                "2B800000",
+                "C02A8BE1",
+                "C0AA01EC",
+                "C0FDB108",
+                "C127ED02",
+                "C14FF155",
+                "C176AFAE",
+                "C18DF58D",
+                "C19FB2F2",
+                "C1B07389",
+                "C1C01E28",
+                "C1CE9A24",
+                "C1DBCE55",
+                "C1E7A9BE",
+                "C1F21526",
+                "C1FB0512",
+                "C2013340",
+                "C20418CE",
+                "C2062D94",
+                "C1E2D79D",
+                "C1DF52EA",
+                "C1DA6D3D",
+                "C1D43017",
+                "C1CCA21C",
+                "C1C3D356",
+                "C1B9CD7F",
+                "C1AEA435",
+                "C1A265D8",
+                "C19527A7",
+                "C186FE7F",
+                "C16FFF4B",
+                "C1508658",
+                "C12FC656",
+                "C10DF2C9",
+                "C0D67250",
+                "C08FB54D",
+                "C0102A04",
+                "B740CA4E",
+                "40102942",
+                "408FB48D",
+                "40D67247",
+                "410DF29C",
+                "412FC5E1"
+              ],
+              "y" : 
+              [
+                "C1FB042E",
+                "C201333A",
+                "C2041874",
+                "C2062D31",
+                "C2076E27",
+                "C207D95A",
+                "C2076E27",
+                "C2062D31",
+                "C2041874",
+                "C201333C",
+                "C1FB042E",
+                "C1F215B8",
+                "C1E7A927",
+                "C1DBCEF5",
+                "C1CE99BF",
+                "C1C01E99",
+                "C1B07449",
+                "C19FB32B",
+                "C18DF642",
+                "C176B24C",
+                "C14FF311",
+                "C127EB05",
+                "C0FDB50D",
+                "C0AA033E",
+                "C08FB653",
+                "C0D675A0",
+                "C10DF10D",
+                "C12FC7C1",
+                "C1508885",
+                "C170006C",
+                "C186FEAA",
+                "C1952844",
+                "C1A26630",
+                "C1AEA3DC",
+                "C1B9CE00",
+                "C1C3D2D2",
+                "C1CCA291",
+                "C1D42F51",
+                "C1DA6D2F",
+                "C1DF524C",
+                "C1E2D6F0",
+                "C1E4F590",
+                "C1E5AACC",
+                "C1E4F590",
+                "C1E2D6F0",
+                "C1DF5254",
+                "C1DA6D29",
+                "C1D42F4F"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 90,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "plaster1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 5,
+            "name" : "wall1",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "42062C81",
+                "42076EA1",
+                "4207D8B4",
+                "42076E86",
+                "42062C98",
+                "420418D5",
+                "4201333A",
+                "41FB0511",
+                "41F21509",
+                "41E7A7B6",
+                "41DBCE56",
+                "41CE9A25",
+                "41C01E2A",
+                "41B0736C",
+                "41952783",
+                "41A265CD",
+                "41AEA42A",
+                "41B9CD74",
+                "41C3D192",
+                "41CCA1F8",
+                "41D4300B",
+                "41DA6D26",
+                "41DF52E9",
+                "41E2D5E7",
+                "41E4F62A",
+                "41E5A9AD",
+                "41E4F658",
+                "41E2D5C4",
+                "41DF52E9",
+                "41DA6D26",
+                "41D4300B",
+                "41CCA1F8",
+                "41C3D192",
+                "41B9CD74",
+                "41AEA42A",
+                "41A265CD",
+                "41952783",
+                "41B0736C",
+                "41C01E2A",
+                "41CE9A25",
+                "41DBCE56",
+                "41E7A7B6",
+                "41F21509",
+                "41FB0524",
+                "42013336",
+                "420418CB"
+              ],
+              "y" : 
+              [
+                "40AA033E",
+                "402A894B",
+                "29000000",
+                "C02A8A2C",
+                "C0AA0278",
+                "C0FDB50D",
+                "C127EB05",
+                "C14FF311",
+                "C176B24C",
+                "C18DF642",
+                "C19FB32B",
+                "C1B07449",
+                "C1C01E99",
+                "C1CE99BF",
+                "C1AEA3DC",
+                "C1A26630",
+                "C1952844",
+                "C186FEAA",
+                "C170006C",
+                "C1508885",
+                "C12FC7C1",
+                "C10DF10D",
+                "C0D675A0",
+                "C08FB5AD",
+                "C0102863",
+                "B50E0875",
+                "401027A0",
+                "408FB651",
+                "40D67590",
+                "410DF100",
+                "412FC7B4",
+                "41508875",
+                "41700065",
+                "4186FEA1",
+                "41952841",
+                "41A2662B",
+                "41AEA404",
+                "41CE99F0",
+                "41C01E93",
+                "41B07446",
+                "419FB322",
+                "418DF63C",
+                "4176B23B",
+                "414FF2E5",
+                "4127EB1C",
+                "40FDB4F7"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 90,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "plaster1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 6,
+            "name" : "wall2",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "412FC63B",
+                "410DF296",
+                "40D67258",
+                "408FB48D",
+                "40102942",
+                "B740CA4E",
+                "C0102A04",
+                "C08FB54D",
+                "C0D67250",
+                "C10DF2C9",
+                "C12FC656",
+                "C1508658",
+                "C16FFF4B",
+                "C186FE7F",
+                "C19527A7",
+                "C1A265D8",
+                "C1AEA435",
+                "C1B9CD7F",
+                "C1C3D356",
+                "C1CCA21C",
+                "C1D43017",
+                "C1DA6D3D",
+                "C1DF52EA",
+                "C1E2D79D",
+                "C2062D94",
+                "C20418CE",
+                "C2013340",
+                "C1FB0512",
+                "C1F21526",
+                "C1E7A9BE",
+                "C1DBCE55",
+                "C1CE9A24",
+                "C1C01E28",
+                "C1B07389",
+                "C19FB2F2",
+                "C18DF58D",
+                "C176AFAE",
+                "C14FF155",
+                "C127ED02",
+                "C0FDB108",
+                "C0AA01EC",
+                "C02A8BE1",
+                "2B800000",
+                "402A8B70",
+                "40AA0142",
+                "40FDB13E",
+                "4127ECE5",
+                "414FF11D"
+              ],
+              "y" : 
+              [
+                "41D42F3A",
+                "41DA6D22",
+                "41DF5243",
+                "41E2D6DF",
+                "41E4F585",
+                "41E5AAC9",
+                "41E4F585",
+                "41E2D6DF",
+                "41DF5243",
+                "41DA6D37",
+                "41D42F46",
+                "41CCA283",
+                "41C3D2C4",
+                "41B9CDFD",
+                "41AEA404",
+                "41A2662B",
+                "41952841",
+                "4186FEA1",
+                "41700065",
+                "41508875",
+                "412FC7B4",
+                "410DF100",
+                "40D67590",
+                "408FB640",
+                "40AA0328",
+                "40FDB4FD",
+                "4127EAF6",
+                "414FF303",
+                "4176B23B",
+                "418DF63C",
+                "419FB322",
+                "41B07446",
+                "41C01E93",
+                "41CE99F0",
+                "41DBCEF1",
+                "41E7A919",
+                "41F215AB",
+                "41FB0421",
+                "42013341",
+                "42041870",
+                "42062D28",
+                "42076E1F",
+                "4207D959",
+                "42076E1F",
+                "42062D28",
+                "42041870",
+                "42013341",
+                "41FB0421"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 100,
+                "name" : "zorder"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "top"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound4.png"
+              }
+            ],
+            "id" : 7,
+            "name" : "mound0",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE66666",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "412FC63B",
+                "410DF296",
+                "40D67258",
+                "408FB48D",
+                "40102942",
+                "B740CA4E",
+                "C0102A04",
+                "C08FB54D",
+                "C0D67250",
+                "C10DF2C9",
+                "C12FC656",
+                "C1508658",
+                "C16FFF4B",
+                "C186FE7F",
+                "C19527A7",
+                "C1A265D8",
+                "C1AEA435",
+                "C1B9CD7F",
+                "C1C3D356",
+                "C1CCA21C",
+                "C1D43017",
+                "C1DA6D3D",
+                "C1DF52EA",
+                "C1E2D79D",
+                "C2062D94",
+                "C20418CE",
+                "C2013340",
+                "C1FB0512",
+                "C1F21526",
+                "C1E7A9BE",
+                "C1DBCE55",
+                "C1CE9A24",
+                "C1C01E28",
+                "C1B07389",
+                "C19FB2F2",
+                "C18DF58D",
+                "C176AFAE",
+                "C14FF155",
+                "C127ED02",
+                "C0FDB108",
+                "C0AA01EC",
+                "C02A8BE1",
+                "2B800000",
+                "402A8B70",
+                "40AA0142",
+                "40FDB13E",
+                "4127ECE5",
+                "414FF11D",
+                "412FC63B",
+                "410DF296",
+                "40D67258"
+              ],
+              "y" : 
+              [
+                "41D42F3A",
+                "41DA6D22",
+                "41DF5243",
+                "41E2D6DF",
+                "41E4F585",
+                "41E5AAC9",
+                "41E4F585",
+                "41E2D6DF",
+                "41DF5243",
+                "41DA6D37",
+                "41D42F46",
+                "41CCA283",
+                "41C3D2C4",
+                "41B9CDFD",
+                "41AEA404",
+                "41A2662B",
+                "41952841",
+                "4186FEA1",
+                "41700065",
+                "41508875",
+                "412FC7B4",
+                "410DF100",
+                "40D67590",
+                "408FB640",
+                "40AA0328",
+                "40FDB4FD",
+                "4127EAF6",
+                "414FF303",
+                "4176B23B",
+                "418DF63C",
+                "419FB322",
+                "41B07446",
+                "41C01E93",
+                "41CE99F0",
+                "41DBCEF1",
+                "41E7A919",
+                "41F215AB",
+                "41FB0421",
+                "42013341",
+                "42041870",
+                "42062D28",
+                "42076E1F",
+                "4207D959",
+                "42076E1F",
+                "42062D28",
+                "42041870",
+                "42013341",
+                "41FB0421",
+                "41D42F3A",
+                "41DA6D22",
+                "41DF5243"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 100,
+                "name" : "zorder"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "top"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound4.png"
+              }
+            ],
+            "id" : 8,
+            "name" : "mound1",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE66666",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "40D67247",
+                "410DF29C",
+                "412FC5E1",
+                "414FF11D",
+                "4127ECE5",
+                "40FDB13E",
+                "40AA0142",
+                "402A8B70",
+                "2B800000",
+                "C02A8BE1",
+                "C0AA01EC",
+                "C0FDB108",
+                "C127ED02",
+                "C14FF155",
+                "C176AFAE",
+                "C18DF58D",
+                "C19FB2F2",
+                "C1B07389",
+                "C1C01E28",
+                "C1CE9A24",
+                "C1DBCE55",
+                "C1E7A9BE",
+                "C1F21526",
+                "C1FB0512",
+                "C2013340",
+                "C20418CE",
+                "C2062D94",
+                "C1E2D79D",
+                "C1DF52EA",
+                "C1DA6D3D",
+                "C1D43017",
+                "C1CCA21C",
+                "C1C3D356",
+                "C1B9CD7F",
+                "C1AEA435",
+                "C1A265D8",
+                "C19527A7",
+                "C186FE7F",
+                "C16FFF4B",
+                "C1508658",
+                "C12FC656",
+                "C10DF2C9",
+                "C0D67250",
+                "C08FB54D",
+                "C0102A04",
+                "B740CA4E",
+                "40102942",
+                "408FB48D",
+                "40D67247",
+                "410DF29C",
+                "412FC5E1"
+              ],
+              "y" : 
+              [
+                "C1DF5254",
+                "C1DA6D29",
+                "C1D42F4F",
+                "C1FB042E",
+                "C201333A",
+                "C2041874",
+                "C2062D31",
+                "C2076E27",
+                "C207D95A",
+                "C2076E27",
+                "C2062D31",
+                "C2041874",
+                "C201333C",
+                "C1FB042E",
+                "C1F215B8",
+                "C1E7A927",
+                "C1DBCEF5",
+                "C1CE99BF",
+                "C1C01E99",
+                "C1B07449",
+                "C19FB32B",
+                "C18DF642",
+                "C176B24C",
+                "C14FF311",
+                "C127EB05",
+                "C0FDB50D",
+                "C0AA033E",
+                "C08FB653",
+                "C0D675A0",
+                "C10DF10D",
+                "C12FC7C1",
+                "C1508885",
+                "C170006C",
+                "C186FEAA",
+                "C1952844",
+                "C1A26630",
+                "C1AEA3DC",
+                "C1B9CE00",
+                "C1C3D2D2",
+                "C1CCA291",
+                "C1D42F51",
+                "C1DA6D2F",
+                "C1DF524C",
+                "C1E2D6F0",
+                "C1E4F590",
+                "C1E5AACC",
+                "C1E4F590",
+                "C1E2D6F0",
+                "C1DF5254",
+                "C1DA6D29",
+                "C1D42F4F"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 100,
+                "name" : "zorder"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "right"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "top"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound4.png"
+              }
+            ],
+            "id" : 9,
+            "name" : "mound2",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE66666",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "41FB0524",
+                "42013336",
+                "420418CB",
+                "42062C81",
+                "42076EA1",
+                "4207D8B4",
+                "42076E86",
+                "42062C98",
+                "420418D5",
+                "4201333A",
+                "41FB0511",
+                "41F21509",
+                "41E7A7B6",
+                "41DBCE56",
+                "41CE9A25",
+                "41C01E2A",
+                "41B0736C",
+                "41952783",
+                "41A265CD",
+                "41AEA42A",
+                "41B9CD74",
+                "41C3D192",
+                "41CCA1F8",
+                "41D4300B",
+                "41DA6D26",
+                "41DF52E9",
+                "41E2D5E7",
+                "41E4F62A",
+                "41E5A9AD",
+                "41E4F658",
+                "41E2D5C4",
+                "41DF52E9",
+                "41DA6D26",
+                "41D4300B",
+                "41CCA1F8",
+                "41C3D192",
+                "41B9CD74",
+                "41AEA42A",
+                "41A265CD",
+                "41952783",
+                "41B0736C",
+                "41C01E2A",
+                "41CE9A25",
+                "41DBCE56",
+                "41E7A7B6",
+                "41F21509",
+                "41FB0524",
+                "42013336",
+                "420418CB"
+              ],
+              "y" : 
+              [
+                "414FF2E5",
+                "4127EB1C",
+                "40FDB4F7",
+                "40AA033E",
+                "402A894B",
+                "29000000",
+                "C02A8A2C",
+                "C0AA0278",
+                "C0FDB50D",
+                "C127EB05",
+                "C14FF311",
+                "C176B24C",
+                "C18DF642",
+                "C19FB32B",
+                "C1B07449",
+                "C1C01E99",
+                "C1CE99BF",
+                "C1AEA3DC",
+                "C1A26630",
+                "C1952844",
+                "C186FEAA",
+                "C170006C",
+                "C1508885",
+                "C12FC7C1",
+                "C10DF10D",
+                "C0D675A0",
+                "C08FB5AD",
+                "C0102863",
+                "B50E0875",
+                "401027A0",
+                "408FB651",
+                "40D67590",
+                "410DF100",
+                "412FC7B4",
+                "41508875",
+                "41700065",
+                "4186FEA1",
+                "41952841",
+                "41A2662B",
+                "41AEA404",
+                "41CE99F0",
+                "41C01E93",
+                "41B07446",
+                "419FB322",
+                "418DF63C",
+                "4176B23B",
+                "414FF2E5",
+                "4127EB1C",
+                "40FDB4F7"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -137,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "catwalk2.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 10,
+            "name" : "floor1",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40C00000",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "C2313F59", "C21BEBE7", "C1EB598E", "C1B7B74C" ],
+              "y" : [ "B487F7B2", "B487F7B2", "B487F7B2", "B487F7B2" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -137,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "catwalk2.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 11,
+            "name" : "floor2",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40C00000",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "41B13F1E", "419BEBAC", "416B5918", "4137B6D5" ],
+              "y" : [ "C2198024", "C207081F", "C1CBD186", "C19F1A2D" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -137,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "catwalk2.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 12,
+            "name" : "floor3",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "40C00000",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "41B13F1E", "419BEBAC", "416B5919", "4137B6D9" ],
+              "y" : [ "42198023", "4207081E", "41CBD183", "419F1A29" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -129,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41200000",
+                "name" : "step"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "hermite_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground5.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 13,
+            "name" : "floor6",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "4099999A",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ "BF262803", "3ECB3C2E", "418517D3", "418D75AB" ],
+              "y" : [ "BF876CFA", "3F25A3F9", "41D8F3A5", "41E69704" ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 90,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "41A3D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "plaster1.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "density" : 1,
+            "filter-maskBits" : 65407,
+            "friction" : "3E4CCCCD",
+            "id" : 15,
+            "name" : "wall3",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "415768DC",
+                "41492EB2",
+                "413229C7",
+                "41135B81",
+                "40DC38DA",
+                "40881ACA",
+                "3FB827A6",
+                "BFB8284E",
+                "C0881ADF",
+                "C0DC38EF",
+                "C1135B8C",
+                "C13229C7",
+                "C1492F1B",
+                "C0E9DE1D",
+                "C0CF1BBC",
+                "C0AB4C23",
+                "C07FFFFE",
+                "C01E376E",
+                "BF5612F4",
+                "3F5612F7",
+                "401E377E",
+                "407FFFFD",
+                "40AB4C27",
+                "40CF1BC1",
+                "40E9DE1F",
+                "40FA67E1",
+                "41000000",
+                "40FA67E2",
+                "40E9DE1D",
+                "40CF1BBD",
+                "40AB4C24",
+                "407FFFFF",
+                "401E3779",
+                "3F5612FF",
+                "BF56130B",
+                "C01E377B",
+                "C0800001",
+                "C0AB4C26",
+                "C0CF1BBE",
+                "C0E9DE1E",
+                "C1492F1B",
+                "C13229C7",
+                "C1135B8C",
+                "C0DC3904",
+                "C0881AF4",
+                "BFB8284E",
+                "3FB827A6",
+                "40881ACA",
+                "40DC38DA",
+                "41135B81",
+                "413229C7",
+                "41492EBD",
+                "415768E7",
+                "415C38FA"
+              ],
+              "y" : 
+              [
+                "C03725C4",
+                "C0B3251C",
+                "C1017180",
+                "C123A858",
+                "C13EB7E9",
+                "C1517176",
+                "C15B0419",
+                "C15B0419",
+                "C1517176",
+                "C13EB7E9",
+                "C123A858",
+                "C101718B",
+                "C0B3251C",
+                "C0503FCC",
+                "C096791A",
+                "C0BE3EBE",
+                "C0DDB3D8",
+                "C0F37872",
+                "C0FE98FD",
+                "C0FE98FD",
+                "C0F37870",
+                "C0DDB3D8",
+                "C0BE3EBC",
+                "C0967913",
+                "C0503FC4",
+                "BFD4E6D2",
+                0,
+                "3FD4E6CE",
+                "40503FC9",
+                "40967918",
+                "40BE3EBE",
+                "40DDB3D8",
+                "40F37871",
+                "40FE98FD",
+                "40FE98FD",
+                "40F37870",
+                "40DDB3D7",
+                "40BE3EBD",
+                "40967917",
+                "40503FC7",
+                "40B3251C",
+                "41017180",
+                "4123A858",
+                "413EB7E9",
+                "41517176",
+                "415B0419",
+                "415B0419",
+                "41517176",
+                "413EB7E9",
+                "4123A858",
+                "41017180",
+                "40B3251D",
+                "4037259C",
+                "B4CC7432"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : -130,
+                "name" : "zorder"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_height"
+              },
+              
+              {
+                "float" : "4123D70A",
+                "name" : "image_width"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "terrain_points"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "left"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "ground4.png"
+              },
+              
+              {
+                "color" : [ 255, 255, 255, 255 ],
+                "name" : "color"
+              }
+            ],
+            "id" : 16,
+            "name" : "floor0",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "41F4A1B1",
+                "41EF444D",
+                "41E86ED2",
+                "41E02835",
+                "41D68088",
+                "41CB87C3",
+                "41BF4DDD",
+                "41B1E471",
+                "41A362AE",
+                "4193DFB2",
+                "41837278",
+                "41646B77",
+                "41408B6D",
+                "411B7DBF",
+                "40EAE84B",
+                "409D6AAA",
+                "401DEA92",
+                "B6B88EA0",
+                "C01DEB28",
+                "C09D6B5E",
+                "C0EAE832",
+                "C11B7DE5",
+                "C1408BAB",
+                "C1646B9C",
+                "C18372A4",
+                "C193DFC3",
+                "C1A362CB",
+                "C1B1E474",
+                "C1BF4DE2",
+                "C1CB87C8",
+                "C1D6826E",
+                "C1E02855",
+                "C1E86ED6",
+                "C1EF4461",
+                "C1F4A1A9",
+                "C1F87C50",
+                "C1FACEB7",
+                "C1FB9577",
+                "C1FACEB7",
+                "C1F87C50",
+                "C1F4A1A9",
+                "C1EF4461",
+                "C1E86ED6",
+                "C1E02855",
+                "C1D6826E",
+                "C1CB87C8",
+                "C1BF4DE2",
+                "C1B1E474",
+                "C1A362CB",
+                "C193DFC3",
+                "C18372A4",
+                "C1646B9C",
+                "C1408BAB",
+                "C11B7DE5",
+                "C0EAE832",
+                "C09D6B5E",
+                "C01DEB28",
+                "B6B88EA0",
+                "401DEA92",
+                "409D6AAA",
+                "40EAE84B",
+                "411B7DBF",
+                "41408B6D",
+                "41646B77",
+                "41837278",
+                "4193DFB2",
+                "41A362AE",
+                "41B1E471",
+                "41BF4DDD",
+                "41CB87C3",
+                "41D68088",
+                "41E02835",
+                "41E86ED2",
+                "41EF444D",
+                "41F4A1B1",
+                "41F87A75",
+                "41FACEA3",
+                "41FB9344",
+                "41FACED7",
+                "41F87A4E"
+              ],
+              "y" : 
+              [
+                "40EAEBCF",
+                "411B7BF9",
+                "41408D34",
+                "41646DF5",
+                "41837343",
+                "4193DFED",
+                "41A36379",
+                "41B1E4D4",
+                "41BF4DAD",
+                "41CB8855",
+                "41D681D3",
+                "41E028CC",
+                "41E86DF5",
+                "41EF445B",
+                "41F4A0F5",
+                "41F87B81",
+                "41FACDEB",
+                "41FB947F",
+                "41FACDEB",
+                "41F87B81",
+                "41F4A0F5",
+                "41EF445B",
+                "41E86DF5",
+                "41E028CC",
+                "41D681D3",
+                "41CB8855",
+                "41BF4DAD",
+                "41B1E4D4",
+                "41A36379",
+                "4193DFED",
+                "41837343",
+                "41646DF5",
+                "41408D34",
+                "411B7BF9",
+                "40EAEBCF",
+                "409D6C78",
+                "401DE947",
+                "B487F7B2",
+                "C01DE97D",
+                "C09D6C8B",
+                "C0EAEBE0",
+                "C11B7C06",
+                "C1408D41",
+                "C1646E03",
+                "C1837347",
+                "C193DFF5",
+                "C1A3637D",
+                "C1B1E4D9",
+                "C1BF4D82",
+                "C1CB885A",
+                "C1D681E0",
+                "C1E028DC",
+                "C1E86E04",
+                "C1EF4457",
+                "C1F4A102",
+                "C1F87B95",
+                "C1FACDFA",
+                "C1FB9483",
+                "C1FACDFA",
+                "C1F87B95",
+                "C1F4A102",
+                "C1EF4451",
+                "C1E86E04",
+                "C1E028D5",
+                "C1D681E0",
+                "C1CB885A",
+                "C1BF4D82",
+                "C1B1E4D9",
+                "C1A3637D",
+                "C193DFF5",
+                "C1837347",
+                "C1646E03",
+                "C1408D41",
+                "C11B7C06",
+                "C0EAEBE0",
+                "C09D6BD4",
+                "C01DE97D",
+                "B487F7B2",
+                "401DE8AA",
+                "409D6C8B"
+              ]
+            }
+          },
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "int" : 100,
+                "name" : "zorder"
+              },
+              
+              {
+                "name" : "base",
+                "string" : "right"
+              },
+              
+              {
+                "name" : "class",
+                "string" : "line_stripe"
+              },
+              
+              {
+                "name" : "first_point",
+                "string" : "top"
+              },
+              
+              {
+                "name" : "image",
+                "string" : "mound4.png"
+              }
+            ],
+            "id" : 17,
+            "name" : "mound3",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : "3FE66666",
+                "type" : "line"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                "41492EBD",
+                "415768E7",
+                "415C38FA",
+                "415768DC",
+                "41492EB2",
+                "413229C7",
+                "41135B81",
+                "40DC38DA",
+                "40881ACA",
+                "3FB827A6",
+                "BFB8284E",
+                "C0881ADF",
+                "C0DC38EF",
+                "C1135B8C",
+                "C13229C7",
+                "C1492F1B",
+                "C0E9DE1D",
+                "C0CF1BBC",
+                "C0AB4C23",
+                "C07FFFFE",
+                "C01E376E",
+                "BF5612F4",
+                "3F5612F7",
+                "401E377E",
+                "407FFFFD",
+                "40AB4C27",
+                "40CF1BC1",
+                "40E9DE1F",
+                "40FA67E1",
+                "41000000",
+                "40FA67E2",
+                "40E9DE1D",
+                "40CF1BBD",
+                "40AB4C24",
+                "407FFFFF",
+                "401E3779",
+                "3F5612FF",
+                "BF56130B",
+                "C01E377B",
+                "C0800001",
+                "C0AB4C26",
+                "C0CF1BBE",
+                "C0E9DE1E",
+                "C1492F1B",
+                "C13229C7",
+                "C1135B8C",
+                "C0DC3904",
+                "C0881AF4",
+                "BFB8284E",
+                "3FB827A6",
+                "40881ACA",
+                "40DC38DA",
+                "41135B81",
+                "413229C7",
+                "41492EBD",
+                "415768E7",
+                "415C38FA"
+              ],
+              "y" : 
+              [
+                "40B3251D",
+                "4037259C",
+                "B4CC7432",
+                "C03725C4",
+                "C0B3251C",
+                "C1017180",
+                "C123A858",
+                "C13EB7E9",
+                "C1517176",
+                "C15B0419",
+                "C15B0419",
+                "C1517176",
+                "C13EB7E9",
+                "C123A858",
+                "C101718B",
+                "C0B3251C",
+                "C0503FCC",
+                "C096791A",
+                "C0BE3EBE",
+                "C0DDB3D8",
+                "C0F37872",
+                "C0FE98FD",
+                "C0FE98FD",
+                "C0F37870",
+                "C0DDB3D8",
+                "C0BE3EBC",
+                "C0967913",
+                "C0503FC4",
+                "BFD4E6D2",
+                0,
+                "3FD4E6CE",
+                "40503FC9",
+                "40967918",
+                "40BE3EBE",
+                "40DDB3D8",
+                "40F37871",
+                "40FE98FD",
+                "40FE98FD",
+                "40F37870",
+                "40DDB3D7",
+                "40BE3EBD",
+                "40967917",
+                "40503FC7",
+                "40B3251C",
+                "41017180",
+                "4123A858",
+                "413EB7E9",
+                "41517176",
+                "415B0419",
+                "415B0419",
+                "41517176",
+                "413EB7E9",
+                "4123A858",
+                "41017180",
+                "40B3251D",
+                "4037259C",
+                "B4CC7432"
+              ]
+            }
+          }
+        ],
+        "id" : 1238,
+        "linearVelocity" : 0,
+        "name" : "terrain1",
+        "position" : 
+        {
+          "x" : "B729C1B4",
+          "y" : "B4FA20AA"
+        },
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "angle" : "BFC90FDB",
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 0,
+        "file" : "a.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "actor",
+        "opacity" : "3F000000",
+        "scale" : "40400000"
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : "3729C1B4",
+          "y" : "34FA20AA"
+        },
+        "anchorB" : 0,
+        "bodyA" : 1238,
+        "bodyB" : 2,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : true,
+        "id" : 1,
+        "lowerLimit" : 0,
+        "maxMotorTorque" : "49742400",
+        "motorSpeed" : "C0490FDB",
+        "name" : "teleport1_door_joint",
+        "referenceAngle" : "400F079C",
+        "type" : "revolute",
+        "upperLimit" : "3F490FDB"
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

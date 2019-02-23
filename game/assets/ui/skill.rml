@@ -1,0 +1,50 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 90%;
+            height: 90%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UISkill = {};
+
+        function UISkill.Choose(document, skill)
+            settings:setSkill(skill);
+            UIWindow.TransitionOut(document, 'play');
+        end
+    </script>
+</head>
+<body template="window">
+    [SKILL_TITLE]
+    <div id="skill_buttons">
+        <button class="skill_button" onclick="UISkill.Choose(document, const.SkillEasy);">
+            <p class="skill_name">[SKILL_EASY]</p>
+            <p class="skill_prop">[SKILL_EASY_PROP1]</p>
+            <p class="skill_prop">[SKILL_EASY_PROP2]</p>
+            <p class="skill_prop">[SKILL_EASY_PROP3]</p>
+            <p class="skill_prop">[SKILL_EASY_PROP4]</p>
+        </button>
+        <button class="skill_button" onclick="UISkill.Choose(document, const.SkillNormal);">
+            <p class="skill_name">[SKILL_NORMAL]</p>
+            <p class="skill_prop">[SKILL_NORMAL_PROP1]</p>
+            <p class="skill_prop">[SKILL_NORMAL_PROP2]</p>
+            <p class="skill_prop">[SKILL_NORMAL_PROP3]</p>
+            <p class="skill_prop">[SKILL_NORMAL_PROP4]</p>
+        </button>
+        <button class="skill_button" onclick="UISkill.Choose(document, const.SkillHard);">
+            <p class="skill_name">[SKILL_HARD]</p>
+            <p class="skill_prop">[SKILL_HARD_PROP1]</p>
+            <p class="skill_prop">[SKILL_HARD_PROP2]</p>
+            <p class="skill_prop">[SKILL_HARD_PROP3]</p>
+            <p class="skill_prop">[SKILL_HARD_PROP4]</p>
+        </button>
+        <div style="clear: both; font-size: 0px;"><br/></div>
+        <button class="skill_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+    </div>
+</body>
+</rml>

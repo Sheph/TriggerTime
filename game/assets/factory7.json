@@ -1,0 +1,246 @@
+{"frames": [
+
+{
+	"filename": "gorger_gib0.png",
+	"frame": {"x":1713,"y":1552,"w":76,"h":125},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":125},
+	"sourceSize": {"w":76,"h":125},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_gib1.png",
+	"frame": {"x":4,"y":1939,"w":153,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":153,"h":103},
+	"sourceSize": {"w":153,"h":103},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_gib2.png",
+	"frame": {"x":1793,"y":1552,"w":98,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":107},
+	"sourceSize": {"w":98,"h":107},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_gib3.png",
+	"frame": {"x":223,"y":1939,"w":61,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":84},
+	"sourceSize": {"w":61,"h":84},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_gib4.png",
+	"frame": {"x":161,"y":1939,"w":58,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":88},
+	"sourceSize": {"w":58,"h":88},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_gib5.png",
+	"frame": {"x":1640,"y":1552,"w":69,"h":158},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":158},
+	"sourceSize": {"w":69,"h":158},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee0.png",
+	"frame": {"x":413,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee1.png",
+	"frame": {"x":822,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee2.png",
+	"frame": {"x":4,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee3.png",
+	"frame": {"x":1231,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee4.png",
+	"frame": {"x":413,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee5.png",
+	"frame": {"x":822,"y":1552,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_melee6.png",
+	"frame": {"x":413,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot20.png",
+	"frame": {"x":4,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot21.png",
+	"frame": {"x":1231,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot22.png",
+	"frame": {"x":4,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot23.png",
+	"frame": {"x":822,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot24.png",
+	"frame": {"x":4,"y":4,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep0.png",
+	"frame": {"x":413,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep1.png",
+	"frame": {"x":1231,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep2.png",
+	"frame": {"x":822,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep3.png",
+	"frame": {"x":413,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep4.png",
+	"frame": {"x":1231,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep5.png",
+	"frame": {"x":4,"y":778,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep6.png",
+	"frame": {"x":822,"y":391,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gorger_shoot_prep7.png",
+	"frame": {"x":1231,"y":1165,"w":405,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":383},
+	"sourceSize": {"w":405,"h":383},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "factory7.png",
+	"format": "RGBA8888",
+	"size": {"w":1895,"h":2046},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f6bc2981cc300ddd638b427d890f25ba:8ad9877572887918e57371996d6a93cb:952e1eea57edc2ed143f34be40a14a57$"
+}
+}

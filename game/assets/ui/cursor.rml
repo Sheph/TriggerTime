@@ -1,0 +1,16 @@
+<rml>
+<head>
+    <style>
+        body
+        {
+            width: 31px;
+            height: 41px;
+
+            cursor-decorator: image;
+            cursor-image: /ui1/cursor.png;
+        }
+    </style>
+</head>
+<body>
+</body>
+</rml>

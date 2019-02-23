@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["factory5/scorp2_walk%7-8%.png", 16],
+        ["factory5/scorp2_walk%0-6%.png", 16]
+    ]
+}

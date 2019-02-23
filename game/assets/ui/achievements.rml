@@ -1,0 +1,68 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 90%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIAch = {};
+
+        function UIAch.OnShow(document)
+            local items = "";
+            for i = 0, const.AchievementMax, 1 do
+                if gameShell:isAchieved(i) then
+                    items = items..[[
+                        <div class="ach_row">
+                            <div class="ach_icon_cell">
+                                <img class="ach_icon" id="ach_icon]]..i..[["/>
+                            </div>
+                            <div class="ach_text_cell">
+                                <p class="ach_name" id="ach_name]]..i..[["></p>
+                                <p class="ach_description" id="ach_description]]..i..[["></p>
+                            </div>
+                        </div>
+                    ]];
+                end
+            end
+            for i = 0, const.AchievementMax, 1 do
+                if not gameShell:isAchieved(i) then
+                    items = items..[[
+                        <div class="ach_row">
+                            <div class="ach_icon_cell">
+                                <img class="ach_icon" id="ach_icon]]..i..[["/>
+                            </div>
+                            <div class="ach_text_cell">
+                                <p class="ach_name inactive" id="ach_name]]..i..[["></p>
+                                <p class="ach_description inactive" id="ach_description]]..i..[["></p>
+                            </div>
+                        </div>
+                    ]];
+                end
+            end
+            document:GetElementById("ach_items").inner_rml = items;
+
+            for i = 0, const.AchievementMax, 1 do
+                document:GetElementById("ach_icon"..i):SetAttribute("src", gameShell:getAchievementImageName(i));
+                local p1, p2 = gameShell:getAchievementProgress(i);
+                local achName = gameShell:getAchievementName(i);
+                if (p2 ~= 0) then
+                    achName = achName.." ("..p1.."/"..p2..")";
+                end
+                document:GetElementById("ach_name"..i):AppendChild(document:CreateTextNode(achName));
+                document:GetElementById("ach_description"..i):AppendChild(document:CreateTextNode(gameShell:getAchievementDescription(i)));
+            end
+        end
+    </script>
+</head>
+<body template="window" onshow="UIAch.OnShow(document);">
+    [ACHIEVEMENTS_TITLE]
+    <div id="ach_items"></div>
+    <button id="ach_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+</body>
+</rml>

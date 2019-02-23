@@ -1,0 +1,29 @@
+#include <windows.h>
+
+107 ICON "tt.ico"
+
+1 VERSIONINFO
+FILEVERSION 1,03,0,0
+PRODUCTVERSION 1,03,0,0
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Shephf games"
+            VALUE "FileVersion", "1.03"
+            VALUE "FileDescription", "Trigger Time"
+            VALUE "InternalName", "tt.exe"
+            VALUE "LegalCopyright", "Shephf games"
+            VALUE "LegalTrademarks", ""
+            VALUE "OriginalFilename", "tt.exe"
+            VALUE "ProductName", "TriggerTime"
+            VALUE "ProductVersion", "1.03"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

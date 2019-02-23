@@ -1,0 +1,8 @@
+{
+    "loop": true,
+    "frames": [
+        ["mech6/mech_legs_walk%7-24%.png", 31],
+        ["mech6/mech_legs_walk%0-6%.png", 31]
+    ],
+    "specials": [6, 20]
+}

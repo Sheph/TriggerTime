@@ -1,0 +1,94 @@
+<rml>
+<head>
+    <link type="text/template" href="window.rml" />
+    <style>
+        div#window_content
+        {
+            width: 80%;
+            height: 90%;
+
+            margin:auto;
+        }
+    </style>
+    <script>
+        UIPlay = {};
+
+        function UIPlay.OnLoad(document)
+            for i = 1, 12, 1 do
+                if ((i >= 5) and MFDemo) then
+                    document:GetElementById("mission_img"..i):SetAttribute("src", "/ui1/na.png");
+                elseif userData:levelAccessible("e1m"..i) then
+                    document:GetElementById("mission_img"..i):SetAttribute("src", "/ui1/e1m"..i..".png");
+                end
+            end
+            UIWindow.TransitionIn(document);
+        end
+
+        function UIPlay.Go(document, i)
+            if ((i >= 5) and MFDemo) then
+                return;
+            end
+            if not userData:levelAccessible("e1m"..i) then
+                return;
+            end
+            UIWindow.TransitionOutFunc(document, function()
+                document:Close();
+                showMissionDetails("e1m"..i);
+            end);
+        end
+
+        function UIPlay.GoNow(document, i)
+            if ((i >= 5) and MFDemo) then
+                return;
+            end
+            if not userData:levelAccessible("e1m"..i) then
+                return;
+            end
+            if UIInTransition then
+                return;
+            end
+            UIInTransition = true;
+            UIFadeOut(function()
+                document:Close();
+                scene:setNextLevel("e1m"..i..".lua", "e1m"..i..".json");
+            end);
+        end
+
+        function UIPlay.MouseOver(document, i, text)
+            if ((i >= 5) and MFDemo) then
+                document:GetElementById("mission_list_name").inner_rml = i..". "..tr.ui.PLAY_NOT_AVAILABLE_IN_DEMO;
+            elseif userData:levelAccessible("e1m"..i) then
+                document:GetElementById("mission_list_name").inner_rml = text;
+            elseif (i == 12) then
+                document:GetElementById("mission_list_name").inner_rml = i..". "..tr.ui.PLAY_SECRET;
+            else
+                document:GetElementById("mission_list_name").inner_rml = i..". "..tr.ui.PLAY_LOCKED;
+            end
+        end
+
+        function UIPlay.MouseOut(document, i)
+            document:GetElementById("mission_list_name").inner_rml = "&nbsp;";
+        end
+    </script>
+</head>
+<body template="window" onload="UIPlay.OnLoad(document);">
+    [PLAY_TITLE]
+    <div id="mission_buttons">
+        <button id="mission1" class="mission_button" onclick="UIPlay.Go(document, 1);" onmouseover="UIPlay.MouseOver(document, 1, '1. '..tr.str25);" onmouseout="UIPlay.MouseOut(document, 1);"><img id="mission_img1" src="/ui1/locked.png" class="mission_thumbnail"/><p>1</p></button>
+        <button id="mission2" class="mission_button" onclick="UIPlay.Go(document, 2);" onmouseover="UIPlay.MouseOver(document, 2, '2. '..tr.str26);" onmouseout="UIPlay.MouseOut(document, 2);"><img id="mission_img2" src="/ui1/locked.png" class="mission_thumbnail"/><p>2</p></button>
+        <button id="mission3" class="mission_button" onclick="UIPlay.Go(document, 3);" onmouseover="UIPlay.MouseOver(document, 3, '3. '..tr.str27);" onmouseout="UIPlay.MouseOut(document, 3);"><img id="mission_img3" src="/ui1/locked.png" class="mission_thumbnail"/><p>3</p></button>
+        <button id="mission4" class="mission_button" onclick="UIPlay.Go(document, 4);" onmouseover="UIPlay.MouseOver(document, 4, '4. '..tr.str28);" onmouseout="UIPlay.MouseOut(document, 4);"><img id="mission_img4" src="/ui1/locked.png" class="mission_thumbnail"/><p>4</p></button>
+        <button id="mission5" class="mission_button" onclick="UIPlay.Go(document, 5);" onmouseover="UIPlay.MouseOver(document, 5, '5. '..tr.str29);" onmouseout="UIPlay.MouseOut(document, 5);"><img id="mission_img5" src="/ui1/locked.png" class="mission_thumbnail"/><p>5</p></button>
+        <button id="mission6" class="mission_button" onclick="UIPlay.Go(document, 6);" onmouseover="UIPlay.MouseOver(document, 6, '6. '..tr.str30);" onmouseout="UIPlay.MouseOut(document, 6);"><img id="mission_img6" src="/ui1/locked.png" class="mission_thumbnail"/><p>6</p></button>
+        <button id="mission7" class="mission_button" onclick="UIPlay.Go(document, 7);" onmouseover="UIPlay.MouseOver(document, 7, '7. '..tr.str31);" onmouseout="UIPlay.MouseOut(document, 7);"><img id="mission_img7" src="/ui1/locked.png" class="mission_thumbnail"/><p>7</p></button>
+        <button id="mission8" class="mission_button" onclick="UIPlay.Go(document, 8);" onmouseover="UIPlay.MouseOver(document, 8, '8. '..tr.str32);" onmouseout="UIPlay.MouseOut(document, 8);"><img id="mission_img8" src="/ui1/locked.png" class="mission_thumbnail"/><p>8</p></button>
+        <button id="mission9" class="mission_button" onclick="UIPlay.Go(document, 9);" onmouseover="UIPlay.MouseOver(document, 9, '9. '..tr.str33);" onmouseout="UIPlay.MouseOut(document, 9);"><img id="mission_img9" src="/ui1/locked.png" class="mission_thumbnail"/><p>9</p></button>
+        <button id="mission10" class="mission_button" onclick="UIPlay.Go(document, 10);" onmouseover="UIPlay.MouseOver(document, 10, '10. '..tr.str34);" onmouseout="UIPlay.MouseOut(document, 10);"><img id="mission_img10" src="/ui1/locked.png" class="mission_thumbnail"/><p>10</p></button>
+        <button id="mission11" class="mission_button" onclick="UIPlay.GoNow(document, 11);" onmouseover="UIPlay.MouseOver(document, 11, '11. '..tr.str35);" onmouseout="UIPlay.MouseOut(document, 11);"><img id="mission_img11" src="/ui1/locked.png" class="mission_thumbnail"/><p>11</p></button>
+        <button id="mission12" class="mission_button" onclick="UIPlay.Go(document, 12);" onmouseover="UIPlay.MouseOver(document, 12, '12. '..tr.str52);" onmouseout="UIPlay.MouseOut(document, 12);"><img id="mission_img12" src="/ui1/secret.png" class="mission_thumbnail"/><p>12</p></button>
+        <div style="clear: both; font-size: 0px;"><br/></div>
+        <p id="mission_list_name">&nbsp;</p>
+        <button class="missions_back_button" onclick="UIWindow.TransitionBack(document);">[BACK]</button>
+    </div>
+</body>
+</rml>

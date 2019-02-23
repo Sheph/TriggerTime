@@ -1,0 +1,7 @@
+{
+    "loop": true,
+    "frames": [
+        ["natan1/natan_idle%0-17%.png", 12],
+        ["natan2/natan_idle%18-19%.png", 12]
+    ]
+}

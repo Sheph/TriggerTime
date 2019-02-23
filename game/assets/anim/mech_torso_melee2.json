@@ -1,0 +1,8 @@
+{
+    "loop": false,
+    "frames": [
+        ["mech2/mech_torso_melee2_%0-24%.png", 30],
+        ["mech6/mech_torso_melee2_%25-29%.png", 30]
+    ],
+    "specials": [15]
+}
