@@ -168,7 +168,7 @@ config.ini has a lot of stuff for developer to use, some of the settings are:
 setting | description
 ------------ | -------------
 developer | an integer from 1 to N specifying debug spawn point, most of the levels have many debug spawn points that are used to check out part of the level without running through from the start. note that if you set this to a non-existent spawn point the game will simply crash in script :)
-debugKeys | if set to true in-game debug keys are enabled, such as 'p' for physics debugging, 'r' for render debugging, 'c' for culling debugging, 'g' for ghost mode, 'm' for slowmo, etc.
+debugKeys | if set to true in-game debug keys are enabled, such as 'p' for physics debugging, 'r' for render debugging, 'c' for culling debugging, 'g' for ghost mode, 'm' for slowmo, +/-/* for zoom, etc.
 atLeastGems| number of games that the player will always have
 allLevelsAccessible| make all levels accessible on all difficulty settings
 skill| run the game on specified skill
