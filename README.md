@@ -178,3 +178,15 @@ Also, when debugKeys is true you can run the game like this:
 tt.exe e1m4.lua e1m4.json
 </pre>
 i.e. launch some level right away.
+
+**9. Build for distribution**
+-------------------
+* If you're on windows you can select "INSTALL" project from game solution and build it
+* If you're on linux you can run "make install"
+
+This will generate game redistributable package, this includes:
+* copying all the necessary things to separate directory
+* precompiling all lua scripts
+
+The resulting directory will contain everything to run the game in any environment. Game's Steam build was
+also made this way.
