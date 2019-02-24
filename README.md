@@ -7,7 +7,7 @@ Trigger Time is a story-driven, top-down shoot'em up with a fun gravity gun and 
 Blast your way through 9 levels filled with enemies, hazards and bizarre bosses.
 Along the way you'll take control of vehicles, pick up weapons, items and boosters.
 
-<img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot1.png?raw=true" width="400px"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot2.png?raw=true" width="400px"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot3.png?raw=true" width="400px"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot4.png?raw=true" width="400px"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot5.png?raw=true" width="400px"/>
+<img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot1.jpg?raw=true"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot2.jpg?raw=true"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot3.jpg?raw=true"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot4.jpg?raw=true"/><img src="https://github.com/Sheph/TriggerTime/blob/master/screenshot5.jpg?raw=true"/>
 
 Check out Trigger Time steam trailer on youtube:
 
