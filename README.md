@@ -20,7 +20,9 @@ You can also get Trigger Time on Steam for free here: https://store.steampowered
 This is 100% full source code for the game. However, due to some legal stuff it's not possible to publish some of the in-game
 music here on github. Those music files were replaced by "5 minutes of silence" dummy ogg files. If you want to have the
 music in game you'll have to install the game from Steam (for free), locate music files and overwrite those dummy oggs. More
-on that later.
+on that later in section 6.
+
+Also, by default, Steam is required for the game to run, if you want to run the game without Steam please see section 7 below.
 
 **3. Building on windows**
 -------------------
