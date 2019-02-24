@@ -79,6 +79,14 @@ running "C:\Projects\TriggerTime\build_Win32_VS2013\out\bin\Release\tt.exe"
 **4. Building on linux**
 -------------------
 
+Install prerequisites:
+
+<pre>
+sudo apt-get install cmake libx11-dev libxxf86vm-dev
+</pre>
+
+Then:
+
 <pre>
 ./cmake_x64_release.sh
 cd ../TriggerTime-x64-release
