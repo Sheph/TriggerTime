@@ -202,3 +202,16 @@ This will generate game redistributable package, this includes:
 
 The resulting directory will contain everything to run the game in any environment. Game's Steam build was
 also made this way.
+
+**10. Modifying objects, enemies and levels**
+-------------------
+
+The game heavily uses R.U.B.E Box2D editor - https://www.iforce2d.net/rube
+
+Though game itself is free, R.U.B.E is not free, it costs around $35. There's a demo version on website, but it
+can only be used for viewing scenes, not saving them.
+
+Most of the resources that have physics (i.e. objects, props, enemies and entire levels) are stored in .rube format in
+games/res directory, you can open those files using R.U.B.E, modify them and then export to game/assets in json format.
+
+For levels, there're also lua scripts that are used to drive things like cutscenes, enemy spawn, etc. Lua scripts are in game/assets directory and are named after levels, i.e. e1m4.rube level will export to e1m4.json and will have e1m4.lua level script (which in turn consists of several parts, i.e. e1m4_part0.lua, e1m4_part1.lua, etc.)
