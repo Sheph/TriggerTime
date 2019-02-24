@@ -38,6 +38,7 @@ Run it, choose "Add CMake to the system PATH for all users", accept other defaul
 #### Install Visual Studio Express 2013 for Windows Desktop
 
 Go to https://visualstudio.microsoft.com/vs/older-downloads/
+
 find "Visual Studio Express 2013 for Windows Desktop" and press "download"
 
 You'll need microsoft account, if you don't have one, create it and use it to download the installer.
@@ -215,3 +216,12 @@ Most of the resources that have physics (i.e. objects, props, enemies and entire
 games/res directory, you can open those files using R.U.B.E, modify them and then export to game/assets in json format.
 
 For levels, there're also lua scripts that are used to drive things like cutscenes, enemy spawn, etc. Lua scripts are in game/assets directory and are named after levels, i.e. e1m4.rube level will export to e1m4.json and will have e1m4.lua level script (which in turn consists of several parts, i.e. e1m4_part0.lua, e1m4_part1.lua, etc.)
+
+**11. Contacts**
+-------------------
+
+E-Mail: shephmail@gmail.com
+
+FaceBook: https://www.facebook.com/TriggerTimeGame
+
+Twitter: https://twitter.com/Shephf
