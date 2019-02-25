@@ -1,7 +1,25 @@
 Trigger Time (https://github.com/Sheph/TriggerTime)
 =========================
 
-**1. About**
++ [1. About](#1-about)
++ [2. Status](#2-status)
++ [3. Building on windows](#3-building-on-windows)
+  - [Install CMake](#install-cmake)
+  - [Install Visual Studio Express 2013 for Windows Desktop](#install-visual-studio-express-2013-for-windows-desktop)
+  - [Generate visual studio solution](#generate-visual-studio-solution)
+  - [Build and run the game](#build-and-run-the-game)
++ [4. Building on linux](#4-building-on-linux)
++ [5. Building for android](#5-building-for-android)
+  - [Build commands](#build-commands)
+  - [Other NDK build options](#other-ndk-build-options)
++ [6. Replacing in-game music](#6-replacing-in-game-music)
++ [7. Running without Steam](#7-running-without-steam)
++ [8. Developer settings](#8-developer-settings)
++ [9. Build for distribution](#9-build-for-distribution)
++ [10. Modifying objects, enemies and levels](#10-modifying-objects-enemies-and-levels)
++ [11. Contacts](#11-contacts)
+
+### 1. About
 -------------------
 Trigger Time is a story-driven, top-down shoot'em up with a fun gravity gun and physics puzzles to solve.
 Blast your way through 9 levels filled with enemies, hazards and bizarre bosses.
@@ -15,7 +33,7 @@ Check out Trigger Time steam trailer on youtube:
 
 You can also get Trigger Time on Steam for free here: https://store.steampowered.com/app/512920
 
-**2. Status**
+### 2. Status
 -------------------
 This is 100% full source code for the game. However, due to some legal stuff it's not possible to publish some of the in-game
 music here on github. Those music files were replaced by "5 minutes of silence" dummy ogg files. If you want to have the
@@ -24,7 +42,7 @@ on that later in section 6.
 
 Also, by default, Steam is required for the game to run, if you want to run the game without Steam please see section 7 below.
 
-**3. Building on windows**
+### 3. Building on windows
 -------------------
 
 #### Install CMake
@@ -79,7 +97,7 @@ choose "Release" in the topmost combox box and press "ctrl + F5"
 Once the game is built you can also run it outside of IDE by simply
 running "C:\Projects\TriggerTime\build_Win32_VS2013\out\bin\Release\tt.exe"
 
-**4. Building on linux**
+### 4. Building on linux
 -------------------
 
 Install prerequisites:
@@ -105,7 +123,7 @@ cd ./out/bin
 
 You can also use other cmake_xxx.sh scripts to generate debug, i386 and steam runtime version of the game.
 
-**5. Building for android**
+### 5. Building for android
 -------------------
 
 Originally there was also an android build, but at some point the game became "PC only". There're still android makefiles
@@ -148,7 +166,7 @@ Start native debugging:
 bash /home/user/android-ndk-rxx/ndk-gdb --start
 </pre>
 
-**6. Replacing in-game music**
+### 6. Replacing in-game music
 -------------------
 
 Due to some legal stuff it's not possible to publish some of the in-game
@@ -160,7 +178,7 @@ music in game you'll have to:
 * If you're on linux, go to /home/user/.steam/steam/SteamApps/common/Trigger Time/assets
 * Copy all action*.ogg and ambient*.ogg files to ./game/assets with overwriting
 
-**7. Running without Steam**
+### 7. Running without Steam
 -------------------
 
 The game is intended to run from Steam, so if you don't have Steam opened you'll see something like this in console:
@@ -173,7 +191,7 @@ Game startup failed, see $HOME/.TriggerTime/log.txt for details
 
 In order to fix this open config.ini and change steamApiRequired to false.
 
-**8. Developer settings**
+### 8. Developer settings
 -------------------
 
 config.ini has a lot of stuff for developer to use, some of the settings are:
@@ -192,7 +210,7 @@ tt.exe e1m4.lua e1m4.json
 </pre>
 i.e. launch some level right away.
 
-**9. Build for distribution**
+### 9. Build for distribution
 -------------------
 * If you're on windows you can select "INSTALL" project from game solution and build it
 * If you're on linux you can run "make install"
@@ -204,7 +222,7 @@ This will generate game redistributable package, this includes:
 The resulting directory will contain everything to run the game in any environment. Game's Steam build was
 also made this way.
 
-**10. Modifying objects, enemies and levels**
+### 10. Modifying objects, enemies and levels
 -------------------
 
 The game heavily uses R.U.B.E Box2D editor - https://www.iforce2d.net/rube
@@ -217,7 +235,7 @@ games/res directory, you can open those files using R.U.B.E, modify them and the
 
 For levels, there're also lua scripts that are used to drive things like cutscenes, enemy spawn, etc. Lua scripts are in game/assets directory and are named after levels, i.e. e1m4.rube level will export to e1m4.json and will have e1m4.lua level script (which in turn consists of several parts, i.e. e1m4_part0.lua, e1m4_part1.lua, etc.)
 
-**11. Contacts**
+### 11. Contacts
 -------------------
 
 E-Mail: shephmail@gmail.com
