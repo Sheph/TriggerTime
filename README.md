@@ -1,5 +1,10 @@
-Trigger Time (https://github.com/Sheph/TriggerTime) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Trigger%20Time%20becomes%20open-source.%20Full%20source%20code%20is%20available%20under%20BSD%20license!&url=https://github.com/Sheph/TriggerTime&hashtags=gamedev,indiedev,indiegame,steam)
+Trigger Time (https://github.com/Sheph/TriggerTime)
+[![mit license][img_license]](https://github.com/Sheph/TriggerTime/blob/master/COPYING?raw=true) [![line count][img_loc]][loc] [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Trigger%20Time%20becomes%20open-source.%20Full%20source%20code%20is%20available%20under%20BSD%20license!&url=https://github.com/Sheph/TriggerTime&hashtags=gamedev,indiedev,indiegame,steam)
 =========================
+
+[img_license]: https://img.shields.io/badge/license-BSD-lightgrey.svg
+[img_loc]: https://tokei.rs/b1/github/Sheph/TriggerTime
+[loc]: https://github.com/Aaronepower/tokei
 
 + [1. About](#1-about)
 + [2. Status](#2-status)
