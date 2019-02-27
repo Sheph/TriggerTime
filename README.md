@@ -1,4 +1,4 @@
-Trigger Time (https://github.com/Sheph/TriggerTime)
+Trigger Time (https://github.com/Sheph/TriggerTime) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Trigger%20Time%20becomes%20open-source.%20Full%20source%20code%20is%20available%20under%20BSD%20license!&url=https://github.com/Sheph/TriggerTime&hashtags=gamedev,indiedev,indiegame,steam)
 =========================
 
 + [1. About](#1-about)
