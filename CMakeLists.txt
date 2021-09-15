@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 cmake_policy(SET CMP0014 NEW)
 
+set(CMAKE_CXX_STANDARD 98)
+
 option(CROSSCOMPILING "Enable cross-compiling")
 
 if (CROSSCOMPILING)
