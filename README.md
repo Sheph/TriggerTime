@@ -92,7 +92,7 @@ C:\Projects\TriggerTime\build_Win32_VS2013\AIRFORCE.sln solution.
 * Set "tt" project as active project, i.e. right-click "tt" project and select "Set as StartUp project"
 * Open "tt" project properties, i.e. right-click "tt" project and select "Properties"
 * Set "Configuration" to "All Configurations"
-* Go to "Configuration Properties -> Debugging" and change "Working Directory" to $(ProjectDir)..\out\bin\$(Configuration)
+* Go to "Configuration Properties -> Debugging" and change "Working Directory" to $(ProjectDir)..\out\bin\\$(Configuration)
 * Press "Ok"
 
 Now you can build and run the game in different configurations, i.e. to build in release mode
