@@ -107,7 +107,7 @@ running "C:\Projects\TriggerTime\build_Win32_VS2013\out\bin\Release\tt.exe"
 Install prerequisites:
 
 <pre>
-sudo apt-get install cmake libx11-dev libxxf86vm-dev
+sudo apt-get install cmake libx11-dev libxxf86vm-dev libopenal-dev
 </pre>
 
 Then:
