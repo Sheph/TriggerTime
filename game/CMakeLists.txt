@@ -323,13 +323,13 @@ if (WIN32)
         set(SOURCES ${SOURCES}
             ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/config.ini
         )
-        configure_file(${AIRFORCE_SOURCE_DIR}/lib/win32/OpenAL32.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/OpenAL32.dll COPYONLY)
-        configure_file(${AIRFORCE_SOURCE_DIR}/lib/win32/wrap_oal.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/wrap_oal.dll COPYONLY)
+        configure_file(${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/OpenAL32.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/OpenAL32.dll COPYONLY)
+        configure_file(${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/wrap_oal.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/wrap_oal.dll COPYONLY)
         configure_file(config-easy.ini ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/config-easy.ini COPYONLY)
         configure_file(config-hard.ini ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/config-hard.ini COPYONLY)
         if (USE_STEAM_API)
             configure_file(steam_appid.txt ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/steam_appid.txt COPYONLY)
-            configure_file(${AIRFORCE_SOURCE_DIR}/lib/win32/steam_api.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/steam_api.dll COPYONLY)
+            configure_file(${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/steam_api${STEAM_API_SUFFIX}.dll ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${_CONFIGURATION}/steam_api${STEAM_API_SUFFIX}.dll COPYONLY)
         endif ()
     endforeach ()
     set(SOURCES ${SOURCES}
@@ -439,13 +439,13 @@ if (WIN32)
     endif ()
     install(
         FILES
-        "${AIRFORCE_SOURCE_DIR}/lib/win32/OpenAL32.dll"
-        "${AIRFORCE_SOURCE_DIR}/lib/win32/wrap_oal.dll"
+        "${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/OpenAL32.dll"
+        "${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/wrap_oal.dll"
         DESTINATION "${INSTALL_OUT_DIR}")
     if (USE_STEAM_API)
         install(
             FILES
-            "${AIRFORCE_SOURCE_DIR}/lib/win32/steam_api.dll"
+            "${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}/steam_api${STEAM_API_SUFFIX}.dll"
             DESTINATION "${INSTALL_OUT_DIR}")
     endif ()
 else()

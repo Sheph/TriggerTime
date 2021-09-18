@@ -146,7 +146,7 @@ namespace
         {
             luabind::object list = luabind::newtable(L);
 
-            for (size_t i = 0; i < value.size(); ++i) {
+            for (int i = 0; i < value.size(); ++i) {
                 list[i + 1] = basic_converter<T>::to_object(L, value[i]);
             }
 

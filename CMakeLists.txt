@@ -24,13 +24,21 @@ include(CheckTypeSize)
 #platform setup
 
 if (WIN32)
-    set(PLATFORM_NAME "win32")
+    if (CMAKE_VS_PLATFORM_NAME STREQUAL "x64")
+        set(PLATFORM_NAME "win64")
+        set(STEAM_API_SUFFIX "64")
+    else ()
+        set(PLATFORM_NAME "win32")
+        set(STEAM_API_SUFFIX "")
+    endif ()
 else ()
     CHECK_TYPE_SIZE("void*" PTR_SIZE BUILTIN_TYPES_ONLY)
     if (PTR_SIZE EQUAL 8)
         set(PLATFORM_NAME "linux64")
+        set(STEAM_API_SUFFIX "")
     else ()
         set(PLATFORM_NAME "linux32")
+        set(STEAM_API_SUFFIX "")
     endif ()
 endif ()
 
@@ -79,7 +87,7 @@ set(ZLIB_LIBRARIES "z")
 
 if (USE_STEAM_API)
     add_definitions(-DUSE_STEAM_API)
-    find_library(STEAM_API_LIBRARIES NAMES steam_api HINTS "${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}" NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+    find_library(STEAM_API_LIBRARIES NAMES steam_api${STEAM_API_SUFFIX} HINTS "${AIRFORCE_SOURCE_DIR}/lib/${PLATFORM_NAME}" NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
 endif ()
 
 #find programs
